@@ -1,0 +1,2 @@
+eclipse.preferences.version=1
+org.eclipse.core.variables.valueVariables=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<valueVariables>\n<valueVariable description\="com port to use to program/debug with a Blackmagic Probe" name\="COM_PORT" readOnly\="false" value\="/dev/ttyACM0"/>\n</valueVariables>\n

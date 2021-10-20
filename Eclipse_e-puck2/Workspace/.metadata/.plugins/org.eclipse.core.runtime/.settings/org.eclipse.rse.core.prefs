@@ -1,0 +1,4 @@
+activeuserprofiles=Team;ubuntu;vagrant-ubuntu-trusty-32
+eclipse.preferences.version=1
+org.eclipse.rse.systemtype.local.systemType.defaultUserId=epfl
+useridperkey=vagrant-ubuntu-trusty-32.Local\=epfl;

@@ -1,0 +1,12 @@
+!SESSION 2020-08-14 12:10:06.037 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=11.0.8
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -purgeHistory -application org.eclipse.equinox.p2.director -repository http://download.eclipse.org/tools/cdt/releases/9.11 -installIUs org.eclipse.cdt.debug.gdbjtag.feature.group
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product -clean -purgeHistory -application org.eclipse.equinox.p2.director -repository http://download.eclipse.org/tools/cdt/releases/9.11 -installIUs org.eclipse.cdt.debug.gdbjtag.feature.group
+
+!ENTRY org.eclipse.equinox.p2.director 0 0 2020-08-14 12:10:19.004
+!MESSAGE Overall install request is satisfiable
+!SUBENTRY 1 org.eclipse.equinox.p2.director 0 0 2020-08-14 12:10:19.004
+!MESSAGE Add request for C/C++ GDB Hardware Debugging 9.11.1.202005131504 (org.eclipse.cdt.debug.gdbjtag.feature.group 9.11.1.202005131504) is satisfiable

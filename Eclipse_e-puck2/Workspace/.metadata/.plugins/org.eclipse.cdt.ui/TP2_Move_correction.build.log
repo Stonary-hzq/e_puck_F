@@ -1,0 +1,10 @@
+06:05:39 **** Clean-only build of configuration Default for project TP2_Move_correction ****
+make clean 
+> Cleaning
+rm -f main.o gpio.o timer.o motor.o selector.o ../ST/system_clock_config.o ../ST/stm32f4xx_ll_rcc.o ../ST/system_stm32f4xx.o ../ST/startup_stm32f407xx.o
+rm main.d gpio.d timer.d motor.d selector.d ../ST/system_clock_config.d ../ST/stm32f4xx_ll_rcc.d ../ST/system_stm32f4xx.d
+rm -f move.elf move.list move.size move.mem
+> Done
+
+06:05:40 Build Finished (took 894ms)
+
