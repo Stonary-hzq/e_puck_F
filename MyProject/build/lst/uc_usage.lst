@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccT7ybOP.s 			page 1
+ARM GAS  /tmp/cc05ReSH.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
   55              	.LVL1:
   56              		.loc 1 78 0
   57 0018 019A     		ldr	r2, [sp, #4]
-ARM GAS  /tmp/ccT7ybOP.s 			page 2
+ARM GAS  /tmp/cc05ReSH.s 			page 2
 
 
   58 001a 2368     		ldr	r3, [r4]
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  112              		.cfi_offset 10, -12
  113              		.cfi_offset 11, -8
  114              		.cfi_offset 14, -4
-ARM GAS  /tmp/ccT7ybOP.s 			page 3
+ARM GAS  /tmp/cc05ReSH.s 			page 3
 
 
  115 0004 764B     		ldr	r3, .L17
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  169 0064 4FF0640A 		mov	r10, #100
  170              		.loc 2 31 0
  171 0068 8146     		mov	r9, r0
-ARM GAS  /tmp/ccT7ybOP.s 			page 4
+ARM GAS  /tmp/cc05ReSH.s 			page 4
 
 
  172              	.LVL8:
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  226 00ec 8200     		lsls	r2, r0, #2
  227 00ee 12EB0008 		adds	r8, r2, r0
  228 00f2 47EA9073 		orr	r3, r7, r0, lsr #30
-ARM GAS  /tmp/ccT7ybOP.s 			page 5
+ARM GAS  /tmp/cc05ReSH.s 			page 5
 
 
  229 00f6 43EB0109 		adc	r9, r3, r1
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  283 0198 FFF7FEFF 		bl	__aeabi_uldivmod
  284              	.LVL16:
  285 019c 80B2     		uxth	r0, r0
-ARM GAS  /tmp/ccT7ybOP.s 			page 6
+ARM GAS  /tmp/cc05ReSH.s 			page 6
 
 
  286              		.loc 2 42 0
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  340 01f0 E0040000 		.word	ch+1248
  341 01f4 10000000 		.word	.LC1
  342 01f8 40000000 		.word	.LC2
-ARM GAS  /tmp/ccT7ybOP.s 			page 7
+ARM GAS  /tmp/cc05ReSH.s 			page 7
 
 
  343 01fc 00000000 		.word	.LC0
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  389 0004 0400     		.2byte	0x4
  390 0006 00000000 		.4byte	.Ldebug_abbrev0
  391 000a 04       		.byte	0x4
-ARM GAS  /tmp/ccT7ybOP.s 			page 8
+ARM GAS  /tmp/cc05ReSH.s 			page 8
 
 
  392 000b 01       		.uleb128 0x1
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  446 007a 7E000000 		.4byte	0x7e
  447 007e 02       		.uleb128 0x2
  448 007f 02       		.byte	0x2
-ARM GAS  /tmp/ccT7ybOP.s 			page 9
+ARM GAS  /tmp/cc05ReSH.s 			page 9
 
 
  449 0080 07       		.byte	0x7
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  503 00f5 04       		.uleb128 0x4
  504 00f6 EA040000 		.4byte	.LASF21
  505 00fa 06       		.byte	0x6
-ARM GAS  /tmp/ccT7ybOP.s 			page 10
+ARM GAS  /tmp/cc05ReSH.s 			page 10
 
 
  506 00fb 45       		.byte	0x45
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  560 0173 07       		.byte	0x7
  561 0174 33       		.byte	0x33
  562 0175 DF000000 		.4byte	0xdf
-ARM GAS  /tmp/ccT7ybOP.s 			page 11
+ARM GAS  /tmp/cc05ReSH.s 			page 11
 
 
  563 0179 06       		.uleb128 0x6
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  617 01e8 18       		.byte	0x18
  618 01e9 08       		.uleb128 0x8
  619 01ea 48020000 		.4byte	.LASF41
-ARM GAS  /tmp/ccT7ybOP.s 			page 12
+ARM GAS  /tmp/cc05ReSH.s 			page 12
 
 
  620 01ee 08       		.byte	0x8
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  674 025d 08       		.byte	0x8
  675 025e 4001     		.2byte	0x140
  676 0260 42010000 		.4byte	0x142
-ARM GAS  /tmp/ccT7ybOP.s 			page 13
+ARM GAS  /tmp/cc05ReSH.s 			page 13
 
 
  677 0264 38       		.byte	0x38
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  731 02d5 B1       		.byte	0xb1
  732 02d6 B2020000 		.4byte	0x2b2
  733 02da 00       		.byte	0
-ARM GAS  /tmp/ccT7ybOP.s 			page 14
+ARM GAS  /tmp/cc05ReSH.s 			page 14
 
 
  734 02db 00       		.byte	0
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  788 034b 0A       		.uleb128 0xa
  789 034c E7010000 		.4byte	.LASF66
  790 0350 08       		.byte	0x8
-ARM GAS  /tmp/ccT7ybOP.s 			page 15
+ARM GAS  /tmp/cc05ReSH.s 			page 15
 
 
  791 0351 9701     		.2byte	0x197
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  845 03c3 0A       		.uleb128 0xa
  846 03c4 CB030000 		.4byte	.LASF74
  847 03c8 08       		.byte	0x8
-ARM GAS  /tmp/ccT7ybOP.s 			page 16
+ARM GAS  /tmp/cc05ReSH.s 			page 16
 
 
  848 03c9 6E01     		.2byte	0x16e
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  902 043d 07       		.byte	0x7
  903 043e 6B       		.byte	0x6b
  904 043f 43040000 		.4byte	0x443
-ARM GAS  /tmp/ccT7ybOP.s 			page 17
+ARM GAS  /tmp/cc05ReSH.s 			page 17
 
 
  905 0443 10       		.uleb128 0x10
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  959 04b9 09       		.uleb128 0x9
  960 04ba 64626700 		.ascii	"dbg\000"
  961 04be 08       		.byte	0x8
-ARM GAS  /tmp/ccT7ybOP.s 			page 18
+ARM GAS  /tmp/cc05ReSH.s 			page 18
 
 
  962 04bf CE01     		.2byte	0x1ce
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  1016 0537 15       		.uleb128 0x15
  1017 0538 72313300 		.ascii	"r13\000"
  1018 053c 0B       		.byte	0xb
-ARM GAS  /tmp/ccT7ybOP.s 			page 19
+ARM GAS  /tmp/cc05ReSH.s 			page 19
 
 
  1019 053d 8A       		.byte	0x8a
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  1073 05a9 0C       		.byte	0xc
  1074 05aa FD       		.byte	0xfd
  1075 05ab 15050000 		.4byte	0x515
-ARM GAS  /tmp/ccT7ybOP.s 			page 20
+ARM GAS  /tmp/cc05ReSH.s 			page 20
 
 
  1076 05af 1C       		.byte	0x1c
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  1130 0621 40       		.byte	0x40
  1131 0622 09       		.uleb128 0x9
  1132 0623 723500   		.ascii	"r5\000"
-ARM GAS  /tmp/ccT7ybOP.s 			page 21
+ARM GAS  /tmp/cc05ReSH.s 			page 21
 
 
  1133 0626 0C       		.byte	0xc
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  1187 068f C4060000 		.4byte	0x6c4
  1188 0693 08       		.uleb128 0x8
  1189 0694 1A000000 		.4byte	.LASF99
-ARM GAS  /tmp/ccT7ybOP.s 			page 22
+ARM GAS  /tmp/cc05ReSH.s 			page 22
 
 
  1190 0698 0D       		.byte	0xd
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  1244 06ff C4060000 		.4byte	0x6c4
  1245 0703 18       		.uleb128 0x18
  1246 0704 C4060000 		.4byte	0x6c4
-ARM GAS  /tmp/ccT7ybOP.s 			page 23
+ARM GAS  /tmp/cc05ReSH.s 			page 23
 
 
  1247 0708 13070000 		.4byte	0x713
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  1301 076f 63010000 		.4byte	0x163
  1302 0773 0C       		.byte	0xc
  1303 0774 08       		.uleb128 0x8
-ARM GAS  /tmp/ccT7ybOP.s 			page 24
+ARM GAS  /tmp/cc05ReSH.s 			page 24
 
 
  1304 0775 AF050000 		.4byte	.LASF113
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  1358 07de 0101     		.2byte	0x101
  1359 07e0 42010000 		.4byte	0x142
  1360 07e4 1B       		.uleb128 0x1b
-ARM GAS  /tmp/ccT7ybOP.s 			page 25
+ARM GAS  /tmp/cc05ReSH.s 			page 25
 
 
  1361 07e5 C7000000 		.4byte	.LASF121
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  1415 085a 33080000 		.4byte	0x833
  1416 085e 07       		.uleb128 0x7
  1417 085f F0070000 		.4byte	.LASF130
-ARM GAS  /tmp/ccT7ybOP.s 			page 26
+ARM GAS  /tmp/cc05ReSH.s 			page 26
 
 
  1418 0863 14       		.byte	0x14
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  1472 08d2 30       		.byte	0x30
  1473 08d3 00       		.byte	0
  1474 08d4 1C       		.uleb128 0x1c
-ARM GAS  /tmp/ccT7ybOP.s 			page 27
+ARM GAS  /tmp/cc05ReSH.s 			page 27
 
 
  1475 08d5 636800   		.ascii	"ch\000"
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  1529 0941 3C       		.byte	0x3c
  1530 0942 B4000000 		.4byte	0xb4
  1531 0946 0B       		.byte	0xb
-ARM GAS  /tmp/ccT7ybOP.s 			page 28
+ARM GAS  /tmp/cc05ReSH.s 			page 28
 
 
  1532 0947 08       		.uleb128 0x8
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  1586 09b3 08       		.uleb128 0x8
  1587 09b4 67040000 		.4byte	.LASF153
  1588 09b8 12       		.byte	0x12
-ARM GAS  /tmp/ccT7ybOP.s 			page 29
+ARM GAS  /tmp/cc05ReSH.s 			page 29
 
 
  1589 09b9 48       		.byte	0x48
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  1643 0a2b 13       		.byte	0x13
  1644 0a2c 41       		.byte	0x41
  1645 0a2d 9C0A0000 		.4byte	0xa9c
-ARM GAS  /tmp/ccT7ybOP.s 			page 30
+ARM GAS  /tmp/cc05ReSH.s 			page 30
 
 
  1646 0a31 08       		.byte	0x8
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  1700 0aac 8F030000 		.4byte	0x38f
  1701 0ab0 00       		.byte	0
  1702 0ab1 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccT7ybOP.s 			page 31
+ARM GAS  /tmp/cc05ReSH.s 			page 31
 
 
  1703 0ab2 04       		.byte	0x4
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  1757 0b24 02       		.byte	0x2
  1758 0b25 0D       		.byte	0xd
  1759 0b26 330C0000 		.4byte	0xc33
-ARM GAS  /tmp/ccT7ybOP.s 			page 32
+ARM GAS  /tmp/cc05ReSH.s 			page 32
 
 
  1760 0b2a 00000000 		.4byte	.LLST2
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  1814 0ba1 AC0B0000 		.4byte	0xbac
  1815 0ba5 26       		.uleb128 0x26
  1816 0ba6 01       		.uleb128 0x1
-ARM GAS  /tmp/ccT7ybOP.s 			page 33
+ARM GAS  /tmp/cc05ReSH.s 			page 33
 
 
  1817 0ba7 50       		.byte	0x50
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  1871 0be9 00       		.sleb128 0
  1872 0bea 79       		.byte	0x79
  1873 0beb 00       		.sleb128 0
-ARM GAS  /tmp/ccT7ybOP.s 			page 34
+ARM GAS  /tmp/cc05ReSH.s 			page 34
 
 
  1874 0bec F7       		.byte	0xf7
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  1928 0c35 D20A0000 		.4byte	0xad2
  1929 0c39 28       		.uleb128 0x28
  1930 0c3a B6080000 		.4byte	.LASF175
-ARM GAS  /tmp/ccT7ybOP.s 			page 35
+ARM GAS  /tmp/cc05ReSH.s 			page 35
 
 
  1931 0c3e 01       		.byte	0x1
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  1985 0ca6 06       		.byte	0x6
  1986 0ca7 26       		.uleb128 0x26
  1987 0ca8 01       		.uleb128 0x1
-ARM GAS  /tmp/ccT7ybOP.s 			page 36
+ARM GAS  /tmp/cc05ReSH.s 			page 36
 
 
  1988 0ca9 52       		.byte	0x52
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  2042 0018 3E       		.uleb128 0x3e
  2043 0019 0B       		.uleb128 0xb
  2044 001a 03       		.uleb128 0x3
-ARM GAS  /tmp/ccT7ybOP.s 			page 37
+ARM GAS  /tmp/cc05ReSH.s 			page 37
 
 
  2045 001b 0E       		.uleb128 0xe
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  2099 0051 00       		.byte	0
  2100 0052 00       		.byte	0
  2101 0053 08       		.uleb128 0x8
-ARM GAS  /tmp/ccT7ybOP.s 			page 38
+ARM GAS  /tmp/cc05ReSH.s 			page 38
 
 
  2102 0054 0D       		.uleb128 0xd
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  2156 008a 13       		.uleb128 0x13
  2157 008b 01       		.byte	0x1
  2158 008c 03       		.uleb128 0x3
-ARM GAS  /tmp/ccT7ybOP.s 			page 39
+ARM GAS  /tmp/cc05ReSH.s 			page 39
 
 
  2159 008d 0E       		.uleb128 0xe
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  2213 00c3 3A       		.uleb128 0x3a
  2214 00c4 0B       		.uleb128 0xb
  2215 00c5 3B       		.uleb128 0x3b
-ARM GAS  /tmp/ccT7ybOP.s 			page 40
+ARM GAS  /tmp/cc05ReSH.s 			page 40
 
 
  2216 00c6 05       		.uleb128 0x5
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  2270 00fc 00       		.byte	0
  2271 00fd 00       		.byte	0
  2272 00fe 15       		.uleb128 0x15
-ARM GAS  /tmp/ccT7ybOP.s 			page 41
+ARM GAS  /tmp/cc05ReSH.s 			page 41
 
 
  2273 00ff 0D       		.uleb128 0xd
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  2327 0135 2F       		.uleb128 0x2f
  2328 0136 0B       		.uleb128 0xb
  2329 0137 00       		.byte	0
-ARM GAS  /tmp/ccT7ybOP.s 			page 42
+ARM GAS  /tmp/cc05ReSH.s 			page 42
 
 
  2330 0138 00       		.byte	0
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  2384 016e 00       		.byte	0
  2385 016f 1E       		.uleb128 0x1e
  2386 0170 0D       		.uleb128 0xd
-ARM GAS  /tmp/ccT7ybOP.s 			page 43
+ARM GAS  /tmp/cc05ReSH.s 			page 43
 
 
  2387 0171 00       		.byte	0
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  2441 01a8 03       		.uleb128 0x3
  2442 01a9 08       		.uleb128 0x8
  2443 01aa 3A       		.uleb128 0x3a
-ARM GAS  /tmp/ccT7ybOP.s 			page 44
+ARM GAS  /tmp/cc05ReSH.s 			page 44
 
 
  2444 01ab 0B       		.uleb128 0xb
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  2498 01e5 13       		.uleb128 0x13
  2499 01e6 00       		.byte	0
  2500 01e7 00       		.byte	0
-ARM GAS  /tmp/ccT7ybOP.s 			page 45
+ARM GAS  /tmp/cc05ReSH.s 			page 45
 
 
  2501 01e8 26       		.uleb128 0x26
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  2555 0225 3B       		.uleb128 0x3b
  2556 0226 0B       		.uleb128 0xb
  2557 0227 49       		.uleb128 0x49
-ARM GAS  /tmp/ccT7ybOP.s 			page 46
+ARM GAS  /tmp/cc05ReSH.s 			page 46
 
 
  2558 0228 13       		.uleb128 0x13
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  2612 025e 00       		.byte	0
  2613 025f 00       		.byte	0
  2614              		.section	.debug_loc,"",%progbits
-ARM GAS  /tmp/ccT7ybOP.s 			page 47
+ARM GAS  /tmp/cc05ReSH.s 			page 47
 
 
  2615              	.Ldebug_loc0:
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  2669              	.LLST0:
  2670 008c 00000000 		.4byte	.LVL0
  2671 0090 17000000 		.4byte	.LVL1-1
-ARM GAS  /tmp/ccT7ybOP.s 			page 48
+ARM GAS  /tmp/cc05ReSH.s 			page 48
 
 
  2672 0094 0100     		.2byte	0x1
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  2718      795F6C69 
  2718      73745F74 
  2718      00
-ARM GAS  /tmp/ccT7ybOP.s 			page 49
+ARM GAS  /tmp/cc05ReSH.s 			page 49
 
 
  2719              	.LASF99:
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  2744      645F6279 
  2744      74657300 
  2745              	.LASF142:
-ARM GAS  /tmp/ccT7ybOP.s 			page 50
+ARM GAS  /tmp/cc05ReSH.s 			page 50
 
 
  2746 00b9 63685F74 		.ascii	"ch_threadsize\000"
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  2772 0142 2F686F6D 		.ascii	"/home/uos/Documents/e_puck_F/MyProject/\000"
  2772      652F756F 
  2772      732F446F 
-ARM GAS  /tmp/ccT7ybOP.s 			page 51
+ARM GAS  /tmp/cc05ReSH.s 			page 51
 
 
  2772      63756D65 
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  2802      77657200 
  2803              	.LASF95:
  2804 01ef 72656761 		.ascii	"regarm_t\000"
-ARM GAS  /tmp/ccT7ybOP.s 			page 52
+ARM GAS  /tmp/cc05ReSH.s 			page 52
 
 
  2804      726D5F74 
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  2826      702D6431 
  2827 02f9 2D676764 		.ascii	"-ggdb -O2 -fomit-frame-pointer -falign-functions=16"
  2827      62202D4F 
-ARM GAS  /tmp/ccT7ybOP.s 			page 53
+ARM GAS  /tmp/cc05ReSH.s 			page 53
 
 
  2827      32202D66 
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  2850      7369676E 
  2850      65642069 
  2850      6E7400
-ARM GAS  /tmp/ccT7ybOP.s 			page 54
+ARM GAS  /tmp/cc05ReSH.s 			page 54
 
 
  2851              	.LASF119:
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  2876      6973745F 
  2877              	.LASF96:
  2878 04b8 73746B61 		.ascii	"stkalign_t\000"
-ARM GAS  /tmp/ccT7ybOP.s 			page 55
+ARM GAS  /tmp/cc05ReSH.s 			page 55
 
 
  2878      6C69676E 
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  2904      5F627566 
  2904      6665725F 
  2904      7400
-ARM GAS  /tmp/ccT7ybOP.s 			page 56
+ARM GAS  /tmp/cc05ReSH.s 			page 56
 
 
  2905              	.LASF39:
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  2934 05ee 74707269 		.ascii	"tprio_t\000"
  2934      6F5F7400 
  2935              	.LASF40:
-ARM GAS  /tmp/ccT7ybOP.s 			page 57
+ARM GAS  /tmp/cc05ReSH.s 			page 57
 
 
  2936 05f6 705F6E61 		.ascii	"p_name\000"
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  2966      61747300 
  2967              	.LASF120:
  2968 0686 7264796D 		.ascii	"rdymsg\000"
-ARM GAS  /tmp/ccT7ybOP.s 			page 58
+ARM GAS  /tmp/cc05ReSH.s 			page 58
 
 
  2968      736700
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  2992 0728 6C6F6E67 		.ascii	"long unsigned int\000"
  2992      20756E73 
  2992      69676E65 
-ARM GAS  /tmp/ccT7ybOP.s 			page 59
+ARM GAS  /tmp/cc05ReSH.s 			page 59
 
 
  2992      6420696E 
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  3022 07b5 63665F6F 		.ascii	"cf_off_flags\000"
  3022      66665F66 
  3022      6C616773 
-ARM GAS  /tmp/ccT7ybOP.s 			page 60
+ARM GAS  /tmp/cc05ReSH.s 			page 60
 
 
  3022      00
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  3053              	.LASF79:
  3054 0843 76745F73 		.ascii	"vt_systime\000"
  3054      79737469 
-ARM GAS  /tmp/ccT7ybOP.s 			page 61
+ARM GAS  /tmp/cc05ReSH.s 			page 61
 
 
  3054      6D6500
@@ -3645,20 +3645,20 @@ ARM GAS  /tmp/ccT7ybOP.s 			page 1
  3074      696E7466 
  3074      00
  3075              		.ident	"GCC: (GNU Tools for Arm Embedded Processors 7-2017-q4-major) 7.2.1 20170904 (release) [ARM
-ARM GAS  /tmp/ccT7ybOP.s 			page 62
+ARM GAS  /tmp/cc05ReSH.s 			page 62
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 uc_usage.c
-     /tmp/ccT7ybOP.s:18     .text.chprintf:0000000000000000 $t
-     /tmp/ccT7ybOP.s:25     .text.chprintf:0000000000000000 chprintf
-     /tmp/ccT7ybOP.s:82     .text.chprintf:0000000000000030 $d
-     /tmp/ccT7ybOP.s:88     .text.printUcUsage:0000000000000000 $t
-     /tmp/ccT7ybOP.s:96     .text.printUcUsage:0000000000000000 printUcUsage
-     /tmp/ccT7ybOP.s:336    .text.printUcUsage:00000000000001e0 $d
-     /tmp/ccT7ybOP.s:348    .bss.sum.7868:0000000000000000 $d
-     /tmp/ccT7ybOP.s:352    .bss.sum.7868:0000000000000000 sum.7868
-     /tmp/ccT7ybOP.s:355    .rodata.printUcUsage.str1.4:0000000000000000 $d
+     /tmp/cc05ReSH.s:18     .text.chprintf:0000000000000000 $t
+     /tmp/cc05ReSH.s:25     .text.chprintf:0000000000000000 chprintf
+     /tmp/cc05ReSH.s:82     .text.chprintf:0000000000000030 $d
+     /tmp/cc05ReSH.s:88     .text.printUcUsage:0000000000000000 $t
+     /tmp/cc05ReSH.s:96     .text.printUcUsage:0000000000000000 printUcUsage
+     /tmp/cc05ReSH.s:336    .text.printUcUsage:00000000000001e0 $d
+     /tmp/cc05ReSH.s:348    .bss.sum.7868:0000000000000000 $d
+     /tmp/cc05ReSH.s:352    .bss.sum.7868:0000000000000000 sum.7868
+     /tmp/cc05ReSH.s:355    .rodata.printUcUsage.str1.4:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 chvprintf

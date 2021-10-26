@@ -9,7 +9,6 @@
 <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;Generic Blackmagic Probe&quot;/&gt;&#10;"/>
 </mruHistory>
 <favorites>
-<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/MyProject/Debug_project_template.launch&quot;/&gt;&#10;"/>
 <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/MyProject/e-puck2_main-processor/ChibiOS/demos/LPC21xx/RT-LPC214x-OLIMEX/debug/RT-LPC214x-OLIMEX (OpenOCD, Flash and Run).launch&quot;/&gt;&#10;"/>
 <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/MyProject/e-puck2_main-processor/ChibiOS/demos/STM32/CMSIS-STM32F407-DISCOVERY/debug/CMSIS-STM32F407-DISCOVERY (OpenOCD, Flash and Run).launch&quot;/&gt;&#10;"/>
 <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/MyProject/e-puck2_main-processor/ChibiOS/demos/STM32/HAL-STM32F407-DISCOVERY/debug/HAL-STM32F407-DISCOVERY (OpenOCD, Flash and Run).launch&quot;/&gt;&#10;"/>
@@ -82,6 +81,7 @@
 <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/MyProject/e-puck2_main-processor/ChibiOS/testhal/STM32/STM32L1xx/ADC/debug/STM32L1xx-ADC (OpenOCD, Flash and Run).launch&quot;/&gt;&#10;"/>
 <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/MyProject/e-puck2_main-processor/ChibiOS/testhal/STM32/STM32L1xx/IRQ_STORM/debug/STM32L1xx-IRQ_STORM (OpenOCD, Flash and Run).launch&quot;/&gt;&#10;"/>
 <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/MyProject/e-puck2_main-processor/Project_template/Debug_project_template.launch&quot;/&gt;&#10;"/>
+<launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#10;&lt;launchConfiguration local=&quot;false&quot; path=&quot;/MyProject/Debug_project_template.launch&quot;/&gt;&#10;"/>
 </favorites>
 </launchGroup>
 <launchGroup id="org.eclipse.debug.ui.launchGroup.profile">

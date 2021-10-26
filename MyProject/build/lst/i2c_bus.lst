@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccg69soa.s 			page 1
+ARM GAS  /tmp/ccLgDE5j.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
   55              		.loc 1 26 0
   56 0014 FFF7FEFF 		bl	_pal_lld_setgroupmode
   57              	.LVL0:
-ARM GAS  /tmp/ccg69soa.s 			page 2
+ARM GAS  /tmp/ccLgDE5j.s 			page 2
 
 
   58 0018 2024     		movs	r4, #32
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  112 005a 00BF     		.align	2
  113              	.L9:
  114 005c 00000000 		.word	__stack_chk_guard
-ARM GAS  /tmp/ccg69soa.s 			page 3
+ARM GAS  /tmp/ccLgDE5j.s 			page 3
 
 
  115 0060 00040240 		.word	1073873920
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  169 0022 04D1     		bne	.L16
  170 0024 03B0     		add	sp, sp, #12
  171              		.cfi_remember_state
-ARM GAS  /tmp/ccg69soa.s 			page 4
+ARM GAS  /tmp/ccLgDE5j.s 			page 4
 
 
  172              		.cfi_def_cfa_offset 4
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  226 0016 5DF804EB 		ldr	lr, [sp], #4
  227              		.cfi_restore 14
  228              		.cfi_def_cfa_offset 0
-ARM GAS  /tmp/ccg69soa.s 			page 5
+ARM GAS  /tmp/ccLgDE5j.s 			page 5
 
 
  229              		.loc 1 40 0
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  283 0018 0860     		str	r0, [r1]
  284              		.loc 1 45 0
  285 001a 01D1     		bne	.L30
-ARM GAS  /tmp/ccg69soa.s 			page 6
+ARM GAS  /tmp/ccLgDE5j.s 			page 6
 
 
  286 001c 02B0     		add	sp, sp, #8
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  340              		.cfi_remember_state
  341              		.cfi_def_cfa_offset 4
  342              		@ sp needed
-ARM GAS  /tmp/ccg69soa.s 			page 7
+ARM GAS  /tmp/ccLgDE5j.s 			page 7
 
 
  343 0018 5DF804FB 		ldr	pc, [sp], #4
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  397              		.loc 1 53 0
  398 0016 8DF81410 		strb	r1, [sp, #20]
  399              		.loc 1 51 0
-ARM GAS  /tmp/ccg69soa.s 			page 8
+ARM GAS  /tmp/ccLgDE5j.s 			page 8
 
 
  400 001a 1746     		mov	r7, r2
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  454 0060 FFF7FEFF 		bl	i2cGetErrors
  455              	.LVL22:
  456              		.loc 1 61 0
-ARM GAS  /tmp/ccg69soa.s 			page 9
+ARM GAS  /tmp/ccLgDE5j.s 			page 9
 
 
  457 0064 2378     		ldrb	r3, [r4]	@ zero_extendqisi2
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  511              		.p2align 4,,15
  512              		.global	write_reg
  513              		.syntax unified
-ARM GAS  /tmp/ccg69soa.s 			page 10
+ARM GAS  /tmp/ccLgDE5j.s 			page 10
 
 
  514              		.thumb
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  568 0036 06AA     		add	r2, sp, #24
  569 0038 2046     		mov	r0, r4
  570 003a FFF7FEFF 		bl	i2cMasterTransmitTimeout
-ARM GAS  /tmp/ccg69soa.s 			page 11
+ARM GAS  /tmp/ccLgDE5j.s 			page 11
 
 
  571              	.LVL31:
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  625              		.loc 1 40 0
  626 0070 2046     		mov	r0, r4
  627 0072 FFF7FEFF 		bl	i2cStop
-ARM GAS  /tmp/ccg69soa.s 			page 12
+ARM GAS  /tmp/ccLgDE5j.s 			page 12
 
 
  628              	.LVL38:
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  682              		.loc 1 102 0
  683 0004 1F4C     		ldr	r4, .L94
  684              		.loc 1 100 0
-ARM GAS  /tmp/ccg69soa.s 			page 13
+ARM GAS  /tmp/ccLgDE5j.s 			page 13
 
 
  685 0006 204E     		ldr	r6, .L94+4
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  739 0050 BDE8F083 		pop	{r4, r5, r6, r7, r8, r9, pc}
  740              	.LVL48:
  741              	.L91:
-ARM GAS  /tmp/ccg69soa.s 			page 14
+ARM GAS  /tmp/ccLgDE5j.s 			page 14
 
 
  742              		.cfi_restore_state
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  796 0084 00000000 		.word	I2CD1
  797 0088 00000000 		.word	__stack_chk_guard
  798 008c 00000000 		.word	.LANCHOR1
-ARM GAS  /tmp/ccg69soa.s 			page 15
+ARM GAS  /tmp/ccLgDE5j.s 			page 15
 
 
  799              		.cfi_endproc
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  853              		.file 33 "../e-puck2_main-processor/ChibiOS//os/hal/ports/STM32/LLD/TIMv1/gpt_lld.h"
  854              		.file 34 "../e-puck2_main-processor/ChibiOS//os/hal/ports/STM32/LLD/TIMv1/stm32_tim.h"
  855              		.file 35 "../e-puck2_main-processor/ChibiOS//os/hal/include/i2c.h"
-ARM GAS  /tmp/ccg69soa.s 			page 16
+ARM GAS  /tmp/ccLgDE5j.s 			page 16
 
 
  856              		.file 36 "../e-puck2_main-processor/ChibiOS//os/hal/ports/STM32/LLD/I2Cv1/i2c_lld.h"
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  910 0053 57000000 		.4byte	0x57
  911 0057 04       		.uleb128 0x4
  912 0058 01       		.byte	0x1
-ARM GAS  /tmp/ccg69soa.s 			page 17
+ARM GAS  /tmp/ccLgDE5j.s 			page 17
 
 
  913 0059 06       		.byte	0x6
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  967 00c5 07       		.byte	0x7
  968 00c6 02150000 		.4byte	.LASF17
  969 00ca 03       		.uleb128 0x3
-ARM GAS  /tmp/ccg69soa.s 			page 18
+ARM GAS  /tmp/ccLgDE5j.s 			page 18
 
 
  970 00cb 05000000 		.4byte	.LASF18
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  1024 0146 05       		.byte	0x5
  1025 0147 48       		.byte	0x48
  1026 0148 D5000000 		.4byte	0xd5
-ARM GAS  /tmp/ccg69soa.s 			page 19
+ARM GAS  /tmp/ccLgDE5j.s 			page 19
 
 
  1027 014c 03       		.uleb128 0x3
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  1081 01c4 06       		.byte	0x6
  1082 01c5 3F       		.byte	0x3f
  1083 01c6 CA010000 		.4byte	0x1ca
-ARM GAS  /tmp/ccg69soa.s 			page 20
+ARM GAS  /tmp/ccLgDE5j.s 			page 20
 
 
  1084 01ca 07       		.uleb128 0x7
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  1138 0236 08       		.uleb128 0x8
  1139 0237 E61D0000 		.4byte	.LASF47
  1140 023b 07       		.byte	0x7
-ARM GAS  /tmp/ccg69soa.s 			page 21
+ARM GAS  /tmp/ccLgDE5j.s 			page 21
 
 
  1141 023c DD       		.byte	0xdd
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  1195 02ac 4601     		.2byte	0x146
  1196 02ae 83010000 		.4byte	0x183
  1197 02b2 3C       		.byte	0x3c
-ARM GAS  /tmp/ccg69soa.s 			page 22
+ARM GAS  /tmp/ccLgDE5j.s 			page 22
 
 
  1198 02b3 0A       		.uleb128 0xa
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  1252 0323 50       		.byte	0x50
  1253 0324 28030000 		.4byte	0x328
  1254 0328 07       		.uleb128 0x7
-ARM GAS  /tmp/ccg69soa.s 			page 23
+ARM GAS  /tmp/ccLgDE5j.s 			page 23
 
 
  1255 0329 78150000 		.4byte	.LASF65
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  1309 039a 8D180000 		.4byte	.LASF72
  1310 039e 07       		.byte	0x7
  1311 039f 9801     		.2byte	0x198
-ARM GAS  /tmp/ccg69soa.s 			page 24
+ARM GAS  /tmp/ccLgDE5j.s 			page 24
 
 
  1312 03a1 F3020000 		.4byte	0x2f3
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  1366 0412 6D0B0000 		.4byte	.LASF80
  1367 0416 07       		.byte	0x7
  1368 0417 6F01     		.2byte	0x16f
-ARM GAS  /tmp/ccg69soa.s 			page 25
+ARM GAS  /tmp/ccLgDE5j.s 			page 25
 
 
  1369 0419 B4030000 		.4byte	0x3b4
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  1423 048c A201     		.2byte	0x1a2
  1424 048e C7040000 		.4byte	0x4c7
  1425 0492 0A       		.uleb128 0xa
-ARM GAS  /tmp/ccg69soa.s 			page 26
+ARM GAS  /tmp/ccLgDE5j.s 			page 26
 
 
  1426 0493 2A080000 		.4byte	.LASF87
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  1480 0508 BE160000 		.4byte	.LASF95
  1481 050c 07       		.byte	0x7
  1482 050d D201     		.2byte	0x1d2
-ARM GAS  /tmp/ccg69soa.s 			page 27
+ARM GAS  /tmp/ccLgDE5j.s 			page 27
 
 
  1483 050f BF010000 		.4byte	0x1bf
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  1537 0584 16010000 		.4byte	0x116
  1538 0588 00       		.byte	0
  1539 0589 18       		.uleb128 0x18
-ARM GAS  /tmp/ccg69soa.s 			page 28
+ARM GAS  /tmp/ccLgDE5j.s 			page 28
 
 
  1540 058a 43523100 		.ascii	"CR1\000"
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  1594 05f6 4C545200 		.ascii	"LTR\000"
  1595 05fa 0A       		.byte	0xa
  1596 05fb D0       		.byte	0xd0
-ARM GAS  /tmp/ccg69soa.s 			page 29
+ARM GAS  /tmp/ccLgDE5j.s 			page 29
 
 
  1597 05fc 16010000 		.4byte	0x116
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  1651 0667 16010000 		.4byte	0x116
  1652 066b 4C       		.byte	0x4c
  1653 066c 00       		.byte	0
-ARM GAS  /tmp/ccg69soa.s 			page 30
+ARM GAS  /tmp/ccLgDE5j.s 			page 30
 
 
  1654 066d 03       		.uleb128 0x3
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  1708 06d6 F8       		.byte	0xf8
  1709 06d7 16010000 		.4byte	0x116
  1710 06db 04       		.byte	0x4
-ARM GAS  /tmp/ccg69soa.s 			page 31
+ARM GAS  /tmp/ccLgDE5j.s 			page 31
 
 
  1711 06dc 08       		.uleb128 0x8
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  1765 074c 0A       		.byte	0xa
  1766 074d 0E01     		.2byte	0x10e
  1767 074f 16010000 		.4byte	0x116
-ARM GAS  /tmp/ccg69soa.s 			page 32
+ARM GAS  /tmp/ccLgDE5j.s 			page 32
 
 
  1768 0753 04       		.byte	0x4
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  1822 07c9 B001     		.2byte	0x1b0
  1823 07cb 11       		.uleb128 0x11
  1824 07cc B4070000 		.4byte	.LASF129
-ARM GAS  /tmp/ccg69soa.s 			page 33
+ARM GAS  /tmp/ccLgDE5j.s 			page 33
 
 
  1825 07d0 0A       		.byte	0xa
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  1879 084e 0A       		.byte	0xa
  1880 084f 2101     		.2byte	0x121
  1881 0851 4F050000 		.4byte	0x54f
-ARM GAS  /tmp/ccg69soa.s 			page 34
+ARM GAS  /tmp/ccLgDE5j.s 			page 34
 
 
  1882 0855 2002     		.2byte	0x220
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  1936 08cc 435200   		.ascii	"CR\000"
  1937 08cf 0A       		.byte	0xa
  1938 08d0 3801     		.2byte	0x138
-ARM GAS  /tmp/ccg69soa.s 			page 35
+ARM GAS  /tmp/ccLgDE5j.s 			page 35
 
 
  1939 08d2 16010000 		.4byte	0x116
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  1993 0947 16010000 		.4byte	0x116
  1994 094b 24       		.byte	0x24
  1995 094c 0A       		.uleb128 0xa
-ARM GAS  /tmp/ccg69soa.s 			page 36
+ARM GAS  /tmp/ccLgDE5j.s 			page 36
 
 
  1996 094d B7120000 		.4byte	.LASF149
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  2050 09c0 0A       		.byte	0xa
  2051 09c1 7001     		.2byte	0x170
  2052 09c3 16010000 		.4byte	0x116
-ARM GAS  /tmp/ccg69soa.s 			page 37
+ARM GAS  /tmp/ccLgDE5j.s 			page 37
 
 
  2053 09c7 0C       		.byte	0xc
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  2107 0a3c 0A       		.uleb128 0xa
  2108 0a3d F6170000 		.4byte	.LASF157
  2109 0a41 0A       		.byte	0xa
-ARM GAS  /tmp/ccg69soa.s 			page 38
+ARM GAS  /tmp/ccLgDE5j.s 			page 38
 
 
  2110 0a42 4302     		.2byte	0x243
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  2164 0ab3 BF02     		.2byte	0x2bf
  2165 0ab5 BE0B0000 		.4byte	0xbbe
  2166 0ab9 0A       		.uleb128 0xa
-ARM GAS  /tmp/ccg69soa.s 			page 39
+ARM GAS  /tmp/ccLgDE5j.s 			page 39
 
 
  2167 0aba D31B0000 		.4byte	.LASF162
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  2221 0b2f 34000000 		.4byte	.LASF169
  2222 0b33 0A       		.byte	0xa
  2223 0b34 CA02     		.2byte	0x2ca
-ARM GAS  /tmp/ccg69soa.s 			page 40
+ARM GAS  /tmp/ccLgDE5j.s 			page 40
 
 
  2224 0b36 16010000 		.4byte	0x116
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  2278 0bab BE0B0000 		.4byte	0xbbe
  2279 0baf 4C       		.byte	0x4c
  2280 0bb0 0A       		.uleb128 0xa
-ARM GAS  /tmp/ccg69soa.s 			page 41
+ARM GAS  /tmp/ccLgDE5j.s 			page 41
 
 
  2281 0bb1 910E0000 		.4byte	.LASF175
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  2335 0c23 D1100000 		.4byte	.LASF178
  2336 0c27 0A       		.byte	0xa
  2337 0c28 E202     		.2byte	0x2e2
-ARM GAS  /tmp/ccg69soa.s 			page 42
+ARM GAS  /tmp/ccLgDE5j.s 			page 42
 
 
  2338 0c2a 16010000 		.4byte	0x116
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  2392 0c9d 0C       		.byte	0xc
  2393 0c9e 09       		.uleb128 0x9
  2394 0c9f 43523200 		.ascii	"CR2\000"
-ARM GAS  /tmp/ccg69soa.s 			page 43
+ARM GAS  /tmp/ccLgDE5j.s 			page 43
 
 
  2395 0ca3 0A       		.byte	0xa
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  2449 0d16 07       		.uleb128 0x7
  2450 0d17 21140000 		.4byte	.LASF188
  2451 0d1b 64       		.byte	0x64
-ARM GAS  /tmp/ccg69soa.s 			page 44
+ARM GAS  /tmp/ccLgDE5j.s 			page 44
 
 
  2452 0d1c 0C       		.byte	0xc
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  2506 0d88 FE       		.byte	0xfe
  2507 0d89 E70C0000 		.4byte	0xce7
  2508 0d8d 20       		.byte	0x20
-ARM GAS  /tmp/ccg69soa.s 			page 45
+ARM GAS  /tmp/ccLgDE5j.s 			page 45
 
 
  2509 0d8e 18       		.uleb128 0x18
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  2563 0e00 09       		.uleb128 0x9
  2564 0e01 723600   		.ascii	"r6\000"
  2565 0e04 0C       		.byte	0xc
-ARM GAS  /tmp/ccg69soa.s 			page 46
+ARM GAS  /tmp/ccLgDE5j.s 			page 46
 
 
  2566 0e05 0901     		.2byte	0x109
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  2620 0e71 08       		.uleb128 0x8
  2621 0e72 FE030000 		.4byte	.LASF190
  2622 0e76 0D       		.byte	0xd
-ARM GAS  /tmp/ccg69soa.s 			page 47
+ARM GAS  /tmp/ccLgDE5j.s 			page 47
 
 
  2623 0e77 59       		.byte	0x59
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  2677 0ee4 00       		.byte	0
  2678 0ee5 03       		.uleb128 0x3
  2679 0ee6 C80B0000 		.4byte	.LASF197
-ARM GAS  /tmp/ccg69soa.s 			page 48
+ARM GAS  /tmp/ccLgDE5j.s 			page 48
 
 
  2680 0eea 0D       		.byte	0xd
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  2734 0f51 10       		.byte	0x10
  2735 0f52 00       		.byte	0
  2736 0f53 03       		.uleb128 0x3
-ARM GAS  /tmp/ccg69soa.s 			page 49
+ARM GAS  /tmp/ccLgDE5j.s 			page 49
 
 
  2737 0f54 15040000 		.4byte	.LASF204
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  2791 0fc2 1E       		.uleb128 0x1e
  2792 0fc3 BF090000 		.4byte	.LASF212
  2793 0fc7 07       		.byte	0x7
-ARM GAS  /tmp/ccg69soa.s 			page 50
+ARM GAS  /tmp/ccLgDE5j.s 			page 50
 
 
  2794 0fc8 0F01     		.2byte	0x10f
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  2848 103c 08       		.uleb128 0x8
  2849 103d E60F0000 		.4byte	.LASF221
  2850 1041 11       		.byte	0x11
-ARM GAS  /tmp/ccg69soa.s 			page 51
+ARM GAS  /tmp/ccLgDE5j.s 			page 51
 
 
  2851 1042 3A       		.byte	0x3a
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  2905 10b1 17       		.uleb128 0x17
  2906 10b2 16       		.byte	0x16
  2907 10b3 12       		.byte	0x12
-ARM GAS  /tmp/ccg69soa.s 			page 52
+ARM GAS  /tmp/ccLgDE5j.s 			page 52
 
 
  2908 10b4 34       		.byte	0x34
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  2962 1120 D5000000 		.4byte	0xd5
  2963 1124 0C       		.byte	0xc
  2964 1125 08       		.uleb128 0x8
-ARM GAS  /tmp/ccg69soa.s 			page 53
+ARM GAS  /tmp/ccLgDE5j.s 			page 53
 
 
  2965 1126 E0090000 		.4byte	.LASF235
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  3019 1192 13       		.uleb128 0x13
  3020 1193 7E100000 		.4byte	0x107e
  3021 1197 A2110000 		.4byte	0x11a2
-ARM GAS  /tmp/ccg69soa.s 			page 54
+ARM GAS  /tmp/ccLgDE5j.s 			page 54
 
 
  3022 119b 14       		.uleb128 0x14
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  3076 120a 41030000 		.4byte	.LASF252
  3077 120e 13       		.byte	0x13
  3078 120f 41       		.byte	0x41
-ARM GAS  /tmp/ccg69soa.s 			page 55
+ARM GAS  /tmp/ccLgDE5j.s 			page 55
 
 
  3079 1210 8E010000 		.4byte	0x18e
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  3133 127c 6D050000 		.4byte	.LASF261
  3134 1280 14       		.byte	0x14
  3135 1281 50       		.byte	0x50
-ARM GAS  /tmp/ccg69soa.s 			page 56
+ARM GAS  /tmp/ccLgDE5j.s 			page 56
 
 
  3136 1282 E6120000 		.4byte	0x12e6
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  3190 12f1 14       		.byte	0x14
  3191 12f2 64       		.byte	0x64
  3192 12f3 4C120000 		.4byte	0x124c
-ARM GAS  /tmp/ccg69soa.s 			page 57
+ARM GAS  /tmp/ccLgDE5j.s 			page 57
 
 
  3193 12f7 03       		.uleb128 0x3
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  3247 1375 17       		.uleb128 0x17
  3248 1376 0C       		.byte	0xc
  3249 1377 15       		.byte	0x15
-ARM GAS  /tmp/ccg69soa.s 			page 58
+ARM GAS  /tmp/ccLgDE5j.s 			page 58
 
 
  3250 1378 DA       		.byte	0xda
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  3304 13e7 D6130000 		.4byte	0x13d6
  3305 13eb 15       		.uleb128 0x15
  3306 13ec CE0D0000 		.4byte	.LASF276
-ARM GAS  /tmp/ccg69soa.s 			page 59
+ARM GAS  /tmp/ccLgDE5j.s 			page 59
 
 
  3307 13f0 15       		.byte	0x15
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  3361 1472 0B       		.uleb128 0xb
  3362 1473 04       		.byte	0x4
  3363 1474 54140000 		.4byte	0x1454
-ARM GAS  /tmp/ccg69soa.s 			page 60
+ARM GAS  /tmp/ccLgDE5j.s 			page 60
 
 
  3364 1478 21       		.uleb128 0x21
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  3418 14e1 39       		.byte	0x39
  3419 14e2 0B010000 		.4byte	0x10b
  3420 14e6 04       		.byte	0x4
-ARM GAS  /tmp/ccg69soa.s 			page 61
+ARM GAS  /tmp/ccLgDE5j.s 			page 61
 
 
  3421 14e7 00       		.byte	0
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  3475 1565 0E       		.uleb128 0xe
  3476 1566 6B150000 		.4byte	0x156b
  3477 156a 00       		.byte	0
-ARM GAS  /tmp/ccg69soa.s 			page 62
+ARM GAS  /tmp/ccLgDE5j.s 			page 62
 
 
  3478 156b 0B       		.uleb128 0xb
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  3532 15d0 08       		.uleb128 0x8
  3533 15d1 9B1B0000 		.4byte	.LASF292
  3534 15d5 17       		.byte	0x17
-ARM GAS  /tmp/ccg69soa.s 			page 63
+ARM GAS  /tmp/ccLgDE5j.s 			page 63
 
 
  3535 15d6 AB       		.byte	0xab
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  3589 1642 BA       		.byte	0xba
  3590 1643 16010000 		.4byte	0x116
  3591 1647 24       		.byte	0x24
-ARM GAS  /tmp/ccg69soa.s 			page 64
+ARM GAS  /tmp/ccLgDE5j.s 			page 64
 
 
  3592 1648 18       		.uleb128 0x18
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  3646 16b1 000D0000 		.4byte	.LASF306
  3647 16b5 17       		.byte	0x17
  3648 16b6 CF       		.byte	0xcf
-ARM GAS  /tmp/ccg69soa.s 			page 65
+ARM GAS  /tmp/ccLgDE5j.s 			page 65
 
 
  3649 16b7 0B010000 		.4byte	0x10b
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  3703 1723 A8       		.byte	0xa8
  3704 1724 08       		.uleb128 0x8
  3705 1725 D7120000 		.4byte	.LASF315
-ARM GAS  /tmp/ccg69soa.s 			page 66
+ARM GAS  /tmp/ccLgDE5j.s 			page 66
 
 
  3706 1729 17       		.byte	0x17
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  3760 179b 03       		.byte	0x3
  3761 179c 22       		.uleb128 0x22
  3762 179d 960E0000 		.4byte	.LASF325
-ARM GAS  /tmp/ccg69soa.s 			page 67
+ARM GAS  /tmp/ccLgDE5j.s 			page 67
 
 
  3763 17a1 04       		.byte	0x4
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  3817 1814 A9170000 		.4byte	0x17a9
  3818 1818 00       		.byte	0
  3819 1819 0A       		.uleb128 0xa
-ARM GAS  /tmp/ccg69soa.s 			page 68
+ARM GAS  /tmp/ccLgDE5j.s 			page 68
 
 
  3820 181a 55030000 		.4byte	.LASF335
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  3874 188f 1A       		.uleb128 0x1a
  3875 1890 92000000 		.4byte	.LASF343
  3876 1894 19       		.byte	0x19
-ARM GAS  /tmp/ccg69soa.s 			page 69
+ARM GAS  /tmp/ccLgDE5j.s 			page 69
 
 
  3877 1895 4501     		.2byte	0x145
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  3931 190c 19       		.byte	0x19
  3932 190d 6401     		.2byte	0x164
  3933 190f 8F180000 		.4byte	0x188f
-ARM GAS  /tmp/ccg69soa.s 			page 70
+ARM GAS  /tmp/ccLgDE5j.s 			page 70
 
 
  3934 1913 04       		.byte	0x4
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  3988 1985 E4180000 		.4byte	0x18e4
  3989 1989 05       		.uleb128 0x5
  3990 198a 7D190000 		.4byte	0x197d
-ARM GAS  /tmp/ccg69soa.s 			page 71
+ARM GAS  /tmp/ccLgDE5j.s 			page 71
 
 
  3991 198e 19       		.uleb128 0x19
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  4045 1a00 03110000 		.4byte	.LASF360
  4046 1a04 00       		.byte	0
  4047 1a05 22       		.uleb128 0x22
-ARM GAS  /tmp/ccg69soa.s 			page 72
+ARM GAS  /tmp/ccLgDE5j.s 			page 72
 
 
  4048 1a06 2A1D0000 		.4byte	.LASF361
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  4102 1a75 0A       		.uleb128 0xa
  4103 1a76 5C030000 		.4byte	.LASF334
  4104 1a7a 1B       		.byte	0x1b
-ARM GAS  /tmp/ccg69soa.s 			page 73
+ARM GAS  /tmp/ccLgDE5j.s 			page 73
 
 
  4105 1a7b 0A01     		.2byte	0x10a
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  4159 1af0 3F01     		.2byte	0x13f
  4160 1af2 FE1A0000 		.4byte	0x1afe
  4161 1af6 2C       		.byte	0x2c
-ARM GAS  /tmp/ccg69soa.s 			page 74
+ARM GAS  /tmp/ccLgDE5j.s 			page 74
 
 
  4162 1af7 00       		.byte	0
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  4216 1b62 64616300 		.ascii	"dac\000"
  4217 1b66 1D       		.byte	0x1d
  4218 1b67 FD       		.byte	0xfd
-ARM GAS  /tmp/ccg69soa.s 			page 75
+ARM GAS  /tmp/ccLgDE5j.s 			page 75
 
 
  4219 1b68 BC1B0000 		.4byte	0x1bbc
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  4273 1bdf 0C       		.uleb128 0xc
  4274 1be0 280F0000 		.4byte	.LASF388
  4275 1be4 30       		.byte	0x30
-ARM GAS  /tmp/ccg69soa.s 			page 76
+ARM GAS  /tmp/ccLgDE5j.s 			page 76
 
 
  4276 1be5 1D       		.byte	0x1d
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  4330 1c5a 1D       		.byte	0x1d
  4331 1c5b 2001     		.2byte	0x120
  4332 1c5d F0000000 		.4byte	0xf0
-ARM GAS  /tmp/ccg69soa.s 			page 77
+ARM GAS  /tmp/ccLgDE5j.s 			page 77
 
 
  4333 1c61 05       		.uleb128 0x5
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  4387 1cd7 0E       		.uleb128 0xe
  4388 1cd8 B41C0000 		.4byte	0x1cb4
  4389 1cdc 0E       		.uleb128 0xe
-ARM GAS  /tmp/ccg69soa.s 			page 78
+ARM GAS  /tmp/ccLgDE5j.s 			page 78
 
 
  4390 1cdd 811C0000 		.4byte	0x1c81
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  4444 1d4d 1A       		.uleb128 0x1a
  4445 1d4e D60C0000 		.4byte	.LASF401
  4446 1d52 1D       		.byte	0x1d
-ARM GAS  /tmp/ccg69soa.s 			page 79
+ARM GAS  /tmp/ccLgDE5j.s 			page 79
 
 
  4447 1d53 6701     		.2byte	0x167
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  4501 1dc5 310C0000 		.4byte	.LASF407
  4502 1dc9 01       		.byte	0x1
  4503 1dca 22       		.uleb128 0x22
-ARM GAS  /tmp/ccg69soa.s 			page 80
+ARM GAS  /tmp/ccLgDE5j.s 			page 80
 
 
  4504 1dcb F60F0000 		.4byte	.LASF408
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  4558 1e3a DC1D0000 		.4byte	0x1ddc
  4559 1e3e 17       		.uleb128 0x17
  4560 1e3f 08       		.byte	0x8
-ARM GAS  /tmp/ccg69soa.s 			page 81
+ARM GAS  /tmp/ccLgDE5j.s 			page 81
 
 
  4561 1e40 1F       		.byte	0x1f
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  4615 1eab DC1D0000 		.4byte	0x1ddc
  4616 1eaf 21       		.uleb128 0x21
  4617 1eb0 07       		.byte	0x7
-ARM GAS  /tmp/ccg69soa.s 			page 82
+ARM GAS  /tmp/ccLgDE5j.s 			page 82
 
 
  4618 1eb1 01       		.byte	0x1
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  4672 1f24 08       		.byte	0x8
  4673 1f25 09       		.uleb128 0x9
  4674 1f26 74696D00 		.ascii	"tim\000"
-ARM GAS  /tmp/ccg69soa.s 			page 83
+ARM GAS  /tmp/ccLgDE5j.s 			page 83
 
 
  4675 1f2a 21       		.byte	0x21
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  4729 1f99 16010000 		.4byte	0x116
  4730 1f9d 10       		.byte	0x10
  4731 1f9e 09       		.uleb128 0x9
-ARM GAS  /tmp/ccg69soa.s 			page 84
+ARM GAS  /tmp/ccLgDE5j.s 			page 84
 
 
  4732 1f9f 45475200 		.ascii	"EGR\000"
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  4786 2014 7A1B0000 		.4byte	.LASF432
  4787 2018 22       		.byte	0x22
  4788 2019 AD01     		.2byte	0x1ad
-ARM GAS  /tmp/ccg69soa.s 			page 85
+ARM GAS  /tmp/ccLgDE5j.s 			page 85
 
 
  4789 201b 16010000 		.4byte	0x116
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  4843 208f 0A       		.uleb128 0xa
  4844 2090 5D040000 		.4byte	.LASF439
  4845 2094 21       		.byte	0x21
-ARM GAS  /tmp/ccg69soa.s 			page 86
+ARM GAS  /tmp/ccLgDE5j.s 			page 86
 
 
  4846 2095 8501     		.2byte	0x185
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  4900 210b 22       		.uleb128 0x22
  4901 210c 3B1D0000 		.4byte	.LASF446
  4902 2110 01       		.byte	0x1
-ARM GAS  /tmp/ccg69soa.s 			page 87
+ARM GAS  /tmp/ccLgDE5j.s 			page 87
 
 
  4903 2111 22       		.uleb128 0x22
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  4957 2181 24       		.byte	0x24
  4958 2182 7D01     		.2byte	0x17d
  4959 2184 9B210000 		.4byte	0x219b
-ARM GAS  /tmp/ccg69soa.s 			page 88
+ARM GAS  /tmp/ccLgDE5j.s 			page 88
 
 
  4960 2188 22       		.uleb128 0x22
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  5014 21fb 24       		.byte	0x24
  5015 21fc 9801     		.2byte	0x198
  5016 21fe 92220000 		.4byte	0x2292
-ARM GAS  /tmp/ccg69soa.s 			page 89
+ARM GAS  /tmp/ccLgDE5j.s 			page 89
 
 
  5017 2202 0A       		.uleb128 0xa
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  5071 2277 0A       		.uleb128 0xa
  5072 2278 3E110000 		.4byte	.LASF472
  5073 227c 24       		.byte	0x24
-ARM GAS  /tmp/ccg69soa.s 			page 90
+ARM GAS  /tmp/ccLgDE5j.s 			page 90
 
 
  5074 227d C601     		.2byte	0x1c6
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  5128 22ec 0C       		.uleb128 0xc
  5129 22ed 32180000 		.4byte	.LASF480
  5130 22f1 20       		.byte	0x20
-ARM GAS  /tmp/ccg69soa.s 			page 91
+ARM GAS  /tmp/ccLgDE5j.s 			page 91
 
 
  5131 22f2 26       		.byte	0x26
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  5185 2367 26       		.byte	0x26
  5186 2368 EB       		.byte	0xeb
  5187 2369 6D230000 		.4byte	0x236d
-ARM GAS  /tmp/ccg69soa.s 			page 92
+ARM GAS  /tmp/ccLgDE5j.s 			page 92
 
 
  5188 236d 0B       		.uleb128 0xb
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  5242 23dc E5000000 		.4byte	0xe5
  5243 23e0 12       		.byte	0x12
  5244 23e1 00       		.byte	0
-ARM GAS  /tmp/ccg69soa.s 			page 93
+ARM GAS  /tmp/ccLgDE5j.s 			page 93
 
 
  5245 23e2 0B       		.uleb128 0xb
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  5299 2451 B1240000 		.4byte	0x24b1
  5300 2455 0A       		.uleb128 0xa
  5301 2456 5C030000 		.4byte	.LASF334
-ARM GAS  /tmp/ccg69soa.s 			page 94
+ARM GAS  /tmp/ccLgDE5j.s 			page 94
 
 
  5302 245a 28       		.byte	0x28
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  5356 24cd 0B       		.uleb128 0xb
  5357 24ce 04       		.byte	0x4
  5358 24cf 3D240000 		.4byte	0x243d
-ARM GAS  /tmp/ccg69soa.s 			page 95
+ARM GAS  /tmp/ccLgDE5j.s 			page 95
 
 
  5359 24d3 1A       		.uleb128 0x1a
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  5413 2549 0A       		.uleb128 0xa
  5414 254a B7060000 		.4byte	.LASF494
  5415 254e 28       		.byte	0x28
-ARM GAS  /tmp/ccg69soa.s 			page 96
+ARM GAS  /tmp/ccLgDE5j.s 			page 96
 
 
  5416 254f 5601     		.2byte	0x156
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  5470 25c6 3D240000 		.4byte	0x243d
  5471 25ca 15       		.uleb128 0x15
  5472 25cb 561B0000 		.4byte	.LASF505
-ARM GAS  /tmp/ccg69soa.s 			page 97
+ARM GAS  /tmp/ccLgDE5j.s 			page 97
 
 
  5473 25cf 28       		.byte	0x28
@@ -5818,7 +5818,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  5527 263e 5C030000 		.4byte	.LASF334
  5528 2642 29       		.byte	0x29
  5529 2643 7B       		.byte	0x7b
-ARM GAS  /tmp/ccg69soa.s 			page 98
+ARM GAS  /tmp/ccLgDE5j.s 			page 98
 
 
  5530 2644 02260000 		.4byte	0x2602
@@ -5878,7 +5878,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  5584 26b0 40130000 		.4byte	0x1340
  5585 26b4 04       		.byte	0x4
  5586 26b5 18       		.uleb128 0x18
-ARM GAS  /tmp/ccg69soa.s 			page 99
+ARM GAS  /tmp/ccLgDE5j.s 			page 99
 
 
  5587 26b6 70757400 		.ascii	"put\000"
@@ -5938,7 +5938,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  5641 2722 69000000 		.4byte	0x69
  5642 2726 2B       		.byte	0x2b
  5643 2727 6C       		.byte	0x6c
-ARM GAS  /tmp/ccg69soa.s 			page 100
+ARM GAS  /tmp/ccLgDE5j.s 			page 100
 
 
  5644 2728 3F270000 		.4byte	0x273f
@@ -5998,7 +5998,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  5698 279a 08       		.byte	0x8
  5699 279b 18       		.uleb128 0x18
  5700 279c 63736400 		.ascii	"csd\000"
-ARM GAS  /tmp/ccg69soa.s 			page 101
+ARM GAS  /tmp/ccLgDE5j.s 			page 101
 
 
  5701 27a0 2C       		.byte	0x2c
@@ -6058,7 +6058,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  5755 2811 2C       		.byte	0x2c
  5756 2812 1901     		.2byte	0x119
  5757 2814 C9280000 		.4byte	0x28c9
-ARM GAS  /tmp/ccg69soa.s 			page 102
+ARM GAS  /tmp/ccLgDE5j.s 			page 102
 
 
  5758 2818 48       		.byte	0x48
@@ -6118,7 +6118,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  5812 2881 EC       		.byte	0xec
  5813 2882 09150000 		.4byte	0x1509
  5814 2886 0C       		.byte	0xc
-ARM GAS  /tmp/ccg69soa.s 			page 103
+ARM GAS  /tmp/ccLgDE5j.s 			page 103
 
 
  5815 2887 08       		.uleb128 0x8
@@ -6178,7 +6178,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  5869 28f4 22       		.uleb128 0x22
  5870 28f5 970F0000 		.4byte	.LASF546
  5871 28f9 02       		.byte	0x2
-ARM GAS  /tmp/ccg69soa.s 			page 104
+ARM GAS  /tmp/ccLgDE5j.s 			page 104
 
 
  5872 28fa 22       		.uleb128 0x22
@@ -6238,7 +6238,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  5926 296d 410F0000 		.4byte	.LASF471
  5927 2971 2E       		.byte	0x2e
  5928 2972 DA01     		.2byte	0x1da
-ARM GAS  /tmp/ccg69soa.s 			page 105
+ARM GAS  /tmp/ccLgDE5j.s 			page 105
 
 
  5929 2974 C8190000 		.4byte	0x19c8
@@ -6298,7 +6298,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  5983 29e7 0A       		.uleb128 0xa
  5984 29e8 241D0000 		.4byte	.LASF553
  5985 29ec 2E       		.byte	0x2e
-ARM GAS  /tmp/ccg69soa.s 			page 106
+ARM GAS  /tmp/ccLgDE5j.s 			page 106
 
 
  5986 29ed B001     		.2byte	0x1b0
@@ -6358,7 +6358,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  6040 2a65 0A       		.uleb128 0xa
  6041 2a66 83090000 		.4byte	.LASF558
  6042 2a6a 30       		.byte	0x30
-ARM GAS  /tmp/ccg69soa.s 			page 107
+ARM GAS  /tmp/ccLgDE5j.s 			page 107
 
 
  6043 2a6b 8701     		.2byte	0x187
@@ -6418,7 +6418,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  6097 2ae0 B101     		.2byte	0x1b1
  6098 2ae2 F0000000 		.4byte	0xf0
  6099 2ae6 4C       		.byte	0x4c
-ARM GAS  /tmp/ccg69soa.s 			page 108
+ARM GAS  /tmp/ccLgDE5j.s 			page 108
 
 
  6100 2ae7 0A       		.uleb128 0xa
@@ -6478,7 +6478,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  6154 2b5b 00       		.byte	0
  6155 2b5c 03       		.uleb128 0x3
  6156 2b5d 8D1B0000 		.4byte	.LASF574
-ARM GAS  /tmp/ccg69soa.s 			page 109
+ARM GAS  /tmp/ccLgDE5j.s 			page 109
 
 
  6157 2b61 2F       		.byte	0x2f
@@ -6538,7 +6538,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  6211 2bcd 101D0000 		.4byte	.LASF586
  6212 2bd1 05       		.byte	0x5
  6213 2bd2 22       		.uleb128 0x22
-ARM GAS  /tmp/ccg69soa.s 			page 110
+ARM GAS  /tmp/ccLgDE5j.s 			page 110
 
 
  6214 2bd3 DB0E0000 		.4byte	.LASF587
@@ -6598,7 +6598,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  6268 2c42 1B130000 		.4byte	0x131b
  6269 2c46 04       		.byte	0x4
  6270 2c47 00       		.byte	0
-ARM GAS  /tmp/ccg69soa.s 			page 111
+ARM GAS  /tmp/ccLgDE5j.s 			page 111
 
 
  6271 2c48 1A       		.uleb128 0x1a
@@ -6658,7 +6658,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  6325 2cc1 3C1A0000 		.4byte	.LASF602
  6326 2cc5 2F       		.byte	0x2f
  6327 2cc6 6001     		.2byte	0x160
-ARM GAS  /tmp/ccg69soa.s 			page 112
+ARM GAS  /tmp/ccLgDE5j.s 			page 112
 
 
  6328 2cc8 CC2C0000 		.4byte	0x2ccc
@@ -6718,7 +6718,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  6382 2d3e 16010000 		.4byte	0x116
  6383 2d42 08       		.byte	0x8
  6384 2d43 08       		.uleb128 0x8
-ARM GAS  /tmp/ccg69soa.s 			page 113
+ARM GAS  /tmp/ccLgDE5j.s 			page 113
 
 
  6385 2d44 A8150000 		.4byte	.LASF607
@@ -6778,7 +6778,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  6439 2db0 31       		.byte	0x31
  6440 2db1 4A       		.byte	0x4a
  6441 2db2 16010000 		.4byte	0x116
-ARM GAS  /tmp/ccg69soa.s 			page 114
+ARM GAS  /tmp/ccLgDE5j.s 			page 114
 
 
  6442 2db6 08       		.byte	0x8
@@ -6838,7 +6838,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  6496 2e1f 08       		.uleb128 0x8
  6497 2e20 4B070000 		.4byte	.LASF622
  6498 2e24 31       		.byte	0x31
-ARM GAS  /tmp/ccg69soa.s 			page 115
+ARM GAS  /tmp/ccLgDE5j.s 			page 115
 
 
  6499 2e25 5C       		.byte	0x5c
@@ -6898,7 +6898,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  6553 2e91 16010000 		.4byte	0x116
  6554 2e95 04       		.byte	0x4
  6555 2e96 08       		.uleb128 0x8
-ARM GAS  /tmp/ccg69soa.s 			page 116
+ARM GAS  /tmp/ccLgDE5j.s 			page 116
 
 
  6556 2e97 A20D0000 		.4byte	.LASF627
@@ -6958,7 +6958,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  6610 2f03 D51A0000 		.4byte	.LASF636
  6611 2f07 31       		.byte	0x31
  6612 2f08 78       		.byte	0x78
-ARM GAS  /tmp/ccg69soa.s 			page 117
+ARM GAS  /tmp/ccLgDE5j.s 			page 117
 
 
  6613 2f09 16010000 		.4byte	0x116
@@ -7018,7 +7018,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  6667 2f78 16010000 		.4byte	0x116
  6668 2f7c 0004     		.2byte	0x400
  6669 2f7e 27       		.uleb128 0x27
-ARM GAS  /tmp/ccg69soa.s 			page 118
+ARM GAS  /tmp/ccLgDE5j.s 			page 118
 
 
  6670 2f7f EA020000 		.4byte	.LASF645
@@ -7078,7 +7078,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  6724 2ff4 686300   		.ascii	"hc\000"
  6725 2ff7 31       		.byte	0x31
  6726 2ff8 93       		.byte	0x93
-ARM GAS  /tmp/ccg69soa.s 			page 119
+ARM GAS  /tmp/ccLgDE5j.s 			page 119
 
 
  6727 2ff9 A4310000 		.4byte	0x31a4
@@ -7138,7 +7138,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  6781 306e 16010000 		.4byte	0x116
  6782 3072 1C08     		.2byte	0x81c
  6783 3074 27       		.uleb128 0x27
-ARM GAS  /tmp/ccg69soa.s 			page 120
+ARM GAS  /tmp/ccLgDE5j.s 			page 120
 
 
  6784 3075 370E0000 		.4byte	.LASF663
@@ -7198,7 +7198,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  6838 30ea FD190000 		.4byte	.LASF672
  6839 30ee 31       		.byte	0x31
  6840 30ef AD       		.byte	0xad
-ARM GAS  /tmp/ccg69soa.s 			page 121
+ARM GAS  /tmp/ccLgDE5j.s 			page 121
 
 
  6841 30f0 D9310000 		.4byte	0x31d9
@@ -7258,7 +7258,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  6895 3165 13       		.uleb128 0x13
  6896 3166 16010000 		.4byte	0x116
  6897 316a 75310000 		.4byte	0x3175
-ARM GAS  /tmp/ccg69soa.s 			page 122
+ARM GAS  /tmp/ccLgDE5j.s 			page 122
 
 
  6898 316e 14       		.uleb128 0x14
@@ -7318,7 +7318,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  6952 31ec 0F       		.byte	0xf
  6953 31ed 00       		.byte	0
  6954 31ee 13       		.uleb128 0x13
-ARM GAS  /tmp/ccg69soa.s 			page 123
+ARM GAS  /tmp/ccLgDE5j.s 			page 123
 
 
  6955 31ef 682E0000 		.4byte	0x2e68
@@ -7378,7 +7378,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  7009 3265 08       		.byte	0x8
  7010 3266 00       		.byte	0
  7011 3267 03       		.uleb128 0x3
-ARM GAS  /tmp/ccg69soa.s 			page 124
+ARM GAS  /tmp/ccLgDE5j.s 			page 124
 
 
  7012 3268 950B0000 		.4byte	.LASF681
@@ -7438,7 +7438,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  7066 32ce 08       		.uleb128 0x8
  7067 32cf 921A0000 		.4byte	.LASF685
  7068 32d3 30       		.byte	0x30
-ARM GAS  /tmp/ccg69soa.s 			page 125
+ARM GAS  /tmp/ccLgDE5j.s 			page 125
 
 
  7069 32d4 D3       		.byte	0xd3
@@ -7498,7 +7498,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  7123 333e 44330000 		.4byte	0x3344
  7124 3342 00       		.byte	0
  7125 3343 00       		.byte	0
-ARM GAS  /tmp/ccg69soa.s 			page 126
+ARM GAS  /tmp/ccLgDE5j.s 			page 126
 
 
  7126 3344 0B       		.uleb128 0xb
@@ -7558,7 +7558,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  7180 33b2 00       		.byte	0
  7181 33b3 1A       		.uleb128 0x1a
  7182 33b4 AE140000 		.4byte	.LASF694
-ARM GAS  /tmp/ccg69soa.s 			page 127
+ARM GAS  /tmp/ccLgDE5j.s 			page 127
 
 
  7183 33b8 30       		.byte	0x30
@@ -7618,7 +7618,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  7237 342b 51340000 		.4byte	0x3451
  7238 342f 18       		.byte	0x18
  7239 3430 0A       		.uleb128 0xa
-ARM GAS  /tmp/ccg69soa.s 			page 128
+ARM GAS  /tmp/ccLgDE5j.s 			page 128
 
 
  7240 3431 C00D0000 		.4byte	.LASF703
@@ -7678,7 +7678,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  7294 34a5 00       		.byte	0
  7295 34a6 1A       		.uleb128 0x1a
  7296 34a7 BB110000 		.4byte	.LASF710
-ARM GAS  /tmp/ccg69soa.s 			page 129
+ARM GAS  /tmp/ccLgDE5j.s 			page 129
 
 
  7297 34ab 30       		.byte	0x30
@@ -7738,7 +7738,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  7351 3522 06       		.byte	0x6
  7352 3523 AF010000 		.4byte	0x1af
  7353 3527 2F       		.uleb128 0x2f
-ARM GAS  /tmp/ccg69soa.s 			page 130
+ARM GAS  /tmp/ccLgDE5j.s 			page 130
 
 
  7354 3528 24130000 		.4byte	.LASF712
@@ -7798,7 +7798,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  7408 35b2 50       		.byte	0x50
  7409 35b3 02       		.uleb128 0x2
  7410 35b4 74       		.byte	0x74
-ARM GAS  /tmp/ccg69soa.s 			page 131
+ARM GAS  /tmp/ccLgDE5j.s 			page 131
 
 
  7411 35b5 00       		.sleb128 0
@@ -7858,7 +7858,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  7465 360f 36       		.uleb128 0x36
  7466 3610 02       		.uleb128 0x2
  7467 3611 7D       		.byte	0x7d
-ARM GAS  /tmp/ccg69soa.s 			page 132
+ARM GAS  /tmp/ccLgDE5j.s 			page 132
 
 
  7468 3612 04       		.sleb128 4
@@ -7918,7 +7918,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  7522 3669 00       		.byte	0
  7523 366a 39       		.uleb128 0x39
  7524 366b 84000000 		.4byte	.LVL55
-ARM GAS  /tmp/ccg69soa.s 			page 133
+ARM GAS  /tmp/ccLgDE5j.s 			page 133
 
 
  7525 366f F33A0000 		.4byte	0x3af3
@@ -7978,7 +7978,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  7579 36ea FF000000 		.4byte	.LLST8
  7580 36ee 34       		.uleb128 0x34
  7581 36ef 92390000 		.4byte	0x3992
-ARM GAS  /tmp/ccg69soa.s 			page 134
+ARM GAS  /tmp/ccLgDE5j.s 			page 134
 
 
  7582 36f3 70000000 		.4byte	.LBB27
@@ -8038,7 +8038,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  7636 375c 60       		.sleb128 -32
  7637 375d 36       		.uleb128 0x36
  7638 375e 01       		.uleb128 0x1
-ARM GAS  /tmp/ccg69soa.s 			page 135
+ARM GAS  /tmp/ccLgDE5j.s 			page 135
 
 
  7639 375f 53       		.byte	0x53
@@ -8098,7 +8098,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  7693 37ad 74       		.byte	0x74
  7694 37ae 00       		.sleb128 0
  7695 37af 00       		.byte	0
-ARM GAS  /tmp/ccg69soa.s 			page 136
+ARM GAS  /tmp/ccLgDE5j.s 			page 136
 
 
  7696 37b0 3A       		.uleb128 0x3a
@@ -8158,7 +8158,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  7750 382b 33       		.byte	0x33
  7751 382c E6120000 		.4byte	0x12e6
  7752 3830 6A010000 		.4byte	.LLST3
-ARM GAS  /tmp/ccg69soa.s 			page 137
+ARM GAS  /tmp/ccLgDE5j.s 			page 137
 
 
  7753 3834 2D       		.uleb128 0x2d
@@ -8218,7 +8218,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  7807 38a9 7E3A0000 		.4byte	0x3a7e
  7808 38ad 39       		.uleb128 0x39
  7809 38ae 88000000 		.4byte	.LVL25
-ARM GAS  /tmp/ccg69soa.s 			page 138
+ARM GAS  /tmp/ccLgDE5j.s 			page 138
 
 
  7810 38b2 CA390000 		.4byte	0x39ca
@@ -8278,7 +8278,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  7864 38fd 36       		.uleb128 0x36
  7865 38fe 01       		.uleb128 0x1
  7866 38ff 50       		.byte	0x50
-ARM GAS  /tmp/ccg69soa.s 			page 139
+ARM GAS  /tmp/ccLgDE5j.s 			page 139
 
 
  7867 3900 02       		.uleb128 0x2
@@ -8338,7 +8338,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  7921 3969 00       		.byte	0
  7922 396a 3B       		.uleb128 0x3b
  7923 396b 58090000 		.4byte	.LASF730
-ARM GAS  /tmp/ccg69soa.s 			page 140
+ARM GAS  /tmp/ccLgDE5j.s 			page 140
 
 
  7924 396f 01       		.byte	0x1
@@ -8398,7 +8398,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  7978 39d3 6C000000 		.4byte	.LFE263-.LFB263
  7979 39d7 01       		.uleb128 0x1
  7980 39d8 9C       		.byte	0x9c
-ARM GAS  /tmp/ccg69soa.s 			page 141
+ARM GAS  /tmp/ccLgDE5j.s 			page 141
 
 
  7981 39d9 6B3A0000 		.4byte	0x3a6b
@@ -8458,7 +8458,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  8035 3a3d 51       		.byte	0x51
  8036 3a3e 03       		.uleb128 0x3
  8037 3a3f 0A       		.byte	0xa
-ARM GAS  /tmp/ccg69soa.s 			page 142
+ARM GAS  /tmp/ccLgDE5j.s 			page 142
 
 
  8038 3a40 0001     		.2byte	0x100
@@ -8518,7 +8518,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  8092 3abd EE0F0000 		.4byte	.LASF719
  8093 3ac1 EE0F0000 		.4byte	.LASF719
  8094 3ac5 23       		.byte	0x23
-ARM GAS  /tmp/ccg69soa.s 			page 143
+ARM GAS  /tmp/ccLgDE5j.s 			page 143
 
 
  8095 3ac6 8E       		.byte	0x8e
@@ -8578,7 +8578,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  8149 000c 17       		.uleb128 0x17
  8150 000d 11       		.uleb128 0x11
  8151 000e 01       		.uleb128 0x1
-ARM GAS  /tmp/ccg69soa.s 			page 144
+ARM GAS  /tmp/ccLgDE5j.s 			page 144
 
 
  8152 000f 10       		.uleb128 0x10
@@ -8638,7 +8638,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  8206 0045 13       		.uleb128 0x13
  8207 0046 01       		.byte	0x1
  8208 0047 03       		.uleb128 0x3
-ARM GAS  /tmp/ccg69soa.s 			page 145
+ARM GAS  /tmp/ccLgDE5j.s 			page 145
 
 
  8209 0048 0E       		.uleb128 0xe
@@ -8698,7 +8698,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  8263 007e 00       		.byte	0
  8264 007f 00       		.byte	0
  8265 0080 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccg69soa.s 			page 146
+ARM GAS  /tmp/ccLgDE5j.s 			page 146
 
 
  8266 0081 0F       		.uleb128 0xf
@@ -8758,7 +8758,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  8320 00b7 0B       		.uleb128 0xb
  8321 00b8 3B       		.uleb128 0x3b
  8322 00b9 05       		.uleb128 0x5
-ARM GAS  /tmp/ccg69soa.s 			page 147
+ARM GAS  /tmp/ccLgDE5j.s 			page 147
 
 
  8323 00ba 01       		.uleb128 0x1
@@ -8818,7 +8818,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  8377 00f0 00       		.byte	0
  8378 00f1 03       		.uleb128 0x3
  8379 00f2 0E       		.uleb128 0xe
-ARM GAS  /tmp/ccg69soa.s 			page 148
+ARM GAS  /tmp/ccLgDE5j.s 			page 148
 
 
  8380 00f3 3A       		.uleb128 0x3a
@@ -8878,7 +8878,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  8434 0129 0B       		.uleb128 0xb
  8435 012a 00       		.byte	0
  8436 012b 00       		.byte	0
-ARM GAS  /tmp/ccg69soa.s 			page 149
+ARM GAS  /tmp/ccLgDE5j.s 			page 149
 
 
  8437 012c 19       		.uleb128 0x19
@@ -8938,7 +8938,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  8491 0162 01       		.byte	0x1
  8492 0163 0B       		.uleb128 0xb
  8493 0164 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccg69soa.s 			page 150
+ARM GAS  /tmp/ccLgDE5j.s 			page 150
 
 
  8494 0165 3A       		.uleb128 0x3a
@@ -8998,7 +8998,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  8548 019b 0B       		.uleb128 0xb
  8549 019c 0B       		.uleb128 0xb
  8550 019d 49       		.uleb128 0x49
-ARM GAS  /tmp/ccg69soa.s 			page 151
+ARM GAS  /tmp/ccLgDE5j.s 			page 151
 
 
  8551 019e 13       		.uleb128 0x13
@@ -9058,7 +9058,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  8605 01d4 13       		.uleb128 0x13
  8606 01d5 01       		.byte	0x1
  8607 01d6 03       		.uleb128 0x3
-ARM GAS  /tmp/ccg69soa.s 			page 152
+ARM GAS  /tmp/ccLgDE5j.s 			page 152
 
 
  8608 01d7 0E       		.uleb128 0xe
@@ -9118,7 +9118,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  8662 020d 2A       		.uleb128 0x2a
  8663 020e 21       		.uleb128 0x21
  8664 020f 00       		.byte	0
-ARM GAS  /tmp/ccg69soa.s 			page 153
+ARM GAS  /tmp/ccLgDE5j.s 			page 153
 
 
  8665 0210 49       		.uleb128 0x49
@@ -9178,7 +9178,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  8719 0246 3B       		.uleb128 0x3b
  8720 0247 0B       		.uleb128 0xb
  8721 0248 49       		.uleb128 0x49
-ARM GAS  /tmp/ccg69soa.s 			page 154
+ARM GAS  /tmp/ccLgDE5j.s 			page 154
 
 
  8722 0249 13       		.uleb128 0x13
@@ -9238,7 +9238,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  8776 0280 49       		.uleb128 0x49
  8777 0281 13       		.uleb128 0x13
  8778 0282 02       		.uleb128 0x2
-ARM GAS  /tmp/ccg69soa.s 			page 155
+ARM GAS  /tmp/ccLgDE5j.s 			page 155
 
 
  8779 0283 17       		.uleb128 0x17
@@ -9298,7 +9298,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  8833 02bb 8A8201   		.uleb128 0x410a
  8834 02be 00       		.byte	0
  8835 02bf 02       		.uleb128 0x2
-ARM GAS  /tmp/ccg69soa.s 			page 156
+ARM GAS  /tmp/ccLgDE5j.s 			page 156
 
 
  8836 02c0 18       		.uleb128 0x18
@@ -9358,7 +9358,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  8890 02fb 11       		.uleb128 0x11
  8891 02fc 01       		.uleb128 0x1
  8892 02fd 12       		.uleb128 0x12
-ARM GAS  /tmp/ccg69soa.s 			page 157
+ARM GAS  /tmp/ccLgDE5j.s 			page 157
 
 
  8893 02fe 06       		.uleb128 0x6
@@ -9418,7 +9418,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  8947 0335 49       		.uleb128 0x49
  8948 0336 13       		.uleb128 0x13
  8949 0337 1C       		.uleb128 0x1c
-ARM GAS  /tmp/ccg69soa.s 			page 158
+ARM GAS  /tmp/ccLgDE5j.s 			page 158
 
 
  8950 0338 0A       		.uleb128 0xa
@@ -9478,7 +9478,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  9004 036f 02       		.uleb128 0x2
  9005 0370 17       		.uleb128 0x17
  9006 0371 00       		.byte	0
-ARM GAS  /tmp/ccg69soa.s 			page 159
+ARM GAS  /tmp/ccLgDE5j.s 			page 159
 
 
  9007 0372 00       		.byte	0
@@ -9538,7 +9538,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  9061 03ae 00       		.byte	0
  9062 03af 48       		.uleb128 0x48
  9063 03b0 2E       		.uleb128 0x2e
-ARM GAS  /tmp/ccg69soa.s 			page 160
+ARM GAS  /tmp/ccLgDE5j.s 			page 160
 
 
  9064 03b1 00       		.byte	0
@@ -9598,7 +9598,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  9118 005c 53       		.byte	0x53
  9119 005d 1D000000 		.4byte	.LVL44-1
  9120 0061 90000000 		.4byte	.LFE262
-ARM GAS  /tmp/ccg69soa.s 			page 161
+ARM GAS  /tmp/ccLgDE5j.s 			page 161
 
 
  9121 0065 0400     		.2byte	0x4
@@ -9658,7 +9658,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  9175 00e8 52       		.byte	0x52
  9176 00e9 21000000 		.4byte	.LVL30-1
  9177 00ed 94000000 		.4byte	.LFE261
-ARM GAS  /tmp/ccg69soa.s 			page 162
+ARM GAS  /tmp/ccLgDE5j.s 			page 162
 
 
  9178 00f1 0400     		.2byte	0x4
@@ -9718,7 +9718,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  9232 0174 52       		.byte	0x52
  9233 0175 21000000 		.4byte	.LVL16-1
  9234 0179 9C000000 		.4byte	.LFE260
-ARM GAS  /tmp/ccg69soa.s 			page 163
+ARM GAS  /tmp/ccLgDE5j.s 			page 163
 
 
  9235 017d 0100     		.2byte	0x1
@@ -9778,7 +9778,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  9289 0014 6C000000 		.4byte	.LFE263-.LFB263
  9290 0018 00000000 		.4byte	.LFB256
  9291 001c 3C000000 		.4byte	.LFE256-.LFB256
-ARM GAS  /tmp/ccg69soa.s 			page 164
+ARM GAS  /tmp/ccLgDE5j.s 			page 164
 
 
  9292 0020 00000000 		.4byte	.LFB257
@@ -9838,7 +9838,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  9346 0098 00000000 		.4byte	.LFB262
  9347 009c 90000000 		.4byte	.LFE262
  9348 00a0 00000000 		.4byte	0
-ARM GAS  /tmp/ccg69soa.s 			page 165
+ARM GAS  /tmp/ccLgDE5j.s 			page 165
 
 
  9349 00a4 00000000 		.4byte	0
@@ -9898,7 +9898,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  9380      64656E74 
  9380      69666965 
  9380      7200
-ARM GAS  /tmp/ccg69soa.s 			page 166
+ARM GAS  /tmp/ccLgDE5j.s 			page 166
 
 
  9381              	.LASF42:
@@ -9958,7 +9958,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  9404      2D616C69 
  9404      6173696E 
  9405 01b3 696F6E2D 		.ascii	"ion-sections -fdata-sections -fno-common -fsingle-p"
-ARM GAS  /tmp/ccg69soa.s 			page 167
+ARM GAS  /tmp/ccLgDE5j.s 			page 167
 
 
  9405      73656374 
@@ -10018,7 +10018,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  9432 026b 76746675 		.ascii	"vtfunc_t\000"
  9432      6E635F74 
  9432      00
-ARM GAS  /tmp/ccg69soa.s 			page 168
+ARM GAS  /tmp/ccLgDE5j.s 			page 168
 
 
  9433              	.LASF150:
@@ -10078,7 +10078,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  9460 02fd 44485231 		.ascii	"DHR12R2\000"
  9460      32523200 
  9461              	.LASF239:
-ARM GAS  /tmp/ccg69soa.s 			page 169
+ARM GAS  /tmp/ccLgDE5j.s 			page 169
 
 
  9462 0305 63665F6F 		.ascii	"cf_off_state\000"
@@ -10138,7 +10138,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  9490      00
  9491              	.LASF366:
  9492 0391 43414E43 		.ascii	"CANConfig\000"
-ARM GAS  /tmp/ccg69soa.s 			page 170
+ARM GAS  /tmp/ccLgDE5j.s 			page 170
 
 
  9492      6F6E6669 
@@ -10198,7 +10198,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  9518      6D656E74 
  9518      5F7400
  9519              	.LASF616:
-ARM GAS  /tmp/ccg69soa.s 			page 171
+ARM GAS  /tmp/ccLgDE5j.s 			page 171
 
 
  9520 0428 72657376 		.ascii	"resvdC\000"
@@ -10258,7 +10258,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  9546 04b5 6D5F6F77 		.ascii	"m_owner\000"
  9546      6E657200 
  9547              	.LASF81:
-ARM GAS  /tmp/ccg69soa.s 			page 172
+ARM GAS  /tmp/ccLgDE5j.s 			page 172
 
 
  9548 04bd 76745F70 		.ascii	"vt_par\000"
@@ -10318,7 +10318,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  9576      41435449 
  9576      564500
  9577              	.LASF483:
-ARM GAS  /tmp/ccg69soa.s 			page 173
+ARM GAS  /tmp/ccLgDE5j.s 			page 173
 
 
  9578 0563 72785F62 		.ascii	"rx_buffer\000"
@@ -10378,7 +10378,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  9606 05eb 4441435F 		.ascii	"DAC_TypeDef\000"
  9606      54797065 
  9606      44656600 
-ARM GAS  /tmp/ccg69soa.s 			page 174
+ARM GAS  /tmp/ccLgDE5j.s 			page 174
 
 
  9607              	.LASF136:
@@ -10438,7 +10438,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  9634      61636B5F 
  9634      7400
  9635              	.LASF258:
-ARM GAS  /tmp/ccg69soa.s 			page 175
+ARM GAS  /tmp/ccLgDE5j.s 			page 175
 
 
  9636 0688 696F5F71 		.ascii	"io_queue\000"
@@ -10498,7 +10498,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  9662      7400
  9663              	.LASF19:
  9664 071c 75696E74 		.ascii	"uint8_t\000"
-ARM GAS  /tmp/ccg69soa.s 			page 176
+ARM GAS  /tmp/ccLgDE5j.s 			page 176
 
 
  9664      385F7400 
@@ -10558,7 +10558,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  9690      52564544 
  9690      3100
  9691              	.LASF7:
-ARM GAS  /tmp/ccg69soa.s 			page 177
+ARM GAS  /tmp/ccLgDE5j.s 			page 177
 
 
  9692 07be 756E7369 		.ascii	"unsigned char\000"
@@ -10618,7 +10618,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  9716      696F00
  9717              	.LASF71:
  9718 0857 725F6E65 		.ascii	"r_newer\000"
-ARM GAS  /tmp/ccg69soa.s 			page 178
+ARM GAS  /tmp/ccLgDE5j.s 			page 178
 
 
  9718      77657200 
@@ -10678,7 +10678,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  9746 08e3 61646373 		.ascii	"adcsample_t\000"
  9746      616D706C 
  9746      655F7400 
-ARM GAS  /tmp/ccg69soa.s 			page 179
+ARM GAS  /tmp/ccLgDE5j.s 			page 179
 
 
  9747              	.LASF391:
@@ -10738,7 +10738,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  9777              	.LASF530:
  9778 0973 63617061 		.ascii	"capacity\000"
  9778      63697479 
-ARM GAS  /tmp/ccg69soa.s 			page 180
+ARM GAS  /tmp/ccLgDE5j.s 			page 180
 
 
  9778      00
@@ -10798,7 +10798,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  9806      6200
  9807              	.LASF520:
  9808 0a01 67657474 		.ascii	"gett\000"
-ARM GAS  /tmp/ccg69soa.s 			page 181
+ARM GAS  /tmp/ccLgDE5j.s 			page 181
 
 
  9808      00
@@ -10858,7 +10858,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  9834      686E5F74 
  9835              	.LASF201:
  9836 0a9a 776F7273 		.ascii	"worst\000"
-ARM GAS  /tmp/ccg69soa.s 			page 182
+ARM GAS  /tmp/ccLgDE5j.s 			page 182
 
 
  9836      7400
@@ -10918,7 +10918,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  9863              	.LASF336:
  9864 0b24 73616D70 		.ascii	"samples\000"
  9864      6C657300 
-ARM GAS  /tmp/ccg69soa.s 			page 183
+ARM GAS  /tmp/ccLgDE5j.s 			page 183
 
 
  9865              	.LASF575:
@@ -10978,7 +10978,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  9892      7000
  9893              	.LASF536:
  9894 0bbb 53444344 		.ascii	"SDCDriverVMT\000"
-ARM GAS  /tmp/ccg69soa.s 			page 184
+ARM GAS  /tmp/ccLgDE5j.s 			page 184
 
 
  9894      72697665 
@@ -11038,7 +11038,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  9920      53454C45 
  9920      43544544 
  9920      00
-ARM GAS  /tmp/ccg69soa.s 			page 185
+ARM GAS  /tmp/ccLgDE5j.s 			page 185
 
 
  9921              	.LASF310:
@@ -11098,7 +11098,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  9950      6E47726F 
  9950      757000
  9951              	.LASF390:
-ARM GAS  /tmp/ccg69soa.s 			page 186
+ARM GAS  /tmp/ccLgDE5j.s 			page 186
 
 
  9952 0ce9 64616373 		.ascii	"dacsample_t\000"
@@ -11158,7 +11158,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  9982 0d77 63685F73 		.ascii	"ch_semaphore\000"
  9982      656D6170 
  9982      686F7265 
-ARM GAS  /tmp/ccg69soa.s 			page 187
+ARM GAS  /tmp/ccLgDE5j.s 			page 187
 
 
  9982      00
@@ -11218,7 +11218,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  10008      725F7400 
  10009              	.LASF66:
  10010 0e18 72656164 		.ascii	"ready_list_t\000"
-ARM GAS  /tmp/ccg69soa.s 			page 188
+ARM GAS  /tmp/ccLgDE5j.s 			page 188
 
 
  10010      795F6C69 
@@ -11278,7 +11278,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  10038      00
  10039              	.LASF63:
  10040 0ea3 63685F74 		.ascii	"ch_threads_list\000"
-ARM GAS  /tmp/ccg69soa.s 			page 189
+ARM GAS  /tmp/ccLgDE5j.s 			page 189
 
 
  10040      68726561 
@@ -11338,7 +11338,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  10068      66665F70 
  10068      7265656D 
  10068      707400
-ARM GAS  /tmp/ccg69soa.s 			page 190
+ARM GAS  /tmp/ccLgDE5j.s 			page 190
 
 
  10069              	.LASF471:
@@ -11398,7 +11398,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  10096      5900
  10097              	.LASF380:
  10098 0fce 4441435F 		.ascii	"DAC_COMPLETE\000"
-ARM GAS  /tmp/ccg69soa.s 			page 191
+ARM GAS  /tmp/ccLgDE5j.s 			page 191
 
 
  10098      434F4D50 
@@ -11458,7 +11458,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  10128      745F736F 
  10128      75726365 
  10128      5F7400
-ARM GAS  /tmp/ccg69soa.s 			page 192
+ARM GAS  /tmp/ccLgDE5j.s 			page 192
 
 
  10129              	.LASF732:
@@ -11518,7 +11518,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  10157              	.LASF718:
  10158 10f3 74696D65 		.ascii	"timeout\000"
  10158      6F757400 
-ARM GAS  /tmp/ccg69soa.s 			page 193
+ARM GAS  /tmp/ccLgDE5j.s 			page 193
 
 
  10159              	.LASF342:
@@ -11578,7 +11578,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  10189              	.LASF97:
  10190 117c 69646C65 		.ascii	"idle_thread_wa\000"
  10190      5F746872 
-ARM GAS  /tmp/ccg69soa.s 			page 194
+ARM GAS  /tmp/ccLgDE5j.s 			page 194
 
 
  10190      6561645F 
@@ -11638,7 +11638,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  10218 1211 705F7265 		.ascii	"p_refs\000"
  10218      667300
  10219              	.LASF482:
-ARM GAS  /tmp/ccg69soa.s 			page 195
+ARM GAS  /tmp/ccLgDE5j.s 			page 195
 
 
  10220 1218 74785F62 		.ascii	"tx_buffer\000"
@@ -11698,7 +11698,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  10250 1299 4932435F 		.ascii	"I2C_READY\000"
  10250      52454144 
  10250      5900
-ARM GAS  /tmp/ccg69soa.s 			page 196
+ARM GAS  /tmp/ccLgDE5j.s 			page 196
 
 
  10251              	.LASF698:
@@ -11758,7 +11758,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  10282      5F6D756C 
  10282      746900
  10283              	.LASF372:
-ARM GAS  /tmp/ccg69soa.s 			page 197
+ARM GAS  /tmp/ccLgDE5j.s 			page 197
 
 
  10284 1333 736C6565 		.ascii	"sleep_event\000"
@@ -11818,7 +11818,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  10309              	.LASF460:
  10310 13ca 46415354 		.ascii	"FAST_DUTY_CYCLE_16_9\000"
  10310      5F445554 
-ARM GAS  /tmp/ccg69soa.s 			page 198
+ARM GAS  /tmp/ccLgDE5j.s 			page 198
 
 
  10310      595F4359 
@@ -11878,7 +11878,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  10334      6F6E6669 
  10334      6700
  10335              	.LASF540:
-ARM GAS  /tmp/ccg69soa.s 			page 199
+ARM GAS  /tmp/ccLgDE5j.s 			page 199
 
 
  10336 1476 64697363 		.ascii	"disconnect\000"
@@ -11938,7 +11938,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  10362 1502 6C6F6E67 		.ascii	"long long unsigned int\000"
  10362      206C6F6E 
  10362      6720756E 
-ARM GAS  /tmp/ccg69soa.s 			page 200
+ARM GAS  /tmp/ccLgDE5j.s 			page 200
 
 
  10362      7369676E 
@@ -11998,7 +11998,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  10390      6700
  10391              	.LASF34:
  10392 159b 6576656E 		.ascii	"eventflags_t\000"
-ARM GAS  /tmp/ccg69soa.s 			page 201
+ARM GAS  /tmp/ccLgDE5j.s 			page 201
 
 
  10392      74666C61 
@@ -12058,7 +12058,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  10416      494E554F 
  10416      555300
  10417              	.LASF120:
-ARM GAS  /tmp/ccg69soa.s 			page 202
+ARM GAS  /tmp/ccLgDE5j.s 			page 202
 
 
  10418 1631 52444C52 		.ascii	"RDLR\000"
@@ -12118,7 +12118,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  10446 16be 6D61696E 		.ascii	"mainthread\000"
  10446      74687265 
  10446      616400
-ARM GAS  /tmp/ccg69soa.s 			page 203
+ARM GAS  /tmp/ccLgDE5j.s 			page 203
 
 
  10447              	.LASF662:
@@ -12178,7 +12178,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  10474      00
  10475              	.LASF375:
  10476 174e 43414E44 		.ascii	"CAND1\000"
-ARM GAS  /tmp/ccg69soa.s 			page 204
+ARM GAS  /tmp/ccLgDE5j.s 			page 204
 
 
  10476      3100
@@ -12238,7 +12238,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  10504      5F384249 
  10504      5400
  10505              	.LASF93:
-ARM GAS  /tmp/ccg69soa.s 			page 205
+ARM GAS  /tmp/ccLgDE5j.s 			page 205
 
 
  10506 17e2 726C6973 		.ascii	"rlist\000"
@@ -12298,7 +12298,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  10536 1862 46533152 		.ascii	"FS1R\000"
  10536      00
  10537              	.LASF370:
-ARM GAS  /tmp/ccg69soa.s 			page 206
+ARM GAS  /tmp/ccLgDE5j.s 			page 206
 
 
  10538 1867 7478656D 		.ascii	"txempty_event\000"
@@ -12358,7 +12358,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  10564      434F4D50 
  10564      4C455445 
  10564      00
-ARM GAS  /tmp/ccg69soa.s 			page 207
+ARM GAS  /tmp/ccLgDE5j.s 			page 207
 
 
  10565              	.LASF667:
@@ -12418,7 +12418,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  10592 1988 4A4F4652 		.ascii	"JOFR1\000"
  10592      3100
  10593              	.LASF20:
-ARM GAS  /tmp/ccg69soa.s 			page 208
+ARM GAS  /tmp/ccLgDE5j.s 			page 208
 
 
  10594 198e 696E7431 		.ascii	"int16_t\000"
@@ -12478,7 +12478,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  10622 1a1e 72657376 		.ascii	"resvd1c\000"
  10622      64316300 
  10623              	.LASF257:
-ARM GAS  /tmp/ccg69soa.s 			page 209
+ARM GAS  /tmp/ccLgDE5j.s 			page 209
 
 
  10624 1a26 696F5F71 		.ascii	"io_queue_t\000"
@@ -12538,7 +12538,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  10654 1abf 47505444 		.ascii	"GPTD11\000"
  10654      313100
  10655              	.LASF148:
-ARM GAS  /tmp/ccg69soa.s 			page 210
+ARM GAS  /tmp/ccLgDE5j.s 			page 210
 
 
  10656 1ac6 44485231 		.ascii	"DHR12LD\000"
@@ -12598,7 +12598,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  10685              	.LASF504:
  10686 1b50 50574D44 		.ascii	"PWMD3\000"
  10686      3300
-ARM GAS  /tmp/ccg69soa.s 			page 211
+ARM GAS  /tmp/ccLgDE5j.s 			page 211
 
 
  10687              	.LASF505:
@@ -12658,7 +12658,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  10718 1bd3 504F5745 		.ascii	"POWER\000"
  10718      5200
  10719              	.LASF673:
-ARM GAS  /tmp/ccg69soa.s 			page 212
+ARM GAS  /tmp/ccLgDE5j.s 			page 212
 
 
  10720 1bd9 72657376 		.ascii	"resvd8C0\000"
@@ -12718,7 +12718,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  10746      7400
  10747              	.LASF549:
  10748 1c6c 73706973 		.ascii	"spistate_t\000"
-ARM GAS  /tmp/ccg69soa.s 			page 213
+ARM GAS  /tmp/ccLgDE5j.s 			page 213
 
 
  10748      74617465 
@@ -12778,7 +12778,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  10774      00
  10775              	.LASF271:
  10776 1d03 69666372 		.ascii	"ifcr\000"
-ARM GAS  /tmp/ccg69soa.s 			page 214
+ARM GAS  /tmp/ccLgDE5j.s 			page 214
 
 
  10776      00
@@ -12838,7 +12838,7 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  10807              	.LASF716:
  10808 1d8b 6765745F 		.ascii	"get_last_i2c_error\000"
  10808      6C617374 
-ARM GAS  /tmp/ccg69soa.s 			page 215
+ARM GAS  /tmp/ccLgDE5j.s 			page 215
 
 
  10808      5F693263 
@@ -12878,39 +12878,39 @@ ARM GAS  /tmp/ccg69soa.s 			page 1
  10826 1de6 705F7374 		.ascii	"p_state\000"
  10826      61746500 
  10827              		.ident	"GCC: (GNU Tools for Arm Embedded Processors 7-2017-q4-major) 7.2.1 20170904 (release) [ARM
-ARM GAS  /tmp/ccg69soa.s 			page 216
+ARM GAS  /tmp/ccLgDE5j.s 			page 216
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 i2c_bus.c
-     /tmp/ccg69soa.s:18     .text.i2c_start.part.0:0000000000000000 $t
-     /tmp/ccg69soa.s:25     .text.i2c_start.part.0:0000000000000000 i2c_start.part.0
-     /tmp/ccg69soa.s:114    .text.i2c_start.part.0:000000000000005c $d
-     /tmp/ccg69soa.s:122    .text.i2c_start:0000000000000000 $t
-     /tmp/ccg69soa.s:130    .text.i2c_start:0000000000000000 i2c_start
-     /tmp/ccg69soa.s:186    .text.i2c_start:0000000000000034 $d
-     /tmp/ccg69soa.s:192    .text.i2c_stop:0000000000000000 $t
-     /tmp/ccg69soa.s:200    .text.i2c_stop:0000000000000000 i2c_stop
-     /tmp/ccg69soa.s:239    .text.i2c_stop:0000000000000024 $d
-     /tmp/ccg69soa.s:245    .text.i2c_update_last_error:0000000000000000 $t
-     /tmp/ccg69soa.s:253    .text.i2c_update_last_error:0000000000000000 i2c_update_last_error
-     /tmp/ccg69soa.s:298    .text.i2c_update_last_error:0000000000000024 $d
-     /tmp/ccg69soa.s:305    .text.get_last_i2c_error:0000000000000000 $t
-     /tmp/ccg69soa.s:313    .text.get_last_i2c_error:0000000000000000 get_last_i2c_error
-     /tmp/ccg69soa.s:351    .text.get_last_i2c_error:0000000000000020 $d
-     /tmp/ccg69soa.s:357    .text.read_reg:0000000000000000 $t
-     /tmp/ccg69soa.s:365    .text.read_reg:0000000000000000 read_reg
-     /tmp/ccg69soa.s:503    .text.read_reg:0000000000000090 $d
-     /tmp/ccg69soa.s:510    .text.write_reg:0000000000000000 $t
-     /tmp/ccg69soa.s:518    .text.write_reg:0000000000000000 write_reg
-     /tmp/ccg69soa.s:651    .text.write_reg:0000000000000088 $d
-     /tmp/ccg69soa.s:658    .text.read_reg_multi:0000000000000000 $t
-     /tmp/ccg69soa.s:666    .text.read_reg_multi:0000000000000000 read_reg_multi
-     /tmp/ccg69soa.s:796    .text.read_reg_multi:0000000000000084 $d
-     /tmp/ccg69soa.s:803    .bss.errors:0000000000000000 $d
-     /tmp/ccg69soa.s:807    .bss.errors:0000000000000000 errors
-     /tmp/ccg69soa.s:810    .rodata.i2c_cfg1.9865:0000000000000000 $d
-     /tmp/ccg69soa.s:814    .rodata.i2c_cfg1.9865:0000000000000000 i2c_cfg1.9865
+     /tmp/ccLgDE5j.s:18     .text.i2c_start.part.0:0000000000000000 $t
+     /tmp/ccLgDE5j.s:25     .text.i2c_start.part.0:0000000000000000 i2c_start.part.0
+     /tmp/ccLgDE5j.s:114    .text.i2c_start.part.0:000000000000005c $d
+     /tmp/ccLgDE5j.s:122    .text.i2c_start:0000000000000000 $t
+     /tmp/ccLgDE5j.s:130    .text.i2c_start:0000000000000000 i2c_start
+     /tmp/ccLgDE5j.s:186    .text.i2c_start:0000000000000034 $d
+     /tmp/ccLgDE5j.s:192    .text.i2c_stop:0000000000000000 $t
+     /tmp/ccLgDE5j.s:200    .text.i2c_stop:0000000000000000 i2c_stop
+     /tmp/ccLgDE5j.s:239    .text.i2c_stop:0000000000000024 $d
+     /tmp/ccLgDE5j.s:245    .text.i2c_update_last_error:0000000000000000 $t
+     /tmp/ccLgDE5j.s:253    .text.i2c_update_last_error:0000000000000000 i2c_update_last_error
+     /tmp/ccLgDE5j.s:298    .text.i2c_update_last_error:0000000000000024 $d
+     /tmp/ccLgDE5j.s:305    .text.get_last_i2c_error:0000000000000000 $t
+     /tmp/ccLgDE5j.s:313    .text.get_last_i2c_error:0000000000000000 get_last_i2c_error
+     /tmp/ccLgDE5j.s:351    .text.get_last_i2c_error:0000000000000020 $d
+     /tmp/ccLgDE5j.s:357    .text.read_reg:0000000000000000 $t
+     /tmp/ccLgDE5j.s:365    .text.read_reg:0000000000000000 read_reg
+     /tmp/ccLgDE5j.s:503    .text.read_reg:0000000000000090 $d
+     /tmp/ccLgDE5j.s:510    .text.write_reg:0000000000000000 $t
+     /tmp/ccLgDE5j.s:518    .text.write_reg:0000000000000000 write_reg
+     /tmp/ccLgDE5j.s:651    .text.write_reg:0000000000000088 $d
+     /tmp/ccLgDE5j.s:658    .text.read_reg_multi:0000000000000000 $t
+     /tmp/ccLgDE5j.s:666    .text.read_reg_multi:0000000000000000 read_reg_multi
+     /tmp/ccLgDE5j.s:796    .text.read_reg_multi:0000000000000084 $d
+     /tmp/ccLgDE5j.s:803    .bss.errors:0000000000000000 $d
+     /tmp/ccLgDE5j.s:807    .bss.errors:0000000000000000 errors
+     /tmp/ccLgDE5j.s:810    .rodata.i2c_cfg1.9865:0000000000000000 $d
+     /tmp/ccLgDE5j.s:814    .rodata.i2c_cfg1.9865:0000000000000000 i2c_cfg1.9865
 
 UNDEFINED SYMBOLS
 _pal_lld_setgroupmode

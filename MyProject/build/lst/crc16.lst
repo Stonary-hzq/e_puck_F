@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cczGAlBd.s 			page 1
+ARM GAS  /tmp/ccClGSHS.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cczGAlBd.s 			page 1
   55              	.LBE2:
   56              		.loc 1 11 0
   57 0012 0DD0     		beq	.L13
-ARM GAS  /tmp/cczGAlBd.s 			page 2
+ARM GAS  /tmp/ccClGSHS.s 			page 2
 
 
   58              	.LVL4:
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cczGAlBd.s 			page 1
  112              		.file 2 "/home/uos/Documents/e_puck_F/Eclipse_e-puck2/Tools/gcc-arm-none-eabi-7-2017-q4-major/arm-
  113              		.file 3 "/home/uos/Documents/e_puck_F/Eclipse_e-puck2/Tools/gcc-arm-none-eabi-7-2017-q4-major/arm-
  114              		.file 4 "/home/uos/Documents/e_puck_F/Eclipse_e-puck2/Tools/gcc-arm-none-eabi-7-2017-q4-major/lib/
-ARM GAS  /tmp/cczGAlBd.s 			page 3
+ARM GAS  /tmp/ccClGSHS.s 			page 3
 
 
  115              		.section	.debug_info,"",%progbits
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cczGAlBd.s 			page 1
  169 006e 07       		.byte	0x7
  170 006f BB010000 		.4byte	.LASF9
  171 0073 04       		.uleb128 0x4
-ARM GAS  /tmp/cczGAlBd.s 			page 4
+ARM GAS  /tmp/ccClGSHS.s 			page 4
 
 
  172 0074 04       		.byte	0x4
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cczGAlBd.s 			page 1
  226 00ef 07       		.uleb128 0x7
  227 00f0 7000     		.ascii	"p\000"
  228 00f2 01       		.byte	0x1
-ARM GAS  /tmp/cczGAlBd.s 			page 5
+ARM GAS  /tmp/ccClGSHS.s 			page 5
 
 
  229 00f3 09       		.byte	0x9
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cczGAlBd.s 			page 1
  283 0012 00       		.byte	0
  284 0013 02       		.uleb128 0x2
  285 0014 24       		.uleb128 0x24
-ARM GAS  /tmp/cczGAlBd.s 			page 6
+ARM GAS  /tmp/ccClGSHS.s 			page 6
 
 
  286 0015 00       		.byte	0
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cczGAlBd.s 			page 1
  340 004b 9742     		.uleb128 0x2117
  341 004d 19       		.uleb128 0x19
  342 004e 01       		.uleb128 0x1
-ARM GAS  /tmp/cczGAlBd.s 			page 7
+ARM GAS  /tmp/ccClGSHS.s 			page 7
 
 
  343 004f 13       		.uleb128 0x13
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cczGAlBd.s 			page 1
  397 0087 0B       		.uleb128 0xb
  398 0088 0B       		.uleb128 0xb
  399 0089 49       		.uleb128 0x49
-ARM GAS  /tmp/cczGAlBd.s 			page 8
+ARM GAS  /tmp/ccClGSHS.s 			page 8
 
 
  400 008a 13       		.uleb128 0x13
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cczGAlBd.s 			page 1
  454 0046 08000000 		.4byte	.LVL1
  455 004a 0100     		.2byte	0x1
  456 004c 52       		.byte	0x52
-ARM GAS  /tmp/cczGAlBd.s 			page 9
+ARM GAS  /tmp/ccClGSHS.s 			page 9
 
 
  457 004d 08000000 		.4byte	.LVL1
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cczGAlBd.s 			page 1
  511 00c8 00000000 		.4byte	0
  512              	.LLST5:
  513 00cc 1C000000 		.4byte	.LVL6
-ARM GAS  /tmp/cczGAlBd.s 			page 10
+ARM GAS  /tmp/ccClGSHS.s 			page 10
 
 
  514 00d0 28000000 		.4byte	.LVL8
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cczGAlBd.s 			page 1
  565      FB0E0D00 
  565      01010101 
  566              	.LASF3:
-ARM GAS  /tmp/cczGAlBd.s 			page 11
+ARM GAS  /tmp/ccClGSHS.s 			page 11
 
 
  567 0000 5F5F7569 		.ascii	"__uint8_t\000"
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cczGAlBd.s 			page 1
  587      702D6431 
  588 0103 2D676764 		.ascii	"-ggdb -O2 -fomit-frame-pointer -falign-functions=16"
  588      62202D4F 
-ARM GAS  /tmp/cczGAlBd.s 			page 12
+ARM GAS  /tmp/ccClGSHS.s 			page 12
 
 
  588      32202D66 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cczGAlBd.s 			page 1
  607      6B325F6D 
  607      61696E2D 
  607      70726F63 
-ARM GAS  /tmp/cczGAlBd.s 			page 13
+ARM GAS  /tmp/ccClGSHS.s 			page 13
 
 
  608              	.LASF21:
@@ -740,14 +740,14 @@ ARM GAS  /tmp/cczGAlBd.s 			page 1
  617 0274 6C656E67 		.ascii	"length\000"
  617      746800
  618              		.ident	"GCC: (GNU Tools for Arm Embedded Processors 7-2017-q4-major) 7.2.1 20170904 (release) [ARM
-ARM GAS  /tmp/cczGAlBd.s 			page 14
+ARM GAS  /tmp/ccClGSHS.s 			page 14
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 crc16.c
-     /tmp/cczGAlBd.s:18     .text.crc16:0000000000000000 $t
-     /tmp/cczGAlBd.s:26     .text.crc16:0000000000000000 crc16
-     /tmp/cczGAlBd.s:106    .text.crc16:0000000000000040 $d
+     /tmp/ccClGSHS.s:18     .text.crc16:0000000000000000 $t
+     /tmp/ccClGSHS.s:26     .text.crc16:0000000000000000 crc16
+     /tmp/ccClGSHS.s:106    .text.crc16:0000000000000040 $d
 
 UNDEFINED SYMBOLS
 __stack_chk_fail

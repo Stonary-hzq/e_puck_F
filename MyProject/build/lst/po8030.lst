@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccHlG55l.s 			page 1
+ARM GAS  /tmp/ccDxM7oT.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
   55              	.LVL2:
   56              		.loc 1 93 0
   57 0014 0193     		str	r3, [sp, #4]
-ARM GAS  /tmp/ccHlG55l.s 			page 2
+ARM GAS  /tmp/ccDxM7oT.s 			page 2
 
 
   58              		.loc 1 97 0
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  112              	po8030_set_bank:
  113              	.LFB258:
  114              		.loc 1 118 0
-ARM GAS  /tmp/ccHlG55l.s 			page 3
+ARM GAS  /tmp/ccDxM7oT.s 			page 3
 
 
  115              		.cfi_startproc
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  169              	.LFB259:
  170              		.loc 1 132 0
  171              		.cfi_startproc
-ARM GAS  /tmp/ccHlG55l.s 			page 4
+ARM GAS  /tmp/ccDxM7oT.s 			page 4
 
 
  172              		@ args = 0, pretend = 0, frame = 8
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  226              	.LVL17:
  227              	.LBB80:
  228              	.LBB81:
-ARM GAS  /tmp/ccHlG55l.s 			page 5
+ARM GAS  /tmp/ccDxM7oT.s 			page 5
 
 
  229              		.loc 1 143 0
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  283              	.LBB84:
  284              	.LBB85:
  285              		.loc 1 119 0
-ARM GAS  /tmp/ccHlG55l.s 			page 6
+ARM GAS  /tmp/ccDxM7oT.s 			page 6
 
 
  286 0078 2246     		mov	r2, r4
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  340 0000 10B5     		push	{r4, lr}
  341              		.cfi_def_cfa_offset 8
  342              		.cfi_offset 4, -8
-ARM GAS  /tmp/ccHlG55l.s 			page 7
+ARM GAS  /tmp/ccDxM7oT.s 			page 7
 
 
  343              		.cfi_offset 14, -4
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  397              	.LVL39:
  398 0046 FFF7FEFF 		bl	write_reg
  399              	.LVL40:
-ARM GAS  /tmp/ccHlG55l.s 			page 8
+ARM GAS  /tmp/ccDxM7oT.s 			page 8
 
 
  400 004a 0028     		cmp	r0, #0
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  454 009a FFF7FEFF 		bl	write_reg
  455              	.LVL52:
  456 009e 0028     		cmp	r0, #0
-ARM GAS  /tmp/ccHlG55l.s 			page 9
+ARM GAS  /tmp/ccDxM7oT.s 			page 9
 
 
  457 00a0 B9D1     		bne	.L39
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  511 00f4 8FD1     		bne	.L39
  512              		.loc 1 231 0
  513 00f6 E022     		movs	r2, #224
-ARM GAS  /tmp/ccHlG55l.s 			page 10
+ARM GAS  /tmp/ccDxM7oT.s 			page 10
 
 
  514 00f8 3C21     		movs	r1, #60
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  568 0154 4221     		movs	r1, #66
  569 0156 6E20     		movs	r0, #110
  570              	.LVL77:
-ARM GAS  /tmp/ccHlG55l.s 			page 11
+ARM GAS  /tmp/ccDxM7oT.s 			page 11
 
 
  571 0158 FFF7FEFF 		bl	write_reg
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  625              		.loc 1 271 0
  626 01b2 054B     		ldr	r3, .L44+4
  627 01b4 054A     		ldr	r2, .L44+8
-ARM GAS  /tmp/ccHlG55l.s 			page 12
+ARM GAS  /tmp/ccDxM7oT.s 			page 12
 
 
  628 01b6 1A60     		str	r2, [r3]
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  682 000e 6E20     		movs	r0, #110
  683 0010 FFF7FEFF 		bl	write_reg
  684              	.LVL92:
-ARM GAS  /tmp/ccHlG55l.s 			page 13
+ARM GAS  /tmp/ccDxM7oT.s 			page 13
 
 
  685              	.LBE109:
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  739              		.loc 1 306 0
  740 005c 0122     		movs	r2, #1
  741 005e 0C21     		movs	r1, #12
-ARM GAS  /tmp/ccHlG55l.s 			page 14
+ARM GAS  /tmp/ccDxM7oT.s 			page 14
 
 
  742 0060 6E20     		movs	r0, #110
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  796 00b4 6E20     		movs	r0, #110
  797              	.LVL112:
  798 00b6 FFF7FEFF 		bl	write_reg
-ARM GAS  /tmp/ccHlG55l.s 			page 15
+ARM GAS  /tmp/ccDxM7oT.s 			page 15
 
 
  799              	.LVL113:
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  853              	.LVL125:
  854 010e 0028     		cmp	r0, #0
  855 0110 81D1     		bne	.L47
-ARM GAS  /tmp/ccHlG55l.s 			page 16
+ARM GAS  /tmp/ccDxM7oT.s 			page 16
 
 
  856              		.loc 1 347 0
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  910              		.loc 1 365 0
  911 0172 A022     		movs	r2, #160
  912 0174 4421     		movs	r1, #68
-ARM GAS  /tmp/ccHlG55l.s 			page 17
+ARM GAS  /tmp/ccDxM7oT.s 			page 17
 
 
  913 0176 6E20     		movs	r0, #110
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  967              	.LVL147:
  968              	.L53:
  969              		.align	2
-ARM GAS  /tmp/ccHlG55l.s 			page 18
+ARM GAS  /tmp/ccDxM7oT.s 			page 18
 
 
  970              	.L52:
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  1024              		@ sp needed
  1025 0022 10BD     		pop	{r4, pc}
  1026              	.L58:
-ARM GAS  /tmp/ccHlG55l.s 			page 19
+ARM GAS  /tmp/ccDxM7oT.s 			page 19
 
 
  1027              		.cfi_restore_state
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  1081 0074 0028     		cmp	r0, #0
  1082 0076 CED1     		bne	.L55
  1083              		.loc 1 421 0
-ARM GAS  /tmp/ccHlG55l.s 			page 20
+ARM GAS  /tmp/ccDxM7oT.s 			page 20
 
 
  1084 0078 0246     		mov	r2, r0
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  1138 00cc 0246     		mov	r2, r0
  1139 00ce 3921     		movs	r1, #57
  1140 00d0 6E20     		movs	r0, #110
-ARM GAS  /tmp/ccHlG55l.s 			page 21
+ARM GAS  /tmp/ccDxM7oT.s 			page 21
 
 
  1141              	.LVL173:
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  1195              	.LVL185:
  1196 0128 FFF7FEFF 		bl	write_reg
  1197              	.LVL186:
-ARM GAS  /tmp/ccHlG55l.s 			page 22
+ARM GAS  /tmp/ccDxM7oT.s 			page 22
 
 
  1198 012c 0028     		cmp	r0, #0
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  1252              	.LVL198:
  1253 0188 FFF7FEFF 		bl	write_reg
  1254              	.LVL199:
-ARM GAS  /tmp/ccHlG55l.s 			page 23
+ARM GAS  /tmp/ccDxM7oT.s 			page 23
 
 
  1255              	.LBE127:
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  1309              		.thumb_func
  1310              		.fpu fpv4-sp-d16
  1311              		.type	po8030_set_size, %function
-ARM GAS  /tmp/ccHlG55l.s 			page 24
+ARM GAS  /tmp/ccDxM7oT.s 			page 24
 
 
  1312              	po8030_set_size:
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  1366 0028 12D1     		bne	.L72
  1367              		.loc 1 517 0
  1368 002a 03B0     		add	sp, sp, #12
-ARM GAS  /tmp/ccHlG55l.s 			page 25
+ARM GAS  /tmp/ccDxM7oT.s 			page 25
 
 
  1369              		.cfi_remember_state
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  1423              		.thumb
  1424              		.thumb_func
  1425              		.fpu fpv4-sp-d16
-ARM GAS  /tmp/ccHlG55l.s 			page 26
+ARM GAS  /tmp/ccDxM7oT.s 			page 26
 
 
  1426              		.type	po8030_set_scale_buffer_size, %function
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  1480              	.LVL219:
  1481 0032 0028     		cmp	r0, #0
  1482 0034 3BD0     		beq	.L97
-ARM GAS  /tmp/ccHlG55l.s 			page 27
+ARM GAS  /tmp/ccDxM7oT.s 			page 27
 
 
  1483              	.LVL220:
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  1537              		.cfi_restore 6
  1538              		.cfi_restore 5
  1539              		.cfi_restore 4
-ARM GAS  /tmp/ccHlG55l.s 			page 28
+ARM GAS  /tmp/ccDxM7oT.s 			page 28
 
 
  1540              		.cfi_def_cfa_offset 0
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  1594 00b0 2368     		ldr	r3, [r4]
  1595 00b2 9A42     		cmp	r2, r3
  1596 00b4 08BF     		it	eq
-ARM GAS  /tmp/ccHlG55l.s 			page 29
+ARM GAS  /tmp/ccDxM7oT.s 			page 29
 
 
  1597 00b6 F522     		moveq	r2, #245
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  1651              		.thumb_func
  1652              		.fpu fpv4-sp-d16
  1653              		.type	po8030_config, %function
-ARM GAS  /tmp/ccHlG55l.s 			page 30
+ARM GAS  /tmp/ccDxM7oT.s 			page 30
 
 
  1654              	po8030_config:
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  1708              	.LVL240:
  1709 0030 0028     		cmp	r0, #0
  1710 0032 F2D1     		bne	.L101
-ARM GAS  /tmp/ccHlG55l.s 			page 31
+ARM GAS  /tmp/ccDxM7oT.s 			page 31
 
 
  1711              		.loc 1 625 0
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  1765              		.thumb_func
  1766              		.fpu fpv4-sp-d16
  1767              		.type	po8030_advanced_config, %function
-ARM GAS  /tmp/ccHlG55l.s 			page 32
+ARM GAS  /tmp/ccDxM7oT.s 			page 32
 
 
  1768              	po8030_advanced_config:
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  1822              		.loc 1 663 0
  1823 004a A142     		cmp	r1, r4
  1824 004c 80F00482 		bcs	.L127
-ARM GAS  /tmp/ccHlG55l.s 			page 33
+ARM GAS  /tmp/ccDxM7oT.s 			page 33
 
 
  1825              		.loc 1 663 0 is_stmt 0 discriminator 1
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  1879 00b4 40F0E281 		bne	.L142
  1880 00b8 0FB0     		add	sp, sp, #60
  1881              		.cfi_remember_state
-ARM GAS  /tmp/ccHlG55l.s 			page 34
+ARM GAS  /tmp/ccDxM7oT.s 			page 34
 
 
  1882              		.cfi_def_cfa_offset 36
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  1936 00f6 4FEA4C02 		lsl	r2, ip, #1
  1937              		.loc 1 714 0
  1938 00fa 6F1C     		adds	r7, r5, #1
-ARM GAS  /tmp/ccHlG55l.s 			page 35
+ARM GAS  /tmp/ccDxM7oT.s 			page 35
 
 
  1939              	.LVL270:
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  1993 0146 0493     		str	r3, [sp, #16]
  1994 0148 FFF7FEFF 		bl	write_reg
  1995              	.LVL280:
-ARM GAS  /tmp/ccHlG55l.s 			page 36
+ARM GAS  /tmp/ccDxM7oT.s 			page 36
 
 
  1996 014c 0028     		cmp	r0, #0
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  2050              	.LVL290:
  2051 01aa 0028     		cmp	r0, #0
  2052 01ac 7FF47EAF 		bne	.L110
-ARM GAS  /tmp/ccHlG55l.s 			page 37
+ARM GAS  /tmp/ccDxM7oT.s 			page 37
 
 
  2053              		.loc 1 766 0
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  2107 0210 FFF7FEFF 		bl	write_reg
  2108              	.LVL302:
  2109 0214 0028     		cmp	r0, #0
-ARM GAS  /tmp/ccHlG55l.s 			page 38
+ARM GAS  /tmp/ccDxM7oT.s 			page 38
 
 
  2110 0216 7FF449AF 		bne	.L110
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  2164 027a 0028     		cmp	r0, #0
  2165 027c 7FF416AF 		bne	.L110
  2166              		.loc 1 804 0
-ARM GAS  /tmp/ccHlG55l.s 			page 39
+ARM GAS  /tmp/ccDxM7oT.s 			page 39
 
 
  2167 0280 019B     		ldr	r3, [sp, #4]
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  2221 02ec 0028     		cmp	r0, #0
  2222 02ee 7FF4DDAE 		bne	.L110
  2223              	.LVL327:
-ARM GAS  /tmp/ccHlG55l.s 			page 40
+ARM GAS  /tmp/ccDxM7oT.s 			page 40
 
 
  2224              	.LBB156:
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  2278 0346 77EEC77A 		vsub.f32	s15, s15, s14
  2279 034a 00F09980 		beq	.L144
  2280              	.LVL337:
-ARM GAS  /tmp/ccHlG55l.s 			page 41
+ARM GAS  /tmp/ccDxM7oT.s 			page 41
 
 
  2281              		.loc 1 843 0
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  2335 03b0 83F806B0 		strb	fp, [r3, #6]
  2336              		.loc 1 864 0
  2337 03b4 7AE6     		b	.L110
-ARM GAS  /tmp/ccHlG55l.s 			page 42
+ARM GAS  /tmp/ccDxM7oT.s 			page 42
 
 
  2338              	.LVL348:
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  2392              		.loc 1 685 0
  2393 03ee 06EB9103 		add	r3, r6, r1, lsr #2
  2394              	.LVL364:
-ARM GAS  /tmp/ccHlG55l.s 			page 43
+ARM GAS  /tmp/ccDxM7oT.s 			page 43
 
 
  2395 03f2 0193     		str	r3, [sp, #4]
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  2449 0446 07EBD203 		add	r3, r7, r2, lsr #3
  2450              		.loc 1 726 0
  2451 044a 05EB9C05 		add	r5, r5, ip, lsr #2
-ARM GAS  /tmp/ccHlG55l.s 			page 44
+ARM GAS  /tmp/ccDxM7oT.s 			page 44
 
 
  2452              	.LVL372:
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  2506 0480 F2EE006A 		vmov.f32	s13, #8.0e+0
  2507 0484 37EE267A 		vadd.f32	s14, s14, s13
  2508              	.LVL389:
-ARM GAS  /tmp/ccHlG55l.s 			page 45
+ARM GAS  /tmp/ccDxM7oT.s 			page 45
 
 
  2509 0488 DFED066A 		vldr.32	s13, .L147+4
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  2563              	.LBB163:
  2564              	.LBB162:
  2565              		.loc 1 119 0
-ARM GAS  /tmp/ccHlG55l.s 			page 46
+ARM GAS  /tmp/ccDxM7oT.s 			page 46
 
 
  2566 000e 0321     		movs	r1, #3
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  2620              		.align	1
  2621              		.p2align 4,,15
  2622              		.global	po8030_set_contrast
-ARM GAS  /tmp/ccHlG55l.s 			page 47
+ARM GAS  /tmp/ccDxM7oT.s 			page 47
 
 
  2623              		.syntax unified
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  2677 0022 30BD     		pop	{r4, r5, pc}
  2678              	.L164:
  2679              		.cfi_restore_state
-ARM GAS  /tmp/ccHlG55l.s 			page 48
+ARM GAS  /tmp/ccDxM7oT.s 			page 48
 
 
  2680              		.loc 1 880 0
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  2734 0004 82B0     		sub	sp, sp, #8
  2735              		.cfi_def_cfa_offset 24
  2736              		.loc 1 883 0
-ARM GAS  /tmp/ccHlG55l.s 			page 49
+ARM GAS  /tmp/ccDxM7oT.s 			page 49
 
 
  2737 0006 0646     		mov	r6, r0
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  2791              	.L168:
  2792              		.cfi_restore_state
  2793              		.loc 1 899 0
-ARM GAS  /tmp/ccHlG55l.s 			page 50
+ARM GAS  /tmp/ccDxM7oT.s 			page 50
 
 
  2794 0040 019A     		ldr	r2, [sp, #4]
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  2848              		.loc 1 119 0
  2849 000e 0222     		movs	r2, #2
  2850 0010 0321     		movs	r1, #3
-ARM GAS  /tmp/ccHlG55l.s 			page 51
+ARM GAS  /tmp/ccDxM7oT.s 			page 51
 
 
  2851 0012 6E20     		movs	r0, #110
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  2905 0056 E2E7     		b	.L179
  2906              	.L185:
  2907              		.loc 1 920 0
-ARM GAS  /tmp/ccHlG55l.s 			page 52
+ARM GAS  /tmp/ccDxM7oT.s 			page 52
 
 
  2908 0058 FFF7FEFF 		bl	__stack_chk_fail
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  2962 001a 2368     		ldr	r3, [r4]
  2963 001c 9A42     		cmp	r2, r3
  2964 001e 22D1     		bne	.L193
-ARM GAS  /tmp/ccHlG55l.s 			page 53
+ARM GAS  /tmp/ccDxM7oT.s 			page 53
 
 
  2965 0020 03B0     		add	sp, sp, #12
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  3019 005c 03B0     		add	sp, sp, #12
  3020              		.cfi_remember_state
  3021              		.cfi_def_cfa_offset 20
-ARM GAS  /tmp/ccHlG55l.s 			page 54
+ARM GAS  /tmp/ccDxM7oT.s 			page 54
 
 
  3022              		@ sp needed
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  3076 0008 0193     		str	r3, [sp, #4]
  3077              	.LVL441:
  3078 000a 0546     		mov	r5, r0
-ARM GAS  /tmp/ccHlG55l.s 			page 55
+ARM GAS  /tmp/ccDxM7oT.s 			page 55
 
 
  3079              		.loc 1 948 0
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  3133 004c 6E20     		movs	r0, #110
  3134              	.LVL446:
  3135              		.loc 1 961 0
-ARM GAS  /tmp/ccHlG55l.s 			page 56
+ARM GAS  /tmp/ccDxM7oT.s 			page 56
 
 
  3136 004e 8DF80320 		strb	r2, [sp, #3]
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  3190 001c FFF7FEFF 		bl	po8030_advanced_config
  3191              	.LVL449:
  3192              		.loc 1 609 0
-ARM GAS  /tmp/ccHlG55l.s 			page 57
+ARM GAS  /tmp/ccDxM7oT.s 			page 57
 
 
  3193 0020 0020     		movs	r0, #0
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  3247              	.LVL454:
  3248 0000 70B5     		push	{r4, r5, r6, lr}
  3249              		.cfi_def_cfa_offset 16
-ARM GAS  /tmp/ccHlG55l.s 			page 58
+ARM GAS  /tmp/ccDxM7oT.s 			page 58
 
 
  3250              		.cfi_offset 4, -16
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  3304 0036 FFF7FEFF 		bl	write_reg
  3305              	.LVL462:
  3306 003a 0028     		cmp	r0, #0
-ARM GAS  /tmp/ccHlG55l.s 			page 59
+ARM GAS  /tmp/ccDxM7oT.s 			page 59
 
 
  3307 003c EBD1     		bne	.L215
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  3361              	po8030_get_image_size:
  3362              	.LFB275:
  3363              		.loc 1 991 0
-ARM GAS  /tmp/ccHlG55l.s 			page 60
+ARM GAS  /tmp/ccDxM7oT.s 			page 60
 
 
  3364              		.cfi_startproc
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  3418              		.thumb_func
  3419              		.fpu fpv4-sp-d16
  3420              		.type	po8030_is_connected, %function
-ARM GAS  /tmp/ccHlG55l.s 			page 61
+ARM GAS  /tmp/ccDxM7oT.s 			page 61
 
 
  3421              	po8030_is_connected:
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  3475              	.LVL472:
  3476 0036 F7E7     		b	.L234
  3477              	.L238:
-ARM GAS  /tmp/ccHlG55l.s 			page 62
+ARM GAS  /tmp/ccDxM7oT.s 			page 62
 
 
  3478              		.loc 1 1007 0
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  3531              		.file 36 "../e-puck2_main-processor/ChibiOS//os/hal/ports/STM32/LLD/I2Cv1/i2c_lld.h"
  3532              		.file 37 "../e-puck2_main-processor/ChibiOS//os/hal/include/i2s.h"
  3533              		.file 38 "../e-puck2_main-processor/ChibiOS//os/hal/ports/STM32/LLD/SPIv1/i2s_lld.h"
-ARM GAS  /tmp/ccHlG55l.s 			page 63
+ARM GAS  /tmp/ccDxM7oT.s 			page 63
 
 
  3534              		.file 39 "../e-puck2_main-processor/ChibiOS//os/hal/include/pwm.h"
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  3588 004f 19160000 		.4byte	.LASF3
  3589 0053 04       		.uleb128 0x4
  3590 0054 46200000 		.4byte	.LASF5
-ARM GAS  /tmp/ccHlG55l.s 			page 64
+ARM GAS  /tmp/ccDxM7oT.s 			page 64
 
 
  3591 0058 03       		.byte	0x3
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  3645 00c4 03       		.byte	0x3
  3646 00c5 69       		.byte	0x69
  3647 00c6 CA000000 		.4byte	0xca
-ARM GAS  /tmp/ccHlG55l.s 			page 65
+ARM GAS  /tmp/ccDxM7oT.s 			page 65
 
 
  3648 00ca 02       		.uleb128 0x2
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  3702 0142 05       		.byte	0x5
  3703 0143 46       		.byte	0x46
  3704 0144 27010000 		.4byte	0x127
-ARM GAS  /tmp/ccHlG55l.s 			page 66
+ARM GAS  /tmp/ccDxM7oT.s 			page 66
 
 
  3705 0148 04       		.uleb128 0x4
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  3759 01bd 12010000 		.4byte	0x112
  3760 01c1 06       		.uleb128 0x6
  3761 01c2 B6010000 		.4byte	0x1b6
-ARM GAS  /tmp/ccHlG55l.s 			page 67
+ARM GAS  /tmp/ccDxM7oT.s 			page 67
 
 
  3762 01c6 04       		.uleb128 0x4
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  3816 0232 2E180000 		.4byte	.LASF47
  3817 0236 07       		.byte	0x7
  3818 0237 D8       		.byte	0xd8
-ARM GAS  /tmp/ccHlG55l.s 			page 68
+ARM GAS  /tmp/ccDxM7oT.s 			page 68
 
 
  3819 0238 91100000 		.4byte	0x1091
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  3873 02a8 7F010000 		.4byte	0x17f
  3874 02ac 38       		.byte	0x38
  3875 02ad 0A       		.uleb128 0xa
-ARM GAS  /tmp/ccHlG55l.s 			page 69
+ARM GAS  /tmp/ccDxM7oT.s 			page 69
 
 
  3876 02ae C21A0000 		.4byte	.LASF56
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  3930 0322 00       		.byte	0
  3931 0323 00       		.byte	0
  3932 0324 04       		.uleb128 0x4
-ARM GAS  /tmp/ccHlG55l.s 			page 70
+ARM GAS  /tmp/ccDxM7oT.s 			page 70
 
 
  3933 0325 D2140000 		.4byte	.LASF65
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  3987 0398 07       		.byte	0x7
  3988 0399 9701     		.2byte	0x197
  3989 039b FA020000 		.4byte	0x2fa
-ARM GAS  /tmp/ccHlG55l.s 			page 71
+ARM GAS  /tmp/ccDxM7oT.s 			page 71
 
 
  3990 039f 10       		.byte	0x10
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  4044 0410 07       		.byte	0x7
  4045 0411 6E01     		.2byte	0x16e
  4046 0413 B6010000 		.4byte	0x1b6
-ARM GAS  /tmp/ccHlG55l.s 			page 72
+ARM GAS  /tmp/ccDxM7oT.s 			page 72
 
 
  4047 0417 08       		.byte	0x8
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  4101 0487 8B040000 		.4byte	0x48b
  4102 048b 10       		.uleb128 0x10
  4103 048c 3F1A0000 		.4byte	.LASF87
-ARM GAS  /tmp/ccHlG55l.s 			page 73
+ARM GAS  /tmp/ccDxM7oT.s 			page 73
 
 
  4104 0490 1404     		.2byte	0x414
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  4158 0506 07       		.byte	0x7
  4159 0507 CE01     		.2byte	0x1ce
  4160 0509 80040000 		.4byte	0x480
-ARM GAS  /tmp/ccHlG55l.s 			page 74
+ARM GAS  /tmp/ccDxM7oT.s 			page 74
 
 
  4161 050d 2C       		.byte	0x2c
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  4215 0581 74060000 		.4byte	0x674
  4216 0585 18       		.uleb128 0x18
  4217 0586 535200   		.ascii	"SR\000"
-ARM GAS  /tmp/ccHlG55l.s 			page 75
+ARM GAS  /tmp/ccDxM7oT.s 			page 75
 
 
  4218 0589 0A       		.byte	0xa
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  4272 05f5 0A       		.byte	0xa
  4273 05f6 CF       		.byte	0xcf
  4274 05f7 1D010000 		.4byte	0x11d
-ARM GAS  /tmp/ccHlG55l.s 			page 76
+ARM GAS  /tmp/ccDxM7oT.s 			page 76
 
 
  4275 05fb 24       		.byte	0x24
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  4329 0667 48       		.byte	0x48
  4330 0668 18       		.uleb128 0x18
  4331 0669 445200   		.ascii	"DR\000"
-ARM GAS  /tmp/ccHlG55l.s 			page 77
+ARM GAS  /tmp/ccDxM7oT.s 			page 77
 
 
  4332 066c 0A       		.byte	0xa
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  4386 06d2 1D010000 		.4byte	0x11d
  4387 06d6 00       		.byte	0
  4388 06d7 08       		.uleb128 0x8
-ARM GAS  /tmp/ccHlG55l.s 			page 78
+ARM GAS  /tmp/ccDxM7oT.s 			page 78
 
 
  4389 06d8 D8190000 		.4byte	.LASF120
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  4443 0747 0D01     		.2byte	0x10d
  4444 0749 1D010000 		.4byte	0x11d
  4445 074d 00       		.byte	0
-ARM GAS  /tmp/ccHlG55l.s 			page 79
+ARM GAS  /tmp/ccDxM7oT.s 			page 79
 
 
  4446 074e 09       		.uleb128 0x9
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  4500 07c4 11       		.uleb128 0x11
  4501 07c5 021F0000 		.4byte	.LASF129
  4502 07c9 0A       		.byte	0xa
-ARM GAS  /tmp/ccHlG55l.s 			page 80
+ARM GAS  /tmp/ccDxM7oT.s 			page 80
 
 
  4503 07ca 1701     		.2byte	0x117
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  4557 0848 2001     		.2byte	0x120
  4558 084a 1D010000 		.4byte	0x11d
  4559 084e 1C02     		.2byte	0x21c
-ARM GAS  /tmp/ccHlG55l.s 			page 81
+ARM GAS  /tmp/ccDxM7oT.s 			page 81
 
 
  4560 0850 11       		.uleb128 0x11
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  4614 08ca 38       		.byte	0x38
  4615 08cb 0A       		.byte	0xa
  4616 08cc 3601     		.2byte	0x136
-ARM GAS  /tmp/ccHlG55l.s 			page 82
+ARM GAS  /tmp/ccDxM7oT.s 			page 82
 
 
  4617 08ce 87090000 		.4byte	0x987
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  4671 0945 20       		.byte	0x20
  4672 0946 0A       		.uleb128 0xa
  4673 0947 18180000 		.4byte	.LASF149
-ARM GAS  /tmp/ccHlG55l.s 			page 83
+ARM GAS  /tmp/ccDxM7oT.s 			page 83
 
 
  4674 094b 0A       		.byte	0xa
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  4728 09bb 6F01     		.2byte	0x16f
  4729 09bd 1D010000 		.4byte	0x11d
  4730 09c1 08       		.byte	0x8
-ARM GAS  /tmp/ccHlG55l.s 			page 84
+ARM GAS  /tmp/ccDxM7oT.s 			page 84
 
 
  4731 09c2 0A       		.uleb128 0xa
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  4785 0a37 43523200 		.ascii	"CR2\000"
  4786 0a3b 0A       		.byte	0xa
  4787 0a3c 4202     		.2byte	0x242
-ARM GAS  /tmp/ccHlG55l.s 			page 85
+ARM GAS  /tmp/ccDxM7oT.s 			page 85
 
 
  4788 0a3e 1D010000 		.4byte	0x11d
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  4842 0ab1 4B02     		.2byte	0x24b
  4843 0ab3 200A0000 		.4byte	0xa20
  4844 0ab7 19       		.uleb128 0x19
-ARM GAS  /tmp/ccHlG55l.s 			page 86
+ARM GAS  /tmp/ccDxM7oT.s 			page 86
 
 
  4845 0ab8 84       		.byte	0x84
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  4899 0b2d 0A       		.byte	0xa
  4900 0b2e C902     		.2byte	0x2c9
  4901 0b30 22010000 		.4byte	0x122
-ARM GAS  /tmp/ccHlG55l.s 			page 87
+ARM GAS  /tmp/ccDxM7oT.s 			page 87
 
 
  4902 0b34 20       		.byte	0x20
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  4956 0ba9 48       		.byte	0x48
  4957 0baa 0A       		.uleb128 0xa
  4958 0bab F01A0000 		.4byte	.LASF130
-ARM GAS  /tmp/ccHlG55l.s 			page 88
+ARM GAS  /tmp/ccDxM7oT.s 			page 88
 
 
  4959 0baf 0A       		.byte	0xa
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  5013 0c21 0A       		.byte	0xa
  5014 0c22 E102     		.2byte	0x2e1
  5015 0c24 1D010000 		.4byte	0x11d
-ARM GAS  /tmp/ccHlG55l.s 			page 89
+ARM GAS  /tmp/ccDxM7oT.s 			page 89
 
 
  5016 0c28 10       		.byte	0x10
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  5070 0c98 09       		.uleb128 0x9
  5071 0c99 43523100 		.ascii	"CR1\000"
  5072 0c9d 0A       		.byte	0xa
-ARM GAS  /tmp/ccHlG55l.s 			page 90
+ARM GAS  /tmp/ccDxM7oT.s 			page 90
 
 
  5073 0c9e 0E03     		.2byte	0x30e
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  5127 0d15 0B       		.byte	0xb
  5128 0d16 8A       		.byte	0x8a
  5129 0d17 5E0E0000 		.4byte	0xe5e
-ARM GAS  /tmp/ccHlG55l.s 			page 91
+ARM GAS  /tmp/ccDxM7oT.s 			page 91
 
 
  5130 0d1b 00       		.byte	0
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  5184 0d84 EE0C0000 		.4byte	0xcee
  5185 0d88 1C       		.byte	0x1c
  5186 0d89 18       		.uleb128 0x18
-ARM GAS  /tmp/ccHlG55l.s 			page 92
+ARM GAS  /tmp/ccDxM7oT.s 			page 92
 
 
  5187 0d8a 73323400 		.ascii	"s24\000"
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  5241 0dfc 723500   		.ascii	"r5\000"
  5242 0dff 0C       		.byte	0xc
  5243 0e00 0801     		.2byte	0x108
-ARM GAS  /tmp/ccHlG55l.s 			page 93
+ARM GAS  /tmp/ccDxM7oT.s 			page 93
 
 
  5244 0e02 EE0C0000 		.4byte	0xcee
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  5298 0e6d 5A1B0000 		.4byte	.LASF190
  5299 0e71 0D       		.byte	0xd
  5300 0e72 55       		.byte	0x55
-ARM GAS  /tmp/ccHlG55l.s 			page 94
+ARM GAS  /tmp/ccDxM7oT.s 			page 94
 
 
  5301 0e73 B6010000 		.4byte	0x1b6
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  5355 0edd 9D0E0000 		.4byte	0xe9d
  5356 0ee1 EC0E0000 		.4byte	0xeec
  5357 0ee5 14       		.uleb128 0x14
-ARM GAS  /tmp/ccHlG55l.s 			page 95
+ARM GAS  /tmp/ccDxM7oT.s 			page 95
 
 
  5358 0ee6 2C000000 		.4byte	0x2c
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  5412 0f4d 08       		.uleb128 0x8
  5413 0f4e 99150000 		.4byte	.LASF204
  5414 0f52 0E       		.byte	0xe
-ARM GAS  /tmp/ccHlG55l.s 			page 96
+ARM GAS  /tmp/ccDxM7oT.s 			page 96
 
 
  5415 0f53 4D       		.byte	0x4d
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  5469 0fbd 1E       		.uleb128 0x1e
  5470 0fbe 06070000 		.4byte	.LASF212
  5471 0fc2 07       		.byte	0x7
-ARM GAS  /tmp/ccHlG55l.s 			page 97
+ARM GAS  /tmp/ccDxM7oT.s 			page 97
 
 
  5472 0fc3 0801     		.2byte	0x108
@@ -5818,7 +5818,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  5526 1038 FF090000 		.4byte	.LASF221
  5527 103c 14       		.byte	0x14
  5528 103d 11       		.byte	0x11
-ARM GAS  /tmp/ccHlG55l.s 			page 98
+ARM GAS  /tmp/ccDxM7oT.s 			page 98
 
 
  5529 103e 39       		.byte	0x39
@@ -5878,7 +5878,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  5583 10ad 1F       		.uleb128 0x1f
  5584 10ae 636800   		.ascii	"ch\000"
  5585 10b1 07       		.byte	0x7
-ARM GAS  /tmp/ccHlG55l.s 			page 99
+ARM GAS  /tmp/ccDxM7oT.s 			page 99
 
 
  5586 10b2 0902     		.2byte	0x209
@@ -5938,7 +5938,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  5640 111f 0B       		.byte	0xb
  5641 1120 08       		.uleb128 0x8
  5642 1121 C0040000 		.4byte	.LASF235
-ARM GAS  /tmp/ccHlG55l.s 			page 100
+ARM GAS  /tmp/ccDxM7oT.s 			page 100
 
 
  5643 1125 12       		.byte	0x12
@@ -5998,7 +5998,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  5697 1191 12       		.byte	0x12
  5698 1192 48       		.byte	0x48
  5699 1193 DC000000 		.4byte	0xdc
-ARM GAS  /tmp/ccHlG55l.s 			page 101
+ARM GAS  /tmp/ccDxM7oT.s 			page 101
 
 
  5700 1197 15       		.byte	0x15
@@ -6058,7 +6058,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  5754 1209 13       		.byte	0x13
  5755 120a 3F       		.byte	0x3f
  5756 120b 8A010000 		.4byte	0x18a
-ARM GAS  /tmp/ccHlG55l.s 			page 102
+ARM GAS  /tmp/ccDxM7oT.s 			page 102
 
 
  5757 120f 08       		.byte	0x8
@@ -6118,7 +6118,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  5811 127b 14       		.byte	0x14
  5812 127c 4F       		.byte	0x4f
  5813 127d 3A000000 		.4byte	0x3a
-ARM GAS  /tmp/ccHlG55l.s 			page 103
+ARM GAS  /tmp/ccDxM7oT.s 			page 103
 
 
  5814 1281 08       		.byte	0x8
@@ -6178,7 +6178,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  5868 12ed 0B       		.uleb128 0xb
  5869 12ee 04       		.byte	0x4
  5870 12ef DC000000 		.4byte	0xdc
-ARM GAS  /tmp/ccHlG55l.s 			page 104
+ARM GAS  /tmp/ccDxM7oT.s 			page 104
 
 
  5871 12f3 04       		.uleb128 0x4
@@ -6238,7 +6238,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  5925 1371 D7030000 		.4byte	0x3d7
  5926 1375 00       		.byte	0
  5927 1376 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccHlG55l.s 			page 105
+ARM GAS  /tmp/ccDxM7oT.s 			page 105
 
 
  5928 1377 04       		.byte	0x4
@@ -6298,7 +6298,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  5982 13e6 14       		.uleb128 0x14
  5983 13e7 2C000000 		.4byte	0x2c
  5984 13eb 0F       		.byte	0xf
-ARM GAS  /tmp/ccHlG55l.s 			page 106
+ARM GAS  /tmp/ccDxM7oT.s 			page 106
 
 
  5985 13ec 00       		.byte	0
@@ -6358,7 +6358,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  6039 146e 0E       		.uleb128 0xe
  6040 146f 3A000000 		.4byte	0x3a
  6041 1473 0E       		.uleb128 0xe
-ARM GAS  /tmp/ccHlG55l.s 			page 107
+ARM GAS  /tmp/ccDxM7oT.s 			page 107
 
 
  6042 1474 B6010000 		.4byte	0x1b6
@@ -6418,7 +6418,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  6096 14dd 12010000 		.4byte	0x112
  6097 14e1 00       		.byte	0
  6098 14e2 08       		.uleb128 0x8
-ARM GAS  /tmp/ccHlG55l.s 			page 108
+ARM GAS  /tmp/ccDxM7oT.s 			page 108
 
 
  6099 14e3 DD190000 		.4byte	.LASF289
@@ -6478,7 +6478,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  6153 155e 20       		.uleb128 0x20
  6154 155f 09150000 		.4byte	0x1509
  6155 1563 72150000 		.4byte	0x1572
-ARM GAS  /tmp/ccHlG55l.s 			page 109
+ARM GAS  /tmp/ccDxM7oT.s 			page 109
 
 
  6156 1567 0E       		.uleb128 0xe
@@ -6538,7 +6538,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  6210 15cf 17       		.uleb128 0x17
  6211 15d0 2C       		.byte	0x2c
  6212 15d1 17       		.byte	0x17
-ARM GAS  /tmp/ccHlG55l.s 			page 110
+ARM GAS  /tmp/ccDxM7oT.s 			page 110
 
 
  6213 15d2 A9       		.byte	0xa9
@@ -6598,7 +6598,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  6267 163e 1D010000 		.4byte	0x11d
  6268 1642 20       		.byte	0x20
  6269 1643 08       		.uleb128 0x8
-ARM GAS  /tmp/ccHlG55l.s 			page 111
+ARM GAS  /tmp/ccDxM7oT.s 			page 111
 
 
  6270 1644 A8180000 		.4byte	.LASF300
@@ -6658,7 +6658,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  6324 16b0 17       		.byte	0x17
  6325 16b1 CD       		.byte	0xcd
  6326 16b2 12010000 		.4byte	0x112
-ARM GAS  /tmp/ccHlG55l.s 			page 112
+ARM GAS  /tmp/ccDxM7oT.s 			page 112
 
 
  6327 16b6 14       		.byte	0x14
@@ -6718,7 +6718,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  6381 171f 08       		.uleb128 0x8
  6382 1720 2B0A0000 		.4byte	.LASF315
  6383 1724 17       		.byte	0x17
-ARM GAS  /tmp/ccHlG55l.s 			page 113
+ARM GAS  /tmp/ccDxM7oT.s 			page 113
 
 
  6384 1725 F4       		.byte	0xf4
@@ -6778,7 +6778,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  6438 1796 03       		.byte	0x3
  6439 1797 22       		.uleb128 0x22
  6440 1798 A2050000 		.4byte	.LASF325
-ARM GAS  /tmp/ccHlG55l.s 			page 114
+ARM GAS  /tmp/ccDxM7oT.s 			page 114
 
 
  6441 179c 04       		.byte	0x4
@@ -6838,7 +6838,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  6495 180f A4170000 		.4byte	0x17a4
  6496 1813 00       		.byte	0
  6497 1814 0A       		.uleb128 0xa
-ARM GAS  /tmp/ccHlG55l.s 			page 115
+ARM GAS  /tmp/ccDxM7oT.s 			page 115
 
 
  6498 1815 F2180000 		.4byte	.LASF335
@@ -6898,7 +6898,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  6552 188a 1A       		.uleb128 0x1a
  6553 188b 20180000 		.4byte	.LASF343
  6554 188f 19       		.byte	0x19
-ARM GAS  /tmp/ccHlG55l.s 			page 116
+ARM GAS  /tmp/ccDxM7oT.s 			page 116
 
 
  6555 1890 4501     		.2byte	0x145
@@ -6958,7 +6958,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  6609 1907 19       		.byte	0x19
  6610 1908 6401     		.2byte	0x164
  6611 190a 8A180000 		.4byte	0x188a
-ARM GAS  /tmp/ccHlG55l.s 			page 117
+ARM GAS  /tmp/ccDxM7oT.s 			page 117
 
 
  6612 190e 04       		.byte	0x4
@@ -7018,7 +7018,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  6666 1980 DF180000 		.4byte	0x18df
  6667 1984 05       		.uleb128 0x5
  6668 1985 78190000 		.4byte	0x1978
-ARM GAS  /tmp/ccHlG55l.s 			page 118
+ARM GAS  /tmp/ccDxM7oT.s 			page 118
 
 
  6669 1989 19       		.uleb128 0x19
@@ -7078,7 +7078,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  6723 19fb C6080000 		.4byte	.LASF360
  6724 19ff 00       		.byte	0
  6725 1a00 22       		.uleb128 0x22
-ARM GAS  /tmp/ccHlG55l.s 			page 119
+ARM GAS  /tmp/ccDxM7oT.s 			page 119
 
 
  6726 1a01 7E000000 		.4byte	.LASF361
@@ -7138,7 +7138,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  6780 1a70 0A       		.uleb128 0xa
  6781 1a71 DC130000 		.4byte	.LASF334
  6782 1a75 1B       		.byte	0x1b
-ARM GAS  /tmp/ccHlG55l.s 			page 120
+ARM GAS  /tmp/ccDxM7oT.s 			page 120
 
 
  6783 1a76 0A01     		.2byte	0x10a
@@ -7198,7 +7198,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  6837 1aeb 3F01     		.2byte	0x13f
  6838 1aed F91A0000 		.4byte	0x1af9
  6839 1af1 2C       		.byte	0x2c
-ARM GAS  /tmp/ccHlG55l.s 			page 121
+ARM GAS  /tmp/ccDxM7oT.s 			page 121
 
 
  6840 1af2 00       		.byte	0
@@ -7258,7 +7258,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  6894 1b5d 64616300 		.ascii	"dac\000"
  6895 1b61 1D       		.byte	0x1d
  6896 1b62 FD       		.byte	0xfd
-ARM GAS  /tmp/ccHlG55l.s 			page 122
+ARM GAS  /tmp/ccDxM7oT.s 			page 122
 
 
  6897 1b63 B71B0000 		.4byte	0x1bb7
@@ -7318,7 +7318,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  6951 1bda 0C       		.uleb128 0xc
  6952 1bdb 390B0000 		.4byte	.LASF388
  6953 1bdf 30       		.byte	0x30
-ARM GAS  /tmp/ccHlG55l.s 			page 123
+ARM GAS  /tmp/ccDxM7oT.s 			page 123
 
 
  6954 1be0 1D       		.byte	0x1d
@@ -7378,7 +7378,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  7008 1c55 1D       		.byte	0x1d
  7009 1c56 2001     		.2byte	0x120
  7010 1c58 F7000000 		.4byte	0xf7
-ARM GAS  /tmp/ccHlG55l.s 			page 124
+ARM GAS  /tmp/ccDxM7oT.s 			page 124
 
 
  7011 1c5c 05       		.uleb128 0x5
@@ -7438,7 +7438,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  7065 1cd2 0E       		.uleb128 0xe
  7066 1cd3 AF1C0000 		.4byte	0x1caf
  7067 1cd7 0E       		.uleb128 0xe
-ARM GAS  /tmp/ccHlG55l.s 			page 125
+ARM GAS  /tmp/ccDxM7oT.s 			page 125
 
 
  7068 1cd8 7C1C0000 		.4byte	0x1c7c
@@ -7498,7 +7498,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  7122 1d48 1A       		.uleb128 0x1a
  7123 1d49 A9100000 		.4byte	.LASF401
  7124 1d4d 1D       		.byte	0x1d
-ARM GAS  /tmp/ccHlG55l.s 			page 126
+ARM GAS  /tmp/ccDxM7oT.s 			page 126
 
 
  7125 1d4e 6701     		.2byte	0x167
@@ -7558,7 +7558,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  7179 1dc0 A6210000 		.4byte	.LASF407
  7180 1dc4 01       		.byte	0x1
  7181 1dc5 22       		.uleb128 0x22
-ARM GAS  /tmp/ccHlG55l.s 			page 127
+ARM GAS  /tmp/ccDxM7oT.s 			page 127
 
 
  7182 1dc6 96010000 		.4byte	.LASF408
@@ -7618,7 +7618,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  7236 1e35 D71D0000 		.4byte	0x1dd7
  7237 1e39 17       		.uleb128 0x17
  7238 1e3a 08       		.byte	0x8
-ARM GAS  /tmp/ccHlG55l.s 			page 128
+ARM GAS  /tmp/ccDxM7oT.s 			page 128
 
 
  7239 1e3b 1F       		.byte	0x1f
@@ -7678,7 +7678,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  7293 1ea6 D71D0000 		.4byte	0x1dd7
  7294 1eaa 21       		.uleb128 0x21
  7295 1eab 07       		.byte	0x7
-ARM GAS  /tmp/ccHlG55l.s 			page 129
+ARM GAS  /tmp/ccDxM7oT.s 			page 129
 
 
  7296 1eac 01       		.byte	0x1
@@ -7738,7 +7738,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  7350 1f1f 08       		.byte	0x8
  7351 1f20 09       		.uleb128 0x9
  7352 1f21 74696D00 		.ascii	"tim\000"
-ARM GAS  /tmp/ccHlG55l.s 			page 130
+ARM GAS  /tmp/ccDxM7oT.s 			page 130
 
 
  7353 1f25 21       		.byte	0x21
@@ -7798,7 +7798,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  7407 1f94 1D010000 		.4byte	0x11d
  7408 1f98 10       		.byte	0x10
  7409 1f99 09       		.uleb128 0x9
-ARM GAS  /tmp/ccHlG55l.s 			page 131
+ARM GAS  /tmp/ccDxM7oT.s 			page 131
 
 
  7410 1f9a 45475200 		.ascii	"EGR\000"
@@ -7858,7 +7858,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  7464 200f 69010000 		.4byte	.LASF432
  7465 2013 22       		.byte	0x22
  7466 2014 AD01     		.2byte	0x1ad
-ARM GAS  /tmp/ccHlG55l.s 			page 132
+ARM GAS  /tmp/ccDxM7oT.s 			page 132
 
 
  7467 2016 1D010000 		.4byte	0x11d
@@ -7918,7 +7918,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  7521 208a 0A       		.uleb128 0xa
  7522 208b 24140000 		.4byte	.LASF439
  7523 208f 21       		.byte	0x21
-ARM GAS  /tmp/ccHlG55l.s 			page 133
+ARM GAS  /tmp/ccDxM7oT.s 			page 133
 
 
  7524 2090 8501     		.2byte	0x185
@@ -7978,7 +7978,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  7578 2106 22       		.uleb128 0x22
  7579 2107 5D0C0000 		.4byte	.LASF446
  7580 210b 01       		.byte	0x1
-ARM GAS  /tmp/ccHlG55l.s 			page 134
+ARM GAS  /tmp/ccDxM7oT.s 			page 134
 
 
  7581 210c 22       		.uleb128 0x22
@@ -8038,7 +8038,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  7635 217c 24       		.byte	0x24
  7636 217d 7D01     		.2byte	0x17d
  7637 217f 96210000 		.4byte	0x2196
-ARM GAS  /tmp/ccHlG55l.s 			page 135
+ARM GAS  /tmp/ccDxM7oT.s 			page 135
 
 
  7638 2183 22       		.uleb128 0x22
@@ -8098,7 +8098,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  7692 21f6 24       		.byte	0x24
  7693 21f7 9801     		.2byte	0x198
  7694 21f9 8D220000 		.4byte	0x228d
-ARM GAS  /tmp/ccHlG55l.s 			page 136
+ARM GAS  /tmp/ccDxM7oT.s 			page 136
 
 
  7695 21fd 0A       		.uleb128 0xa
@@ -8158,7 +8158,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  7749 2272 0A       		.uleb128 0xa
  7750 2273 89010000 		.4byte	.LASF472
  7751 2277 24       		.byte	0x24
-ARM GAS  /tmp/ccHlG55l.s 			page 137
+ARM GAS  /tmp/ccDxM7oT.s 			page 137
 
 
  7752 2278 C601     		.2byte	0x1c6
@@ -8218,7 +8218,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  7806 22e7 0C       		.uleb128 0xc
  7807 22e8 6D210000 		.4byte	.LASF480
  7808 22ec 20       		.byte	0x20
-ARM GAS  /tmp/ccHlG55l.s 			page 138
+ARM GAS  /tmp/ccDxM7oT.s 			page 138
 
 
  7809 22ed 26       		.byte	0x26
@@ -8278,7 +8278,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  7863 2362 26       		.byte	0x26
  7864 2363 EB       		.byte	0xeb
  7865 2364 68230000 		.4byte	0x2368
-ARM GAS  /tmp/ccHlG55l.s 			page 139
+ARM GAS  /tmp/ccDxM7oT.s 			page 139
 
 
  7866 2368 0B       		.uleb128 0xb
@@ -8338,7 +8338,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  7920 23d7 EC000000 		.4byte	0xec
  7921 23db 12       		.byte	0x12
  7922 23dc 00       		.byte	0
-ARM GAS  /tmp/ccHlG55l.s 			page 140
+ARM GAS  /tmp/ccDxM7oT.s 			page 140
 
 
  7923 23dd 0B       		.uleb128 0xb
@@ -8398,7 +8398,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  7977 244c AC240000 		.4byte	0x24ac
  7978 2450 0A       		.uleb128 0xa
  7979 2451 DC130000 		.4byte	.LASF334
-ARM GAS  /tmp/ccHlG55l.s 			page 141
+ARM GAS  /tmp/ccDxM7oT.s 			page 141
 
 
  7980 2455 28       		.byte	0x28
@@ -8458,7 +8458,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  8034 24c8 0B       		.uleb128 0xb
  8035 24c9 04       		.byte	0x4
  8036 24ca 38240000 		.4byte	0x2438
-ARM GAS  /tmp/ccHlG55l.s 			page 142
+ARM GAS  /tmp/ccDxM7oT.s 			page 142
 
 
  8037 24ce 1A       		.uleb128 0x1a
@@ -8518,7 +8518,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  8091 2544 0A       		.uleb128 0xa
  8092 2545 6E110000 		.4byte	.LASF494
  8093 2549 28       		.byte	0x28
-ARM GAS  /tmp/ccHlG55l.s 			page 143
+ARM GAS  /tmp/ccDxM7oT.s 			page 143
 
 
  8094 254a 5601     		.2byte	0x156
@@ -8578,7 +8578,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  8148 25c1 38240000 		.4byte	0x2438
  8149 25c5 15       		.uleb128 0x15
  8150 25c6 71100000 		.4byte	.LASF505
-ARM GAS  /tmp/ccHlG55l.s 			page 144
+ARM GAS  /tmp/ccDxM7oT.s 			page 144
 
 
  8151 25ca 28       		.byte	0x28
@@ -8638,7 +8638,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  8205 2639 DC130000 		.4byte	.LASF334
  8206 263d 29       		.byte	0x29
  8207 263e 7B       		.byte	0x7b
-ARM GAS  /tmp/ccHlG55l.s 			page 145
+ARM GAS  /tmp/ccDxM7oT.s 			page 145
 
 
  8208 263f FD250000 		.4byte	0x25fd
@@ -8698,7 +8698,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  8262 26ab 47130000 		.4byte	0x1347
  8263 26af 04       		.byte	0x4
  8264 26b0 18       		.uleb128 0x18
-ARM GAS  /tmp/ccHlG55l.s 			page 146
+ARM GAS  /tmp/ccDxM7oT.s 			page 146
 
 
  8265 26b1 70757400 		.ascii	"put\000"
@@ -8758,7 +8758,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  8319 271d 70000000 		.4byte	0x70
  8320 2721 2B       		.byte	0x2b
  8321 2722 6C       		.byte	0x6c
-ARM GAS  /tmp/ccHlG55l.s 			page 147
+ARM GAS  /tmp/ccDxM7oT.s 			page 147
 
 
  8322 2723 3A270000 		.4byte	0x273a
@@ -8818,7 +8818,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  8376 2795 08       		.byte	0x8
  8377 2796 18       		.uleb128 0x18
  8378 2797 63736400 		.ascii	"csd\000"
-ARM GAS  /tmp/ccHlG55l.s 			page 148
+ARM GAS  /tmp/ccDxM7oT.s 			page 148
 
 
  8379 279b 2C       		.byte	0x2c
@@ -8878,7 +8878,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  8433 280c 2C       		.byte	0x2c
  8434 280d 1901     		.2byte	0x119
  8435 280f C4280000 		.4byte	0x28c4
-ARM GAS  /tmp/ccHlG55l.s 			page 149
+ARM GAS  /tmp/ccDxM7oT.s 			page 149
 
 
  8436 2813 48       		.byte	0x48
@@ -8938,7 +8938,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  8490 287c EC       		.byte	0xec
  8491 287d 10150000 		.4byte	0x1510
  8492 2881 0C       		.byte	0xc
-ARM GAS  /tmp/ccHlG55l.s 			page 150
+ARM GAS  /tmp/ccDxM7oT.s 			page 150
 
 
  8493 2882 08       		.uleb128 0x8
@@ -8998,7 +8998,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  8547 28ef 22       		.uleb128 0x22
  8548 28f0 F81E0000 		.4byte	.LASF546
  8549 28f4 02       		.byte	0x2
-ARM GAS  /tmp/ccHlG55l.s 			page 151
+ARM GAS  /tmp/ccDxM7oT.s 			page 151
 
 
  8550 28f5 22       		.uleb128 0x22
@@ -9058,7 +9058,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  8604 2968 D3000000 		.4byte	.LASF471
  8605 296c 2E       		.byte	0x2e
  8606 296d DA01     		.2byte	0x1da
-ARM GAS  /tmp/ccHlG55l.s 			page 152
+ARM GAS  /tmp/ccDxM7oT.s 			page 152
 
 
  8607 296f C3190000 		.4byte	0x19c3
@@ -9118,7 +9118,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  8661 29e2 0A       		.uleb128 0xa
  8662 29e3 B2070000 		.4byte	.LASF553
  8663 29e7 2E       		.byte	0x2e
-ARM GAS  /tmp/ccHlG55l.s 			page 153
+ARM GAS  /tmp/ccDxM7oT.s 			page 153
 
 
  8664 29e8 B001     		.2byte	0x1b0
@@ -9178,7 +9178,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  8718 2a60 0A       		.uleb128 0xa
  8719 2a61 0A200000 		.4byte	.LASF558
  8720 2a65 30       		.byte	0x30
-ARM GAS  /tmp/ccHlG55l.s 			page 154
+ARM GAS  /tmp/ccDxM7oT.s 			page 154
 
 
  8721 2a66 8701     		.2byte	0x187
@@ -9238,7 +9238,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  8775 2adb B101     		.2byte	0x1b1
  8776 2add F7000000 		.4byte	0xf7
  8777 2ae1 4C       		.byte	0x4c
-ARM GAS  /tmp/ccHlG55l.s 			page 155
+ARM GAS  /tmp/ccDxM7oT.s 			page 155
 
 
  8778 2ae2 0A       		.uleb128 0xa
@@ -9298,7 +9298,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  8832 2b56 00       		.byte	0
  8833 2b57 04       		.uleb128 0x4
  8834 2b58 8E080000 		.4byte	.LASF574
-ARM GAS  /tmp/ccHlG55l.s 			page 156
+ARM GAS  /tmp/ccDxM7oT.s 			page 156
 
 
  8835 2b5c 2F       		.byte	0x2f
@@ -9358,7 +9358,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  8889 2bc8 C00F0000 		.4byte	.LASF586
  8890 2bcc 05       		.byte	0x5
  8891 2bcd 22       		.uleb128 0x22
-ARM GAS  /tmp/ccHlG55l.s 			page 157
+ARM GAS  /tmp/ccDxM7oT.s 			page 157
 
 
  8892 2bce E50C0000 		.4byte	.LASF587
@@ -9418,7 +9418,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  8946 2c3d 22130000 		.4byte	0x1322
  8947 2c41 04       		.byte	0x4
  8948 2c42 00       		.byte	0
-ARM GAS  /tmp/ccHlG55l.s 			page 158
+ARM GAS  /tmp/ccDxM7oT.s 			page 158
 
 
  8949 2c43 1A       		.uleb128 0x1a
@@ -9478,7 +9478,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  9003 2cbc 92050000 		.4byte	.LASF602
  9004 2cc0 2F       		.byte	0x2f
  9005 2cc1 6001     		.2byte	0x160
-ARM GAS  /tmp/ccHlG55l.s 			page 159
+ARM GAS  /tmp/ccDxM7oT.s 			page 159
 
 
  9006 2cc3 C72C0000 		.4byte	0x2cc7
@@ -9538,7 +9538,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  9060 2d39 1D010000 		.4byte	0x11d
  9061 2d3d 08       		.byte	0x8
  9062 2d3e 08       		.uleb128 0x8
-ARM GAS  /tmp/ccHlG55l.s 			page 160
+ARM GAS  /tmp/ccDxM7oT.s 			page 160
 
 
  9063 2d3f E9180000 		.4byte	.LASF607
@@ -9598,7 +9598,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  9117 2dab 31       		.byte	0x31
  9118 2dac 4A       		.byte	0x4a
  9119 2dad 1D010000 		.4byte	0x11d
-ARM GAS  /tmp/ccHlG55l.s 			page 161
+ARM GAS  /tmp/ccDxM7oT.s 			page 161
 
 
  9120 2db1 08       		.byte	0x8
@@ -9658,7 +9658,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  9174 2e1a 08       		.uleb128 0x8
  9175 2e1b D8150000 		.4byte	.LASF622
  9176 2e1f 31       		.byte	0x31
-ARM GAS  /tmp/ccHlG55l.s 			page 162
+ARM GAS  /tmp/ccDxM7oT.s 			page 162
 
 
  9177 2e20 5C       		.byte	0x5c
@@ -9718,7 +9718,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  9231 2e8c 1D010000 		.4byte	0x11d
  9232 2e90 04       		.byte	0x4
  9233 2e91 08       		.uleb128 0x8
-ARM GAS  /tmp/ccHlG55l.s 			page 163
+ARM GAS  /tmp/ccDxM7oT.s 			page 163
 
 
  9234 2e92 77060000 		.4byte	.LASF627
@@ -9778,7 +9778,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  9288 2efe A7170000 		.4byte	.LASF636
  9289 2f02 31       		.byte	0x31
  9290 2f03 78       		.byte	0x78
-ARM GAS  /tmp/ccHlG55l.s 			page 164
+ARM GAS  /tmp/ccDxM7oT.s 			page 164
 
 
  9291 2f04 1D010000 		.4byte	0x11d
@@ -9838,7 +9838,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  9345 2f73 1D010000 		.4byte	0x11d
  9346 2f77 0004     		.2byte	0x400
  9347 2f79 27       		.uleb128 0x27
-ARM GAS  /tmp/ccHlG55l.s 			page 165
+ARM GAS  /tmp/ccDxM7oT.s 			page 165
 
 
  9348 2f7a DA200000 		.4byte	.LASF645
@@ -9898,7 +9898,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  9402 2fef 686300   		.ascii	"hc\000"
  9403 2ff2 31       		.byte	0x31
  9404 2ff3 93       		.byte	0x93
-ARM GAS  /tmp/ccHlG55l.s 			page 166
+ARM GAS  /tmp/ccDxM7oT.s 			page 166
 
 
  9405 2ff4 9F310000 		.4byte	0x319f
@@ -9958,7 +9958,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  9459 3069 1D010000 		.4byte	0x11d
  9460 306d 1C08     		.2byte	0x81c
  9461 306f 27       		.uleb128 0x27
-ARM GAS  /tmp/ccHlG55l.s 			page 167
+ARM GAS  /tmp/ccDxM7oT.s 			page 167
 
 
  9462 3070 4A050000 		.4byte	.LASF663
@@ -10018,7 +10018,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  9516 30e5 A60B0000 		.4byte	.LASF672
  9517 30e9 31       		.byte	0x31
  9518 30ea AD       		.byte	0xad
-ARM GAS  /tmp/ccHlG55l.s 			page 168
+ARM GAS  /tmp/ccDxM7oT.s 			page 168
 
 
  9519 30eb D4310000 		.4byte	0x31d4
@@ -10078,7 +10078,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  9573 3160 13       		.uleb128 0x13
  9574 3161 1D010000 		.4byte	0x11d
  9575 3165 70310000 		.4byte	0x3170
-ARM GAS  /tmp/ccHlG55l.s 			page 169
+ARM GAS  /tmp/ccDxM7oT.s 			page 169
 
 
  9576 3169 14       		.uleb128 0x14
@@ -10138,7 +10138,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  9630 31e7 0F       		.byte	0xf
  9631 31e8 00       		.byte	0
  9632 31e9 13       		.uleb128 0x13
-ARM GAS  /tmp/ccHlG55l.s 			page 170
+ARM GAS  /tmp/ccDxM7oT.s 			page 170
 
 
  9633 31ea 632E0000 		.4byte	0x2e63
@@ -10198,7 +10198,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  9687 3260 08       		.byte	0x8
  9688 3261 00       		.byte	0
  9689 3262 04       		.uleb128 0x4
-ARM GAS  /tmp/ccHlG55l.s 			page 171
+ARM GAS  /tmp/ccDxM7oT.s 			page 171
 
 
  9690 3263 CE090000 		.4byte	.LASF681
@@ -10258,7 +10258,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  9744 32c9 08       		.uleb128 0x8
  9745 32ca D4060000 		.4byte	.LASF685
  9746 32ce 30       		.byte	0x30
-ARM GAS  /tmp/ccHlG55l.s 			page 172
+ARM GAS  /tmp/ccDxM7oT.s 			page 172
 
 
  9747 32cf D3       		.byte	0xd3
@@ -10318,7 +10318,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  9801 3339 3F330000 		.4byte	0x333f
  9802 333d 00       		.byte	0
  9803 333e 00       		.byte	0
-ARM GAS  /tmp/ccHlG55l.s 			page 173
+ARM GAS  /tmp/ccDxM7oT.s 			page 173
 
 
  9804 333f 0B       		.uleb128 0xb
@@ -10378,7 +10378,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  9858 33ad 00       		.byte	0
  9859 33ae 1A       		.uleb128 0x1a
  9860 33af BB190000 		.4byte	.LASF694
-ARM GAS  /tmp/ccHlG55l.s 			page 174
+ARM GAS  /tmp/ccDxM7oT.s 			page 174
 
 
  9861 33b3 30       		.byte	0x30
@@ -10438,7 +10438,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  9915 3426 4C340000 		.4byte	0x344c
  9916 342a 18       		.byte	0x18
  9917 342b 0A       		.uleb128 0xa
-ARM GAS  /tmp/ccHlG55l.s 			page 175
+ARM GAS  /tmp/ccDxM7oT.s 			page 175
 
 
  9918 342c BC100000 		.4byte	.LASF703
@@ -10498,7 +10498,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  9972 34a0 00       		.byte	0
  9973 34a1 1A       		.uleb128 0x1a
  9974 34a2 54100000 		.4byte	.LASF710
-ARM GAS  /tmp/ccHlG55l.s 			page 176
+ARM GAS  /tmp/ccDxM7oT.s 			page 176
 
 
  9975 34a6 30       		.byte	0x30
@@ -10558,7 +10558,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  10029 351a C4160000 		.4byte	.LASF713
  10030 351e 01       		.byte	0x1
  10031 351f 22       		.uleb128 0x22
-ARM GAS  /tmp/ccHlG55l.s 			page 177
+ARM GAS  /tmp/ccDxM7oT.s 			page 177
 
 
  10032 3520 8D060000 		.4byte	.LASF714
@@ -10618,7 +10618,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  10086 358f 54       		.byte	0x54
  10087 3590 29       		.uleb128 0x29
  10088 3591 6F6200   		.ascii	"ob\000"
-ARM GAS  /tmp/ccHlG55l.s 			page 178
+ARM GAS  /tmp/ccDxM7oT.s 			page 178
 
 
  10089 3594 32       		.byte	0x32
@@ -10678,7 +10678,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  10143 35ff 08       		.uleb128 0x8
  10144 3600 C5150000 		.4byte	.LASF517
  10145 3604 32       		.byte	0x32
-ARM GAS  /tmp/ccHlG55l.s 			page 179
+ARM GAS  /tmp/ccDxM7oT.s 			page 179
 
 
  10146 3605 DB       		.byte	0xdb
@@ -10738,7 +10738,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  10200 3674 14       		.uleb128 0x14
  10201 3675 2C000000 		.4byte	0x2c
  10202 3679 FF       		.byte	0xff
-ARM GAS  /tmp/ccHlG55l.s 			page 180
+ARM GAS  /tmp/ccDxM7oT.s 			page 180
 
 
  10203 367a 00       		.byte	0
@@ -10798,7 +10798,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  10257 36e0 45370000 		.4byte	0x3745
  10258 36e4 22       		.uleb128 0x22
  10259 36e5 E11B0000 		.4byte	.LASF731
-ARM GAS  /tmp/ccHlG55l.s 			page 181
+ARM GAS  /tmp/ccDxM7oT.s 			page 181
 
 
  10260 36e9 00       		.byte	0
@@ -10858,7 +10858,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  10314 3755 08       		.byte	0x8
  10315 3756 34       		.byte	0x34
  10316 3757 24       		.byte	0x24
-ARM GAS  /tmp/ccHlG55l.s 			page 182
+ARM GAS  /tmp/ccDxM7oT.s 			page 182
 
 
  10317 3758 99370000 		.4byte	0x3799
@@ -10918,7 +10918,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  10371 37c7 00000000 		.4byte	po8030_conf
  10372 37cb 2E       		.uleb128 0x2e
  10373 37cc CC070000 		.4byte	.LASF765
-ARM GAS  /tmp/ccHlG55l.s 			page 183
+ARM GAS  /tmp/ccDxM7oT.s 			page 183
 
 
  10374 37d0 01       		.byte	0x1
@@ -10978,7 +10978,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  10428 384b 56550000 		.4byte	0x5556
  10429 384f 00       		.byte	0
  10430 3850 2F       		.uleb128 0x2f
-ARM GAS  /tmp/ccHlG55l.s 			page 184
+ARM GAS  /tmp/ccDxM7oT.s 			page 184
 
 
  10431 3851 E5190000 		.4byte	.LASF760
@@ -11038,7 +11038,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  10485 38ce 14000000 		.4byte	.LVL457
  10486 38d2 43390000 		.4byte	0x3943
  10487 38d6 E0380000 		.4byte	0x38e0
-ARM GAS  /tmp/ccHlG55l.s 			page 185
+ARM GAS  /tmp/ccDxM7oT.s 			page 185
 
 
  10488 38da 33       		.uleb128 0x33
@@ -11098,7 +11098,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  10542 3925 5F550000 		.4byte	0x555f
  10543 3929 39390000 		.4byte	0x3939
  10544 392d 33       		.uleb128 0x33
-ARM GAS  /tmp/ccHlG55l.s 			page 186
+ARM GAS  /tmp/ccDxM7oT.s 			page 186
 
 
  10545 392e 01       		.uleb128 0x1
@@ -11158,7 +11158,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  10599 39a4 F4000000 		.4byte	.LLST74
  10600 39a8 38       		.uleb128 0x38
  10601 39a9 1C000000 		.4byte	.LVL444
-ARM GAS  /tmp/ccHlG55l.s 			page 187
+ARM GAS  /tmp/ccDxM7oT.s 			page 187
 
 
  10602 39ad 5F550000 		.4byte	0x555f
@@ -11218,7 +11218,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  10656 39f8 01       		.uleb128 0x1
  10657 39f9 34       		.byte	0x34
  10658 39fa 00       		.byte	0
-ARM GAS  /tmp/ccHlG55l.s 			page 188
+ARM GAS  /tmp/ccDxM7oT.s 			page 188
 
 
  10659 39fb 34       		.uleb128 0x34
@@ -11278,7 +11278,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  10713 3a7b 3B       		.uleb128 0x3b
  10714 3a7c 550A0000 		.4byte	.LASF764
  10715 3a80 01       		.byte	0x1
-ARM GAS  /tmp/ccHlG55l.s 			page 189
+ARM GAS  /tmp/ccDxM7oT.s 			page 189
 
 
  10716 3a81 8703     		.2byte	0x387
@@ -11338,7 +11338,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  10770 3add 02       		.uleb128 0x2
  10771 3ade 91       		.byte	0x91
  10772 3adf 6B       		.sleb128 -21
-ARM GAS  /tmp/ccHlG55l.s 			page 190
+ARM GAS  /tmp/ccDxM7oT.s 			page 190
 
 
  10773 3ae0 00       		.byte	0
@@ -11398,7 +11398,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  10827 3b5a B2010000 		.4byte	.LLST59
  10828 3b5e 36       		.uleb128 0x36
  10829 3b5f 2C450000 		.4byte	0x452c
-ARM GAS  /tmp/ccHlG55l.s 			page 191
+ARM GAS  /tmp/ccDxM7oT.s 			page 191
 
 
  10830 3b63 0E000000 		.4byte	.LBB168
@@ -11458,7 +11458,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  10884 3bc2 D1000000 		.4byte	0xd1
  10885 3bc6 00000000 		.4byte	.LFB269
  10886 3bca 40000000 		.4byte	.LFE269-.LFB269
-ARM GAS  /tmp/ccHlG55l.s 			page 192
+ARM GAS  /tmp/ccDxM7oT.s 			page 192
 
 
  10887 3bce 01       		.uleb128 0x1
@@ -11518,7 +11518,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  10941 3c3d 08       		.byte	0x8
  10942 3c3e 6E       		.byte	0x6e
  10943 3c3f 33       		.uleb128 0x33
-ARM GAS  /tmp/ccHlG55l.s 			page 193
+ARM GAS  /tmp/ccDxM7oT.s 			page 193
 
 
  10944 3c40 01       		.uleb128 0x1
@@ -11578,7 +11578,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  10998 3cb9 01       		.uleb128 0x1
  10999 3cba 33       		.byte	0x33
  11000 3cbb 33       		.uleb128 0x33
-ARM GAS  /tmp/ccHlG55l.s 			page 194
+ARM GAS  /tmp/ccDxM7oT.s 			page 194
 
 
  11001 3cbc 01       		.uleb128 0x1
@@ -11638,7 +11638,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  11055 3d2a 17040000 		.4byte	.LLST32
  11056 3d2e 35       		.uleb128 0x35
  11057 3d2f D31A0000 		.4byte	.LASF749
-ARM GAS  /tmp/ccHlG55l.s 			page 195
+ARM GAS  /tmp/ccDxM7oT.s 			page 195
 
 
  11058 3d33 01       		.byte	0x1
@@ -11698,7 +11698,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  11112 3dc1 01       		.byte	0x1
  11113 3dc2 8702     		.2byte	0x287
  11114 3dc4 2C000000 		.4byte	0x2c
-ARM GAS  /tmp/ccHlG55l.s 			page 196
+ARM GAS  /tmp/ccDxM7oT.s 			page 196
 
 
  11115 3dc8 CC090000 		.4byte	.LLST42
@@ -11758,7 +11758,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  11169 3e41 01       		.byte	0x1
  11170 3e42 E802     		.2byte	0x2e8
  11171 3e44 673E0000 		.4byte	0x3e67
-ARM GAS  /tmp/ccHlG55l.s 			page 197
+ARM GAS  /tmp/ccDxM7oT.s 			page 197
 
 
  11172 3e48 37       		.uleb128 0x37
@@ -11818,7 +11818,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  11226 3eac 01       		.byte	0x1
  11227 3ead 4303     		.2byte	0x343
  11228 3eaf D73E0000 		.4byte	0x3ed7
-ARM GAS  /tmp/ccHlG55l.s 			page 198
+ARM GAS  /tmp/ccDxM7oT.s 			page 198
 
 
  11229 3eb3 37       		.uleb128 0x37
@@ -11878,7 +11878,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  11283 3f0a 5F550000 		.4byte	0x555f
  11284 3f0e 273F0000 		.4byte	0x3f27
  11285 3f12 33       		.uleb128 0x33
-ARM GAS  /tmp/ccHlG55l.s 			page 199
+ARM GAS  /tmp/ccDxM7oT.s 			page 199
 
 
  11286 3f13 01       		.uleb128 0x1
@@ -11938,7 +11938,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  11340 3f5d 01       		.uleb128 0x1
  11341 3f5e 51       		.byte	0x51
  11342 3f5f 01       		.uleb128 0x1
-ARM GAS  /tmp/ccHlG55l.s 			page 200
+ARM GAS  /tmp/ccDxM7oT.s 			page 200
 
 
  11343 3f60 3A       		.byte	0x3a
@@ -11998,7 +11998,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  11397 3faa 40       		.sleb128 -64
  11398 3fab 94       		.byte	0x94
  11399 3fac 01       		.byte	0x1
-ARM GAS  /tmp/ccHlG55l.s 			page 201
+ARM GAS  /tmp/ccDxM7oT.s 			page 201
 
 
  11400 3fad 00       		.byte	0
@@ -12058,7 +12058,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  11454 3ffe 01       		.uleb128 0x1
  11455 3fff 50       		.byte	0x50
  11456 4000 02       		.uleb128 0x2
-ARM GAS  /tmp/ccHlG55l.s 			page 202
+ARM GAS  /tmp/ccDxM7oT.s 			page 202
 
 
  11457 4001 08       		.byte	0x8
@@ -12118,7 +12118,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  11511 404a 02       		.uleb128 0x2
  11512 404b 08       		.byte	0x8
  11513 404c 36       		.byte	0x36
-ARM GAS  /tmp/ccHlG55l.s 			page 203
+ARM GAS  /tmp/ccDxM7oT.s 			page 203
 
 
  11514 404d 33       		.uleb128 0x33
@@ -12178,7 +12178,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  11568 4096 91       		.byte	0x91
  11569 4097 44       		.sleb128 -60
  11570 4098 94       		.byte	0x94
-ARM GAS  /tmp/ccHlG55l.s 			page 204
+ARM GAS  /tmp/ccDxM7oT.s 			page 204
 
 
  11571 4099 01       		.byte	0x1
@@ -12238,7 +12238,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  11625 40e6 5F550000 		.4byte	0x555f
  11626 40ea 03410000 		.4byte	0x4103
  11627 40ee 33       		.uleb128 0x33
-ARM GAS  /tmp/ccHlG55l.s 			page 205
+ARM GAS  /tmp/ccDxM7oT.s 			page 205
 
 
  11628 40ef 01       		.uleb128 0x1
@@ -12298,7 +12298,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  11682 4137 6E       		.byte	0x6e
  11683 4138 33       		.uleb128 0x33
  11684 4139 01       		.uleb128 0x1
-ARM GAS  /tmp/ccHlG55l.s 			page 206
+ARM GAS  /tmp/ccDxM7oT.s 			page 206
 
 
  11685 413a 51       		.byte	0x51
@@ -12358,7 +12358,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  11739 4182 01       		.uleb128 0x1
  11740 4183 51       		.byte	0x51
  11741 4184 02       		.uleb128 0x2
-ARM GAS  /tmp/ccHlG55l.s 			page 207
+ARM GAS  /tmp/ccDxM7oT.s 			page 207
 
 
  11742 4185 08       		.byte	0x8
@@ -12418,7 +12418,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  11796 41cf 02       		.uleb128 0x2
  11797 41d0 08       		.byte	0x8
  11798 41d1 41       		.byte	0x41
-ARM GAS  /tmp/ccHlG55l.s 			page 208
+ARM GAS  /tmp/ccDxM7oT.s 			page 208
 
 
  11799 41d2 33       		.uleb128 0x33
@@ -12478,7 +12478,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  11853 421c 43       		.byte	0x43
  11854 421d 33       		.uleb128 0x33
  11855 421e 01       		.uleb128 0x1
-ARM GAS  /tmp/ccHlG55l.s 			page 209
+ARM GAS  /tmp/ccDxM7oT.s 			page 209
 
 
  11856 421f 52       		.byte	0x52
@@ -12538,7 +12538,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  11910 4269 01       		.uleb128 0x1
  11911 426a 52       		.byte	0x52
  11912 426b 02       		.uleb128 0x2
-ARM GAS  /tmp/ccHlG55l.s 			page 210
+ARM GAS  /tmp/ccDxM7oT.s 			page 210
 
 
  11913 426c 79       		.byte	0x79
@@ -12598,7 +12598,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  11967 42b4 25       		.byte	0x25
  11968 42b5 00       		.byte	0
  11969 42b6 32       		.uleb128 0x32
-ARM GAS  /tmp/ccHlG55l.s 			page 211
+ARM GAS  /tmp/ccDxM7oT.s 			page 211
 
 
  11970 42b7 96030000 		.4byte	.LVL344
@@ -12658,7 +12658,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  12024 4324 D1000000 		.4byte	0xd1
  12025 4328 240C0000 		.4byte	.LLST28
  12026 432c 36       		.uleb128 0x36
-ARM GAS  /tmp/ccHlG55l.s 			page 212
+ARM GAS  /tmp/ccDxM7oT.s 			page 212
 
 
  12027 432d 2C450000 		.4byte	0x452c
@@ -12718,7 +12718,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  12081 438e 02       		.uleb128 0x2
  12082 438f 75       		.byte	0x75
  12083 4390 00       		.sleb128 0
-ARM GAS  /tmp/ccHlG55l.s 			page 213
+ARM GAS  /tmp/ccDxM7oT.s 			page 213
 
 
  12084 4391 00       		.byte	0
@@ -12778,7 +12778,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  12138 43f2 A0       		.byte	0xa0
  12139 43f3 33       		.uleb128 0x33
  12140 43f4 02       		.uleb128 0x2
-ARM GAS  /tmp/ccHlG55l.s 			page 214
+ARM GAS  /tmp/ccDxM7oT.s 			page 214
 
 
  12141 43f5 7D       		.byte	0x7d
@@ -12838,7 +12838,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  12195 443d 44000000 		.4byte	.LVL452
  12196 4441 43390000 		.4byte	0x3943
  12197 4445 4F440000 		.4byte	0x444f
-ARM GAS  /tmp/ccHlG55l.s 			page 215
+ARM GAS  /tmp/ccDxM7oT.s 			page 215
 
 
  12198 4449 33       		.uleb128 0x33
@@ -12898,7 +12898,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  12252 44bf 65727200 		.ascii	"err\000"
  12253 44c3 01       		.byte	0x1
  12254 44c4 8D01     		.2byte	0x18d
-ARM GAS  /tmp/ccHlG55l.s 			page 216
+ARM GAS  /tmp/ccDxM7oT.s 			page 216
 
 
  12255 44c6 D1000000 		.4byte	0xd1
@@ -12958,7 +12958,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  12309 453d 55180000 		.4byte	.LASF791
  12310 4541 01       		.byte	0x1
  12311 4542 76       		.byte	0x76
-ARM GAS  /tmp/ccHlG55l.s 			page 217
+ARM GAS  /tmp/ccDxM7oT.s 			page 217
 
 
  12312 4543 DC000000 		.4byte	0xdc
@@ -13018,7 +13018,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  12366 45ab 32       		.uleb128 0x32
  12367 45ac 34000000 		.4byte	.LVL6
  12368 45b0 6A550000 		.4byte	0x556a
-ARM GAS  /tmp/ccHlG55l.s 			page 218
+ARM GAS  /tmp/ccDxM7oT.s 			page 218
 
 
  12369 45b4 CA450000 		.4byte	0x45ca
@@ -13078,7 +13078,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  12423 461a 01       		.uleb128 0x1
  12424 461b 51       		.byte	0x51
  12425 461c 01       		.uleb128 0x1
-ARM GAS  /tmp/ccHlG55l.s 			page 219
+ARM GAS  /tmp/ccDxM7oT.s 			page 219
 
 
  12426 461d 33       		.byte	0x33
@@ -13138,7 +13138,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  12480 4692 96470000 		.4byte	0x4796
  12481 4696 37       		.uleb128 0x37
  12482 4697 15450000 		.4byte	0x4515
-ARM GAS  /tmp/ccHlG55l.s 			page 220
+ARM GAS  /tmp/ccDxM7oT.s 			page 220
 
 
  12483 469b 4E0D0000 		.4byte	.LLST6
@@ -13198,7 +13198,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  12537 470d 02       		.uleb128 0x2
  12538 470e 08       		.byte	0x8
  12539 470f 6E       		.byte	0x6e
-ARM GAS  /tmp/ccHlG55l.s 			page 221
+ARM GAS  /tmp/ccDxM7oT.s 			page 221
 
 
  12540 4710 33       		.uleb128 0x33
@@ -13258,7 +13258,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  12594 4758 52       		.byte	0x52
  12595 4759 01       		.uleb128 0x1
  12596 475a 31       		.byte	0x31
-ARM GAS  /tmp/ccHlG55l.s 			page 222
+ARM GAS  /tmp/ccDxM7oT.s 			page 222
 
 
  12597 475b 00       		.byte	0
@@ -13318,7 +13318,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  12651 47a9 33       		.uleb128 0x33
  12652 47aa 01       		.uleb128 0x1
  12653 47ab 51       		.byte	0x51
-ARM GAS  /tmp/ccHlG55l.s 			page 223
+ARM GAS  /tmp/ccDxM7oT.s 			page 223
 
 
  12654 47ac 02       		.uleb128 0x2
@@ -13378,7 +13378,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  12708 4812 00       		.byte	0
  12709 4813 51       		.uleb128 0x51
  12710 4814 5C000000 		.4byte	.LBB97
-ARM GAS  /tmp/ccHlG55l.s 			page 224
+ARM GAS  /tmp/ccDxM7oT.s 			page 224
 
 
  12711 4818 64010000 		.4byte	.LBE97-.LBB97
@@ -13438,7 +13438,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  12765 4879 32       		.byte	0x32
  12766 487a 00       		.byte	0
  12767 487b 32       		.uleb128 0x32
-ARM GAS  /tmp/ccHlG55l.s 			page 225
+ARM GAS  /tmp/ccDxM7oT.s 			page 225
 
 
  12768 487c 74000000 		.4byte	.LVL46
@@ -13498,7 +13498,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  12822 48cd 51       		.byte	0x51
  12823 48ce 01       		.uleb128 0x1
  12824 48cf 3F       		.byte	0x3f
-ARM GAS  /tmp/ccHlG55l.s 			page 226
+ARM GAS  /tmp/ccDxM7oT.s 			page 226
 
 
  12825 48d0 33       		.uleb128 0x33
@@ -13558,7 +13558,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  12879 4921 08       		.byte	0x8
  12880 4922 6E       		.byte	0x6e
  12881 4923 33       		.uleb128 0x33
-ARM GAS  /tmp/ccHlG55l.s 			page 227
+ARM GAS  /tmp/ccDxM7oT.s 			page 227
 
 
  12882 4924 01       		.uleb128 0x1
@@ -13618,7 +13618,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  12936 4972 88490000 		.4byte	0x4988
  12937 4976 33       		.uleb128 0x33
  12938 4977 01       		.uleb128 0x1
-ARM GAS  /tmp/ccHlG55l.s 			page 228
+ARM GAS  /tmp/ccDxM7oT.s 			page 228
 
 
  12939 4978 50       		.byte	0x50
@@ -13678,7 +13678,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  12993 49c0 33       		.uleb128 0x33
  12994 49c1 01       		.uleb128 0x1
  12995 49c2 52       		.byte	0x52
-ARM GAS  /tmp/ccHlG55l.s 			page 229
+ARM GAS  /tmp/ccDxM7oT.s 			page 229
 
 
  12996 49c3 02       		.uleb128 0x2
@@ -13738,7 +13738,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  13050 4a14 33       		.uleb128 0x33
  13051 4a15 01       		.uleb128 0x1
  13052 4a16 51       		.byte	0x51
-ARM GAS  /tmp/ccHlG55l.s 			page 230
+ARM GAS  /tmp/ccDxM7oT.s 			page 230
 
 
  13053 4a17 02       		.uleb128 0x2
@@ -13798,7 +13798,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  13107 4a68 01       		.uleb128 0x1
  13108 4a69 50       		.byte	0x50
  13109 4a6a 02       		.uleb128 0x2
-ARM GAS  /tmp/ccHlG55l.s 			page 231
+ARM GAS  /tmp/ccDxM7oT.s 			page 231
 
 
  13110 4a6b 08       		.byte	0x8
@@ -13858,7 +13858,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  13164 4ab3 01       		.uleb128 0x1
  13165 4ab4 52       		.byte	0x52
  13166 4ab5 02       		.uleb128 0x2
-ARM GAS  /tmp/ccHlG55l.s 			page 232
+ARM GAS  /tmp/ccDxM7oT.s 			page 232
 
 
  13167 4ab6 08       		.byte	0x8
@@ -13918,7 +13918,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  13221 4b04 01       		.uleb128 0x1
  13222 4b05 50       		.byte	0x50
  13223 4b06 02       		.uleb128 0x2
-ARM GAS  /tmp/ccHlG55l.s 			page 233
+ARM GAS  /tmp/ccDxM7oT.s 			page 233
 
 
  13224 4b07 08       		.byte	0x8
@@ -13978,7 +13978,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  13278 4b58 6E       		.byte	0x6e
  13279 4b59 33       		.uleb128 0x33
  13280 4b5a 01       		.uleb128 0x1
-ARM GAS  /tmp/ccHlG55l.s 			page 234
+ARM GAS  /tmp/ccDxM7oT.s 			page 234
 
 
  13281 4b5b 51       		.byte	0x51
@@ -14038,7 +14038,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  13335 4bc2 51       		.uleb128 0x51
  13336 4bc3 5C000000 		.4byte	.LBB111
  13337 4bc7 64010000 		.4byte	.LBE111-.LBB111
-ARM GAS  /tmp/ccHlG55l.s 			page 235
+ARM GAS  /tmp/ccDxM7oT.s 			page 235
 
 
  13338 4bcb 914E0000 		.4byte	0x4e91
@@ -14098,7 +14098,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  13392 4c29 00       		.byte	0
  13393 4c2a 32       		.uleb128 0x32
  13394 4c2b 74000000 		.4byte	.LVL103
-ARM GAS  /tmp/ccHlG55l.s 			page 236
+ARM GAS  /tmp/ccDxM7oT.s 			page 236
 
 
  13395 4c2f 5F550000 		.4byte	0x555f
@@ -14158,7 +14158,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  13449 4c7d 02       		.uleb128 0x2
  13450 4c7e 09       		.byte	0x9
  13451 4c7f F0       		.byte	0xf0
-ARM GAS  /tmp/ccHlG55l.s 			page 237
+ARM GAS  /tmp/ccDxM7oT.s 			page 237
 
 
  13452 4c80 00       		.byte	0
@@ -14218,7 +14218,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  13506 4cd1 08       		.byte	0x8
  13507 4cd2 37       		.byte	0x37
  13508 4cd3 33       		.uleb128 0x33
-ARM GAS  /tmp/ccHlG55l.s 			page 238
+ARM GAS  /tmp/ccDxM7oT.s 			page 238
 
 
  13509 4cd4 01       		.uleb128 0x1
@@ -14278,7 +14278,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  13563 4d25 6E       		.byte	0x6e
  13564 4d26 33       		.uleb128 0x33
  13565 4d27 01       		.uleb128 0x1
-ARM GAS  /tmp/ccHlG55l.s 			page 239
+ARM GAS  /tmp/ccDxM7oT.s 			page 239
 
 
  13566 4d28 51       		.byte	0x51
@@ -14338,7 +14338,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  13620 4d79 33       		.uleb128 0x33
  13621 4d7a 01       		.uleb128 0x1
  13622 4d7b 50       		.byte	0x50
-ARM GAS  /tmp/ccHlG55l.s 			page 240
+ARM GAS  /tmp/ccDxM7oT.s 			page 240
 
 
  13623 4d7c 02       		.uleb128 0x2
@@ -14398,7 +14398,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  13677 4dcd 33       		.uleb128 0x33
  13678 4dce 01       		.uleb128 0x1
  13679 4dcf 50       		.byte	0x50
-ARM GAS  /tmp/ccHlG55l.s 			page 241
+ARM GAS  /tmp/ccDxM7oT.s 			page 241
 
 
  13680 4dd0 02       		.uleb128 0x2
@@ -14458,7 +14458,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  13734 4e18 50       		.byte	0x50
  13735 4e19 00       		.byte	0
  13736 4e1a 32       		.uleb128 0x32
-ARM GAS  /tmp/ccHlG55l.s 			page 242
+ARM GAS  /tmp/ccDxM7oT.s 			page 242
 
 
  13737 4e1b 6C010000 		.4byte	.LVL137
@@ -14518,7 +14518,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  13791 4e6c 93       		.byte	0x93
  13792 4e6d 33       		.uleb128 0x33
  13793 4e6e 01       		.uleb128 0x1
-ARM GAS  /tmp/ccHlG55l.s 			page 243
+ARM GAS  /tmp/ccDxM7oT.s 			page 243
 
 
  13794 4e6f 52       		.byte	0x52
@@ -14578,7 +14578,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  13848 4ebd 33       		.uleb128 0x33
  13849 4ebe 01       		.uleb128 0x1
  13850 4ebf 51       		.byte	0x51
-ARM GAS  /tmp/ccHlG55l.s 			page 244
+ARM GAS  /tmp/ccDxM7oT.s 			page 244
 
 
  13851 4ec0 01       		.uleb128 0x1
@@ -14638,7 +14638,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  13905 4f17 9C       		.byte	0x9c
  13906 4f18 9A520000 		.4byte	0x529a
  13907 4f1c 4C       		.uleb128 0x4c
-ARM GAS  /tmp/ccHlG55l.s 			page 245
+ARM GAS  /tmp/ccDxM7oT.s 			page 245
 
 
  13908 4f1d BE440000 		.4byte	0x44be
@@ -14698,7 +14698,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  13962 4f97 50       		.byte	0x50
  13963 4f98 02       		.uleb128 0x2
  13964 4f99 08       		.byte	0x8
-ARM GAS  /tmp/ccHlG55l.s 			page 246
+ARM GAS  /tmp/ccDxM7oT.s 			page 246
 
 
  13965 4f9a 6E       		.byte	0x6e
@@ -14758,7 +14758,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  14019 4fe8 F84F0000 		.4byte	0x4ff8
  14020 4fec 33       		.uleb128 0x33
  14021 4fed 01       		.uleb128 0x1
-ARM GAS  /tmp/ccHlG55l.s 			page 247
+ARM GAS  /tmp/ccDxM7oT.s 			page 247
 
 
  14022 4fee 50       		.byte	0x50
@@ -14818,7 +14818,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  14076 503f 01       		.uleb128 0x1
  14077 5040 50       		.byte	0x50
  14078 5041 02       		.uleb128 0x2
-ARM GAS  /tmp/ccHlG55l.s 			page 248
+ARM GAS  /tmp/ccDxM7oT.s 			page 248
 
 
  14079 5042 08       		.byte	0x8
@@ -14878,7 +14878,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  14133 508a 32       		.uleb128 0x32
  14134 508b D6000000 		.4byte	.LVL174
  14135 508f 5F550000 		.4byte	0x555f
-ARM GAS  /tmp/ccHlG55l.s 			page 249
+ARM GAS  /tmp/ccDxM7oT.s 			page 249
 
 
  14136 5093 A4500000 		.4byte	0x50a4
@@ -14938,7 +14938,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  14190 50de 00010000 		.4byte	.LVL180
  14191 50e2 5F550000 		.4byte	0x555f
  14192 50e6 FD500000 		.4byte	0x50fd
-ARM GAS  /tmp/ccHlG55l.s 			page 250
+ARM GAS  /tmp/ccDxM7oT.s 			page 250
 
 
  14193 50ea 33       		.uleb128 0x33
@@ -14998,7 +14998,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  14247 5132 52       		.byte	0x52
  14248 5133 02       		.uleb128 0x2
  14249 5134 08       		.byte	0x8
-ARM GAS  /tmp/ccHlG55l.s 			page 251
+ARM GAS  /tmp/ccDxM7oT.s 			page 251
 
 
  14250 5135 36       		.byte	0x36
@@ -15058,7 +15058,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  14304 5186 51       		.byte	0x51
  14305 5187 02       		.uleb128 0x2
  14306 5188 08       		.byte	0x8
-ARM GAS  /tmp/ccHlG55l.s 			page 252
+ARM GAS  /tmp/ccDxM7oT.s 			page 252
 
 
  14307 5189 41       		.byte	0x41
@@ -15118,7 +15118,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  14361 51da 51       		.byte	0x51
  14362 51db 02       		.uleb128 0x2
  14363 51dc 08       		.byte	0x8
-ARM GAS  /tmp/ccHlG55l.s 			page 253
+ARM GAS  /tmp/ccDxM7oT.s 			page 253
 
 
  14364 51dd 44       		.byte	0x44
@@ -15178,7 +15178,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  14418 5222 32       		.uleb128 0x32
  14419 5223 2E000000 		.4byte	.LVL150
  14420 5227 5F550000 		.4byte	0x555f
-ARM GAS  /tmp/ccHlG55l.s 			page 254
+ARM GAS  /tmp/ccDxM7oT.s 			page 254
 
 
  14421 522b 3B520000 		.4byte	0x523b
@@ -15238,7 +15238,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  14475 527f 33       		.uleb128 0x33
  14476 5280 01       		.uleb128 0x1
  14477 5281 50       		.byte	0x50
-ARM GAS  /tmp/ccHlG55l.s 			page 255
+ARM GAS  /tmp/ccDxM7oT.s 			page 255
 
 
  14478 5282 02       		.uleb128 0x2
@@ -15298,7 +15298,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  14532 5300 9C       		.byte	0x9c
  14533 5301 45540000 		.4byte	0x5445
  14534 5305 37       		.uleb128 0x37
-ARM GAS  /tmp/ccHlG55l.s 			page 256
+ARM GAS  /tmp/ccDxM7oT.s 			page 256
 
 
  14535 5306 6A440000 		.4byte	0x446a
@@ -15358,7 +15358,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  14589 5382 32000000 		.4byte	.LVL219
  14590 5386 5F550000 		.4byte	0x555f
  14591 538a 9B530000 		.4byte	0x539b
-ARM GAS  /tmp/ccHlG55l.s 			page 257
+ARM GAS  /tmp/ccDxM7oT.s 			page 257
 
 
  14592 538e 33       		.uleb128 0x33
@@ -15418,7 +15418,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  14646 53df 02       		.uleb128 0x2
  14647 53e0 08       		.byte	0x8
  14648 53e1 6E       		.byte	0x6e
-ARM GAS  /tmp/ccHlG55l.s 			page 258
+ARM GAS  /tmp/ccDxM7oT.s 			page 258
 
 
  14649 53e2 33       		.uleb128 0x33
@@ -15478,7 +15478,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  14703 5430 08       		.byte	0x8
  14704 5431 6E       		.byte	0x6e
  14705 5432 33       		.uleb128 0x33
-ARM GAS  /tmp/ccHlG55l.s 			page 259
+ARM GAS  /tmp/ccDxM7oT.s 			page 259
 
 
  14706 5433 01       		.uleb128 0x1
@@ -15538,7 +15538,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  14760 54ac 33       		.byte	0x33
  14761 54ad 00       		.byte	0
  14762 54ae 00       		.byte	0
-ARM GAS  /tmp/ccHlG55l.s 			page 260
+ARM GAS  /tmp/ccDxM7oT.s 			page 260
 
 
  14763 54af 52       		.uleb128 0x52
@@ -15598,7 +15598,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  14817 551e 6E       		.byte	0x6e
  14818 551f 33       		.uleb128 0x33
  14819 5520 01       		.uleb128 0x1
-ARM GAS  /tmp/ccHlG55l.s 			page 261
+ARM GAS  /tmp/ccDxM7oT.s 			page 261
 
 
  14820 5521 51       		.byte	0x51
@@ -15658,7 +15658,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  14874 0000 01       		.uleb128 0x1
  14875 0001 11       		.uleb128 0x11
  14876 0002 01       		.byte	0x1
-ARM GAS  /tmp/ccHlG55l.s 			page 262
+ARM GAS  /tmp/ccDxM7oT.s 			page 262
 
 
  14877 0003 25       		.uleb128 0x25
@@ -15718,7 +15718,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  14931 0039 49       		.uleb128 0x49
  14932 003a 13       		.uleb128 0x13
  14933 003b 00       		.byte	0
-ARM GAS  /tmp/ccHlG55l.s 			page 263
+ARM GAS  /tmp/ccDxM7oT.s 			page 263
 
 
  14934 003c 00       		.byte	0
@@ -15778,7 +15778,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  14988 0072 0D       		.uleb128 0xd
  14989 0073 00       		.byte	0
  14990 0074 03       		.uleb128 0x3
-ARM GAS  /tmp/ccHlG55l.s 			page 264
+ARM GAS  /tmp/ccDxM7oT.s 			page 264
 
 
  14991 0075 0E       		.uleb128 0xe
@@ -15838,7 +15838,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  15045 00ab 0B       		.uleb128 0xb
  15046 00ac 0B       		.uleb128 0xb
  15047 00ad 00       		.byte	0
-ARM GAS  /tmp/ccHlG55l.s 			page 265
+ARM GAS  /tmp/ccDxM7oT.s 			page 265
 
 
  15048 00ae 00       		.byte	0
@@ -15898,7 +15898,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  15102 00e4 00       		.byte	0
  15103 00e5 14       		.uleb128 0x14
  15104 00e6 21       		.uleb128 0x21
-ARM GAS  /tmp/ccHlG55l.s 			page 266
+ARM GAS  /tmp/ccDxM7oT.s 			page 266
 
 
  15105 00e7 00       		.byte	0
@@ -15958,7 +15958,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  15159 011d 18       		.uleb128 0x18
  15160 011e 0D       		.uleb128 0xd
  15161 011f 00       		.byte	0
-ARM GAS  /tmp/ccHlG55l.s 			page 267
+ARM GAS  /tmp/ccDxM7oT.s 			page 267
 
 
  15162 0120 03       		.uleb128 0x3
@@ -16018,7 +16018,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  15216 0156 0B       		.uleb128 0xb
  15217 0157 05       		.uleb128 0x5
  15218 0158 3A       		.uleb128 0x3a
-ARM GAS  /tmp/ccHlG55l.s 			page 268
+ARM GAS  /tmp/ccDxM7oT.s 			page 268
 
 
  15219 0159 0B       		.uleb128 0xb
@@ -16078,7 +16078,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  15273 018f 19       		.uleb128 0x19
  15274 0190 49       		.uleb128 0x49
  15275 0191 13       		.uleb128 0x13
-ARM GAS  /tmp/ccHlG55l.s 			page 269
+ARM GAS  /tmp/ccDxM7oT.s 			page 269
 
 
  15276 0192 01       		.uleb128 0x1
@@ -16138,7 +16138,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  15330 01c8 3B       		.uleb128 0x3b
  15331 01c9 05       		.uleb128 0x5
  15332 01ca 01       		.uleb128 0x1
-ARM GAS  /tmp/ccHlG55l.s 			page 270
+ARM GAS  /tmp/ccDxM7oT.s 			page 270
 
 
  15333 01cb 13       		.uleb128 0x13
@@ -16198,7 +16198,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  15387 0201 03       		.uleb128 0x3
  15388 0202 08       		.uleb128 0x8
  15389 0203 3A       		.uleb128 0x3a
-ARM GAS  /tmp/ccHlG55l.s 			page 271
+ARM GAS  /tmp/ccDxM7oT.s 			page 271
 
 
  15390 0204 0B       		.uleb128 0xb
@@ -16258,7 +16258,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  15444 023a 13       		.uleb128 0x13
  15445 023b 02       		.uleb128 0x2
  15446 023c 18       		.uleb128 0x18
-ARM GAS  /tmp/ccHlG55l.s 			page 272
+ARM GAS  /tmp/ccDxM7oT.s 			page 272
 
 
  15447 023d 00       		.byte	0
@@ -16318,7 +16318,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  15501 0274 18       		.uleb128 0x18
  15502 0275 00       		.byte	0
  15503 0276 00       		.byte	0
-ARM GAS  /tmp/ccHlG55l.s 			page 273
+ARM GAS  /tmp/ccDxM7oT.s 			page 273
 
 
  15504 0277 31       		.uleb128 0x31
@@ -16378,7 +16378,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  15558 02b4 13       		.uleb128 0x13
  15559 02b5 02       		.uleb128 0x2
  15560 02b6 17       		.uleb128 0x17
-ARM GAS  /tmp/ccHlG55l.s 			page 274
+ARM GAS  /tmp/ccDxM7oT.s 			page 274
 
 
  15561 02b7 00       		.byte	0
@@ -16438,7 +16438,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  15615 02f2 08       		.uleb128 0x8
  15616 02f3 3A       		.uleb128 0x3a
  15617 02f4 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccHlG55l.s 			page 275
+ARM GAS  /tmp/ccDxM7oT.s 			page 275
 
 
  15618 02f5 3B       		.uleb128 0x3b
@@ -16498,7 +16498,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  15672 032b 13       		.uleb128 0x13
  15673 032c 20       		.uleb128 0x20
  15674 032d 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccHlG55l.s 			page 276
+ARM GAS  /tmp/ccDxM7oT.s 			page 276
 
 
  15675 032e 01       		.uleb128 0x1
@@ -16558,7 +16558,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  15729 0367 00       		.byte	0
  15730 0368 00       		.byte	0
  15731 0369 42       		.uleb128 0x42
-ARM GAS  /tmp/ccHlG55l.s 			page 277
+ARM GAS  /tmp/ccDxM7oT.s 			page 277
 
 
  15732 036a 2E       		.uleb128 0x2e
@@ -16618,7 +16618,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  15786 03a1 01       		.uleb128 0x1
  15787 03a2 13       		.uleb128 0x13
  15788 03a3 00       		.byte	0
-ARM GAS  /tmp/ccHlG55l.s 			page 278
+ARM GAS  /tmp/ccDxM7oT.s 			page 278
 
 
  15789 03a4 00       		.byte	0
@@ -16678,7 +16678,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  15843 03da 13       		.uleb128 0x13
  15844 03db 11       		.uleb128 0x11
  15845 03dc 01       		.uleb128 0x1
-ARM GAS  /tmp/ccHlG55l.s 			page 279
+ARM GAS  /tmp/ccDxM7oT.s 			page 279
 
 
  15846 03dd 12       		.uleb128 0x12
@@ -16738,7 +16738,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  15900 0415 13       		.uleb128 0x13
  15901 0416 00       		.byte	0
  15902 0417 00       		.byte	0
-ARM GAS  /tmp/ccHlG55l.s 			page 280
+ARM GAS  /tmp/ccDxM7oT.s 			page 280
 
 
  15903 0418 4C       		.uleb128 0x4c
@@ -16798,7 +16798,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  15957 044e 00       		.byte	0
  15958 044f 51       		.uleb128 0x51
  15959 0450 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccHlG55l.s 			page 281
+ARM GAS  /tmp/ccDxM7oT.s 			page 281
 
 
  15960 0451 01       		.byte	0x1
@@ -16858,7 +16858,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  16014 048a 3F       		.uleb128 0x3f
  16015 048b 19       		.uleb128 0x19
  16016 048c 3C       		.uleb128 0x3c
-ARM GAS  /tmp/ccHlG55l.s 			page 282
+ARM GAS  /tmp/ccDxM7oT.s 			page 282
 
 
  16017 048d 19       		.uleb128 0x19
@@ -16918,7 +16918,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  16071 0060 0C000000 		.4byte	.LVL455
  16072 0064 14000000 		.4byte	.LVL457
  16073 0068 0200     		.2byte	0x2
-ARM GAS  /tmp/ccHlG55l.s 			page 283
+ARM GAS  /tmp/ccDxM7oT.s 			page 283
 
 
  16074 006a 30       		.byte	0x30
@@ -16978,7 +16978,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  16128              	.LLST74:
  16129 00f4 18000000 		.4byte	.LVL443
  16130 00f8 1C000000 		.4byte	.LVL444
-ARM GAS  /tmp/ccHlG55l.s 			page 284
+ARM GAS  /tmp/ccDxM7oT.s 			page 284
 
 
  16131 00fc 0200     		.2byte	0x2
@@ -17038,7 +17038,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  16185 017d 00000000 		.4byte	.LVL405
  16186 0181 12000000 		.4byte	.LVL407
  16187 0185 0100     		.2byte	0x1
-ARM GAS  /tmp/ccHlG55l.s 			page 285
+ARM GAS  /tmp/ccDxM7oT.s 			page 285
 
 
  16188 0187 51       		.byte	0x51
@@ -17098,7 +17098,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  16242 0209 9F       		.byte	0x9f
  16243 020a 00000000 		.4byte	0
  16244 020e 00000000 		.4byte	0
-ARM GAS  /tmp/ccHlG55l.s 			page 286
+ARM GAS  /tmp/ccDxM7oT.s 			page 286
 
 
  16245              	.LLST55:
@@ -17158,7 +17158,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  16299 0293 D0000000 		.4byte	.LVL262
  16300 0297 B6030000 		.4byte	.LVL348
  16301 029b 0400     		.2byte	0x4
-ARM GAS  /tmp/ccHlG55l.s 			page 287
+ARM GAS  /tmp/ccDxM7oT.s 			page 287
 
 
  16302 029d F3       		.byte	0xf3
@@ -17218,7 +17218,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  16356 0318 0400     		.2byte	0x4
  16357 031a F3       		.byte	0xf3
  16358 031b 01       		.uleb128 0x1
-ARM GAS  /tmp/ccHlG55l.s 			page 288
+ARM GAS  /tmp/ccDxM7oT.s 			page 288
 
 
  16359 031c 50       		.byte	0x50
@@ -17278,7 +17278,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  16413 039d 01       		.sleb128 1
  16414 039e 9F       		.byte	0x9f
  16415 039f CC000000 		.4byte	.LVL261
-ARM GAS  /tmp/ccHlG55l.s 			page 289
+ARM GAS  /tmp/ccDxM7oT.s 			page 289
 
 
  16416 03a3 B6030000 		.4byte	.LVL348
@@ -17338,7 +17338,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  16470 0435 0100     		.2byte	0x1
  16471 0437 52       		.byte	0x52
  16472 0438 C0000000 		.4byte	.LVL258
-ARM GAS  /tmp/ccHlG55l.s 			page 290
+ARM GAS  /tmp/ccDxM7oT.s 			page 290
 
 
  16473 043c F6000000 		.4byte	.LVL269
@@ -17398,7 +17398,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  16527 04c8 00000000 		.4byte	.LVL248
  16528 04cc 80000000 		.4byte	.LVL252
  16529 04d0 0100     		.2byte	0x1
-ARM GAS  /tmp/ccHlG55l.s 			page 291
+ARM GAS  /tmp/ccDxM7oT.s 			page 291
 
 
  16530 04d2 53       		.byte	0x53
@@ -17458,7 +17458,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  16584              	.LLST34:
  16585 054d 00000000 		.4byte	.LVL248
  16586 0551 BE000000 		.4byte	.LVL257
-ARM GAS  /tmp/ccHlG55l.s 			page 292
+ARM GAS  /tmp/ccDxM7oT.s 			page 292
 
 
  16587 0555 0200     		.2byte	0x2
@@ -17518,7 +17518,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  16641 05da 50       		.byte	0x50
  16642 05db 4C010000 		.4byte	.LVL280
  16643 05df 58010000 		.4byte	.LVL281
-ARM GAS  /tmp/ccHlG55l.s 			page 293
+ARM GAS  /tmp/ccDxM7oT.s 			page 293
 
 
  16644 05e3 0100     		.2byte	0x1
@@ -17578,7 +17578,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  16698 0675 44020000 		.4byte	.LVL308
  16699 0679 50020000 		.4byte	.LVL309
  16700 067d 0100     		.2byte	0x1
-ARM GAS  /tmp/ccHlG55l.s 			page 294
+ARM GAS  /tmp/ccDxM7oT.s 			page 294
 
 
  16701 067f 50       		.byte	0x50
@@ -17638,7 +17638,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  16755 0713 7C040000 		.4byte	.LVL387
  16756 0717 0200     		.2byte	0x2
  16757 0719 30       		.byte	0x30
-ARM GAS  /tmp/ccHlG55l.s 			page 295
+ARM GAS  /tmp/ccDxM7oT.s 			page 295
 
 
  16758 071a 9F       		.byte	0x9f
@@ -17698,7 +17698,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  16812 0786 7F       		.sleb128 -1
  16813 0787 9F       		.byte	0x9f
  16814 0788 B6030000 		.4byte	.LVL348
-ARM GAS  /tmp/ccHlG55l.s 			page 296
+ARM GAS  /tmp/ccDxM7oT.s 			page 296
 
 
  16815 078c D8030000 		.4byte	.LVL358
@@ -17758,7 +17758,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  16869 07fc 22       		.byte	0x22
  16870 07fd 31       		.byte	0x31
  16871 07fe 1C       		.byte	0x1c
-ARM GAS  /tmp/ccHlG55l.s 			page 297
+ARM GAS  /tmp/ccDxM7oT.s 			page 297
 
 
  16872 07ff 9F       		.byte	0x9f
@@ -17818,7 +17818,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  16926 0866 80040000 		.4byte	.LVL388
  16927 086a A8040000 		.4byte	.LFE267
  16928 086e 0100     		.2byte	0x1
-ARM GAS  /tmp/ccHlG55l.s 			page 298
+ARM GAS  /tmp/ccDxM7oT.s 			page 298
 
 
  16929 0870 55       		.byte	0x55
@@ -17878,7 +17878,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  16983 08f8 7D       		.byte	0x7d
  16984 08f9 00       		.sleb128 0
  16985 08fa 52040000 		.4byte	.LVL374
-ARM GAS  /tmp/ccHlG55l.s 			page 299
+ARM GAS  /tmp/ccDxM7oT.s 			page 299
 
 
  16986 08fe 76040000 		.4byte	.LVL386
@@ -17938,7 +17938,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  17040 0985 9F       		.byte	0x9f
  17041 0986 F4030000 		.4byte	.LVL365
  17042 098a 0C040000 		.4byte	.LVL366
-ARM GAS  /tmp/ccHlG55l.s 			page 300
+ARM GAS  /tmp/ccDxM7oT.s 			page 300
 
 
  17043 098e 0100     		.2byte	0x1
@@ -17998,7 +17998,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  17097 0a15 28040000 		.4byte	.LVL369
  17098 0a19 4E040000 		.4byte	.LVL372
  17099 0a1d 0200     		.2byte	0x2
-ARM GAS  /tmp/ccHlG55l.s 			page 301
+ARM GAS  /tmp/ccDxM7oT.s 			page 301
 
 
  17100 0a1f 30       		.byte	0x30
@@ -18058,7 +18058,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  17154 0aa7 50040000 		.4byte	.LVL373
  17155 0aab 0200     		.2byte	0x2
  17156 0aad 30       		.byte	0x30
-ARM GAS  /tmp/ccHlG55l.s 			page 302
+ARM GAS  /tmp/ccDxM7oT.s 			page 302
 
 
  17157 0aae 9F       		.byte	0x9f
@@ -18118,7 +18118,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  17211 0b23 00002444 		.4byte	0x44240000
  17212 0b27 1B       		.byte	0x1b
  17213 0b28 9F       		.byte	0x9f
-ARM GAS  /tmp/ccHlG55l.s 			page 303
+ARM GAS  /tmp/ccDxM7oT.s 			page 303
 
 
  17214 0b29 88040000 		.4byte	.LVL389
@@ -18178,7 +18178,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  17268 0b7c 1B       		.byte	0x1b
  17269 0b7d 9F       		.byte	0x9f
  17270 0b7e 94040000 		.4byte	.LVL391
-ARM GAS  /tmp/ccHlG55l.s 			page 304
+ARM GAS  /tmp/ccDxM7oT.s 			page 304
 
 
  17271 0b82 A8040000 		.4byte	.LFE267
@@ -18238,7 +18238,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  17325 0c07 12000000 		.4byte	.LVL237
  17326 0c0b 0100     		.2byte	0x1
  17327 0c0d 51       		.byte	0x51
-ARM GAS  /tmp/ccHlG55l.s 			page 305
+ARM GAS  /tmp/ccDxM7oT.s 			page 305
 
 
  17328 0c0e 12000000 		.4byte	.LVL237
@@ -18298,7 +18298,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  17382 0c97 1A000000 		.4byte	.LVL3
  17383 0c9b 30000000 		.4byte	.LVL5
  17384 0c9f 0100     		.2byte	0x1
-ARM GAS  /tmp/ccHlG55l.s 			page 306
+ARM GAS  /tmp/ccDxM7oT.s 			page 306
 
 
  17385 0ca1 50       		.byte	0x50
@@ -18358,7 +18358,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  17439 0d24 0100     		.2byte	0x1
  17440 0d26 50       		.byte	0x50
  17441 0d27 4C000000 		.4byte	.LVL21
-ARM GAS  /tmp/ccHlG55l.s 			page 307
+ARM GAS  /tmp/ccDxM7oT.s 			page 307
 
 
  17442 0d2b 52000000 		.4byte	.LVL22
@@ -18418,7 +18418,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  17496 0db6 58000000 		.4byte	.LVL42
  17497 0dba 62000000 		.4byte	.LVL43
  17498 0dbe 0100     		.2byte	0x1
-ARM GAS  /tmp/ccHlG55l.s 			page 308
+ARM GAS  /tmp/ccDxM7oT.s 			page 308
 
 
  17499 0dc0 50       		.byte	0x50
@@ -18478,7 +18478,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  17553 0e4d 0200     		.2byte	0x2
  17554 0e4f 31       		.byte	0x31
  17555 0e50 9F       		.byte	0x9f
-ARM GAS  /tmp/ccHlG55l.s 			page 309
+ARM GAS  /tmp/ccDxM7oT.s 			page 309
 
 
  17556 0e51 00000000 		.4byte	0
@@ -18538,7 +18538,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  17610 0eda 26000000 		.4byte	.LVL207
  17611 0ede 33000000 		.4byte	.LVL208-1
  17612 0ee2 0100     		.2byte	0x1
-ARM GAS  /tmp/ccHlG55l.s 			page 310
+ARM GAS  /tmp/ccDxM7oT.s 			page 310
 
 
  17613 0ee4 50       		.byte	0x50
@@ -18598,7 +18598,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  17667 0f5e 9F       		.byte	0x9f
  17668 0f5f 00000000 		.4byte	0
  17669 0f63 00000000 		.4byte	0
-ARM GAS  /tmp/ccHlG55l.s 			page 311
+ARM GAS  /tmp/ccDxM7oT.s 			page 311
 
 
  17670              	.LLST20:
@@ -18658,7 +18658,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  17724 0feb AA000000 		.4byte	.LVL229
  17725 0fef 0100     		.2byte	0x1
  17726 0ff1 55       		.byte	0x55
-ARM GAS  /tmp/ccHlG55l.s 			page 312
+ARM GAS  /tmp/ccDxM7oT.s 			page 312
 
 
  17727 0ff2 AE000000 		.4byte	.LVL230
@@ -18718,7 +18718,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  17781 107b 00000000 		.4byte	.LVL424
  17782 107f 15000000 		.4byte	.LVL427-1
  17783 1083 0100     		.2byte	0x1
-ARM GAS  /tmp/ccHlG55l.s 			page 313
+ARM GAS  /tmp/ccDxM7oT.s 			page 313
 
 
  17784 1085 52       		.byte	0x52
@@ -18778,7 +18778,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  17838 110e 00000000 		.4byte	0
  17839 1112 00000000 		.4byte	0
  17840              	.LLST71:
-ARM GAS  /tmp/ccHlG55l.s 			page 314
+ARM GAS  /tmp/ccDxM7oT.s 			page 314
 
 
  17841 1116 4E000000 		.4byte	.LVL435
@@ -18838,7 +18838,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  17895 00b0 00000000 		.4byte	0
  17896 00b4 00000000 		.4byte	0
  17897              		.section	.debug_ranges,"",%progbits
-ARM GAS  /tmp/ccHlG55l.s 			page 315
+ARM GAS  /tmp/ccDxM7oT.s 			page 315
 
 
  17898              	.Ldebug_ranges0:
@@ -18898,7 +18898,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  17952 00d4 D0010000 		.4byte	.LFE260
  17953 00d8 00000000 		.4byte	.LFB261
  17954 00dc D0010000 		.4byte	.LFE261
-ARM GAS  /tmp/ccHlG55l.s 			page 316
+ARM GAS  /tmp/ccDxM7oT.s 			page 316
 
 
  17955 00e0 00000000 		.4byte	.LFB262
@@ -18958,7 +18958,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  17997 0027 63685F70 		.ascii	"ch_ptrsize\000"
  17997      74727369 
  17997      7A6500
-ARM GAS  /tmp/ccHlG55l.s 			page 317
+ARM GAS  /tmp/ccDxM7oT.s 			page 317
 
 
  17998              	.LASF512:
@@ -19018,7 +19018,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18025 00bd 77747365 		.ascii	"wtsemp\000"
  18025      6D7000
  18026              	.LASF291:
-ARM GAS  /tmp/ccHlG55l.s 			page 318
+ARM GAS  /tmp/ccDxM7oT.s 			page 318
 
 
  18027 00c4 5F426F6F 		.ascii	"_Bool\000"
@@ -19078,7 +19078,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18057      545F4247 
  18057      52353635 
  18058              	.LASF174:
-ARM GAS  /tmp/ccHlG55l.s 			page 319
+ARM GAS  /tmp/ccDxM7oT.s 			page 319
 
 
  18059 0156 4D41534B 		.ascii	"MASK\000"
@@ -19138,7 +19138,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18089      5F636E74 
  18089      00
  18090              	.LASF66:
-ARM GAS  /tmp/ccHlG55l.s 			page 320
+ARM GAS  /tmp/ccDxM7oT.s 			page 320
 
 
  18091 01e3 63685F74 		.ascii	"ch_threads_queue\000"
@@ -19198,7 +19198,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18119 0288 48505458 		.ascii	"HPTXSTS\000"
  18119      53545300 
  18120              	.LASF303:
-ARM GAS  /tmp/ccHlG55l.s 			page 321
+ARM GAS  /tmp/ccDxM7oT.s 			page 321
 
 
  18121 0290 6F747970 		.ascii	"otyper\000"
@@ -19258,7 +19258,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18148              	.LASF463:
  18149 0326 636C6F63 		.ascii	"clock_speed\000"
  18149      6B5F7370 
-ARM GAS  /tmp/ccHlG55l.s 			page 322
+ARM GAS  /tmp/ccDxM7oT.s 			page 322
 
 
  18149      65656400 
@@ -19318,7 +19318,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18179 03b4 4750545F 		.ascii	"GPT_ONESHOT\000"
  18179      4F4E4553 
  18179      484F5400 
-ARM GAS  /tmp/ccHlG55l.s 			page 323
+ARM GAS  /tmp/ccDxM7oT.s 			page 323
 
 
  18180              	.LASF263:
@@ -19378,7 +19378,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18207      6F6E7472 
  18207      61737400 
  18208              	.LASF160:
-ARM GAS  /tmp/ccHlG55l.s 			page 324
+ARM GAS  /tmp/ccDxM7oT.s 			page 324
 
 
  18209 0450 54524953 		.ascii	"TRISE\000"
@@ -19438,7 +19438,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18232              	.LASF657:
  18233 04ec 44535453 		.ascii	"DSTS\000"
  18233      00
-ARM GAS  /tmp/ccHlG55l.s 			page 325
+ARM GAS  /tmp/ccDxM7oT.s 			page 325
 
 
  18234              	.LASF458:
@@ -19498,7 +19498,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18261 0576 52455350 		.ascii	"RESP4\000"
  18261      3400
  18262              	.LASF762:
-ARM GAS  /tmp/ccHlG55l.s 			page 326
+ARM GAS  /tmp/ccDxM7oT.s 			page 326
 
 
  18263 057c 66726163 		.ascii	"fractional\000"
@@ -19558,7 +19558,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18289      5F7400
  18290              	.LASF670:
  18291 060d 72657376 		.ascii	"resvd83C\000"
-ARM GAS  /tmp/ccHlG55l.s 			page 327
+ARM GAS  /tmp/ccDxM7oT.s 			page 327
 
 
  18291      64383343 
@@ -19618,7 +19618,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18321      52454144 
  18321      5900
  18322              	.LASF671:
-ARM GAS  /tmp/ccHlG55l.s 			page 328
+ARM GAS  /tmp/ccDxM7oT.s 			page 328
 
 
  18323 0697 72657376 		.ascii	"resvd840\000"
@@ -19678,7 +19678,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18351      53747265 
  18351      616D5F54 
  18351      79706544 
-ARM GAS  /tmp/ccHlG55l.s 			page 329
+ARM GAS  /tmp/ccDxM7oT.s 			page 329
 
 
  18351      656600
@@ -19738,7 +19738,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18377      6400
  18378              	.LASF470:
  18379 07b8 7478646D 		.ascii	"txdmamode\000"
-ARM GAS  /tmp/ccHlG55l.s 			page 330
+ARM GAS  /tmp/ccDxM7oT.s 			page 330
 
 
  18379      616D6F64 
@@ -19798,7 +19798,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18405 0848 4649464F 		.ascii	"FIFO\000"
  18405      00
  18406              	.LASF197:
-ARM GAS  /tmp/ccHlG55l.s 			page 331
+ARM GAS  /tmp/ccDxM7oT.s 			page 331
 
 
  18407 084d 74625F62 		.ascii	"tb_buffer\000"
@@ -19858,7 +19858,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18435 08d7 73797374 		.ascii	"system_debug_t\000"
  18435      656D5F64 
  18435      65627567 
-ARM GAS  /tmp/ccHlG55l.s 			page 332
+ARM GAS  /tmp/ccDxM7oT.s 			page 332
 
 
  18435      5F7400
@@ -19918,7 +19918,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18467 0961 6E5F6374 		.ascii	"n_ctxswc\000"
  18467      78737763 
  18467      00
-ARM GAS  /tmp/ccHlG55l.s 			page 333
+ARM GAS  /tmp/ccDxM7oT.s 			page 333
 
 
  18468              	.LASF246:
@@ -19978,7 +19978,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18494              	.LASF690:
  18495 09f1 72786275 		.ascii	"rxbuf\000"
  18495      6600
-ARM GAS  /tmp/ccHlG55l.s 			page 334
+ARM GAS  /tmp/ccDxM7oT.s 			page 334
 
 
  18496              	.LASF630:
@@ -20038,7 +20038,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18525 0a7f 4841494E 		.ascii	"HAINTMSK\000"
  18525      544D534B 
  18525      00
-ARM GAS  /tmp/ccHlG55l.s 			page 335
+ARM GAS  /tmp/ccDxM7oT.s 			page 335
 
 
  18526              	.LASF560:
@@ -20098,7 +20098,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18553      745F7400 
  18554              	.LASF340:
  18555 0b18 6D757465 		.ascii	"mutex\000"
-ARM GAS  /tmp/ccHlG55l.s 			page 336
+ARM GAS  /tmp/ccDxM7oT.s 			page 336
 
 
  18555      7800
@@ -20158,7 +20158,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18584              	.LASF672:
  18585 0ba6 72657376 		.ascii	"resvd880\000"
  18585      64383830 
-ARM GAS  /tmp/ccHlG55l.s 			page 337
+ARM GAS  /tmp/ccDxM7oT.s 			page 337
 
 
  18585      00
@@ -20218,7 +20218,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18615      616400
  18616              	.LASF702:
  18617 0c3d 6F75745F 		.ascii	"out_state\000"
-ARM GAS  /tmp/ccHlG55l.s 			page 338
+ARM GAS  /tmp/ccDxM7oT.s 			page 338
 
 
  18617      73746174 
@@ -20278,7 +20278,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18645 0ccc 424C4B5F 		.ascii	"BLK_STOP\000"
  18645      53544F50 
  18645      00
-ARM GAS  /tmp/ccHlG55l.s 			page 339
+ARM GAS  /tmp/ccDxM7oT.s 			page 339
 
 
  18646              	.LASF516:
@@ -20338,7 +20338,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18670 0d8e 616E6368 		.ascii	"anch revision 255204] -mcpu=cortex-m4 -mfloat-abi=h"
  18670      20726576 
  18670      6973696F 
-ARM GAS  /tmp/ccHlG55l.s 			page 340
+ARM GAS  /tmp/ccDxM7oT.s 			page 340
 
 
  18670      6E203235 
@@ -20398,7 +20398,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18690              	.LASF211:
  18691 0ee2 7264796D 		.ascii	"rdymsg\000"
  18691      736700
-ARM GAS  /tmp/ccHlG55l.s 			page 341
+ARM GAS  /tmp/ccDxM7oT.s 			page 341
 
 
  18692              	.LASF491:
@@ -20458,7 +20458,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18716              	.LASF774:
  18717 0f86 73756273 		.ascii	"subsampling_y\000"
  18717      616D706C 
-ARM GAS  /tmp/ccHlG55l.s 			page 342
+ARM GAS  /tmp/ccDxM7oT.s 			page 342
 
 
  18717      696E675F 
@@ -20518,7 +20518,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18743      7400
  18744              	.LASF262:
  18745 1024 715F6275 		.ascii	"q_buffer\000"
-ARM GAS  /tmp/ccHlG55l.s 			page 343
+ARM GAS  /tmp/ccDxM7oT.s 			page 343
 
 
  18745      66666572 
@@ -20578,7 +20578,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18777 10a9 44414343 		.ascii	"DACConversionGroup\000"
  18777      6F6E7665 
  18777      7273696F 
-ARM GAS  /tmp/ccHlG55l.s 			page 344
+ARM GAS  /tmp/ccDxM7oT.s 			page 344
 
 
  18777      6E47726F 
@@ -20638,7 +20638,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18803 1143 706F3830 		.ascii	"po8030_set_qvga\000"
  18803      33305F73 
  18803      65745F71 
-ARM GAS  /tmp/ccHlG55l.s 			page 345
+ARM GAS  /tmp/ccDxM7oT.s 			page 345
 
 
  18803      76676100 
@@ -20698,7 +20698,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18831 11e4 5350495F 		.ascii	"SPI_COMPLETE\000"
  18831      434F4D50 
  18831      4C455445 
-ARM GAS  /tmp/ccHlG55l.s 			page 346
+ARM GAS  /tmp/ccDxM7oT.s 			page 346
 
 
  18831      00
@@ -20758,7 +20758,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18859      5F7400
  18860              	.LASF643:
  18861 1284 72657376 		.ascii	"resvd140\000"
-ARM GAS  /tmp/ccHlG55l.s 			page 347
+ARM GAS  /tmp/ccDxM7oT.s 			page 347
 
 
  18861      64313430 
@@ -20818,7 +20818,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18887      776200
  18888              	.LASF37:
  18889 131d 75636E74 		.ascii	"ucnt_t\000"
-ARM GAS  /tmp/ccHlG55l.s 			page 348
+ARM GAS  /tmp/ccDxM7oT.s 			page 348
 
 
  18889      5F7400
@@ -20878,7 +20878,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18917      6E657200 
  18918              	.LASF100:
  18919 13ae 53797374 		.ascii	"SystemCoreClock\000"
-ARM GAS  /tmp/ccHlG55l.s 			page 349
+ARM GAS  /tmp/ccDxM7oT.s 			page 349
 
 
  18919      656D436F 
@@ -20938,7 +20938,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18945      6D00
  18946              	.LASF163:
  18947 1447 504F5745 		.ascii	"POWER\000"
-ARM GAS  /tmp/ccHlG55l.s 			page 350
+ARM GAS  /tmp/ccDxM7oT.s 			page 350
 
 
  18947      5200
@@ -20998,7 +20998,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  18971 14e2 626C6B73 		.ascii	"blkstate_t\000"
  18971      74617465 
  18971      5F7400
-ARM GAS  /tmp/ccHlG55l.s 			page 351
+ARM GAS  /tmp/ccDxM7oT.s 			page 351
 
 
  18972              	.LASF52:
@@ -21058,7 +21058,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  19002              	.LASF779:
  19003 1571 7363616C 		.ascii	"scale_th\000"
  19003      655F7468 
-ARM GAS  /tmp/ccHlG55l.s 			page 352
+ARM GAS  /tmp/ccDxM7oT.s 			page 352
 
 
  19003      00
@@ -21118,7 +21118,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  19039 15ea 73647374 		.ascii	"sdstate_t\000"
  19039      6174655F 
  19039      7400
-ARM GAS  /tmp/ccHlG55l.s 			page 353
+ARM GAS  /tmp/ccDxM7oT.s 			page 353
 
 
  19040              	.LASF24:
@@ -21178,7 +21178,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  19067      52454144 
  19067      5900
  19068              	.LASF382:
-ARM GAS  /tmp/ccHlG55l.s 			page 354
+ARM GAS  /tmp/ccDxM7oT.s 			page 354
 
 
  19069 1685 64616373 		.ascii	"dacstate_t\000"
@@ -21238,7 +21238,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  19097      4F524D41 
  19097      545F5943 
  19097      42594352 
-ARM GAS  /tmp/ccHlG55l.s 			page 355
+ARM GAS  /tmp/ccDxM7oT.s 			page 355
 
 
  19098              	.LASF782:
@@ -21298,7 +21298,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  19127      69677572 
  19127      6174696F 
  19127      6E00
-ARM GAS  /tmp/ccHlG55l.s 			page 356
+ARM GAS  /tmp/ccDxM7oT.s 			page 356
 
 
  19128              	.LASF775:
@@ -21358,7 +21358,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  19154              	.LASF791:
  19155 1855 62616E6B 		.ascii	"bank\000"
  19155      00
-ARM GAS  /tmp/ccHlG55l.s 			page 357
+ARM GAS  /tmp/ccDxM7oT.s 			page 357
 
 
  19156              	.LASF583:
@@ -21418,7 +21418,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  19181 18f9 47505444 		.ascii	"GPTD11\000"
  19181      313100
  19182              	.LASF444:
-ARM GAS  /tmp/ccHlG55l.s 			page 358
+ARM GAS  /tmp/ccDxM7oT.s 			page 358
 
 
  19183 1900 47505444 		.ascii	"GPTD14\000"
@@ -21478,7 +21478,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  19207      616C5553 
  19207      42436F6E 
  19207      66696700 
-ARM GAS  /tmp/ccHlG55l.s 			page 359
+ARM GAS  /tmp/ccDxM7oT.s 			page 359
 
 
  19208              	.LASF266:
@@ -21538,7 +21538,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  19233      5F7400
  19234              	.LASF87:
  19235 1a3f 63685F73 		.ascii	"ch_system_debug\000"
-ARM GAS  /tmp/ccHlG55l.s 			page 360
+ARM GAS  /tmp/ccDxM7oT.s 			page 360
 
 
  19235      79737465 
@@ -21598,7 +21598,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  19262              	.LASF749:
  19263 1ad3 77696474 		.ascii	"width\000"
  19263      6800
-ARM GAS  /tmp/ccHlG55l.s 			page 361
+ARM GAS  /tmp/ccDxM7oT.s 			page 361
 
 
  19264              	.LASF478:
@@ -21658,7 +21658,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  19291      64343434 
  19291      00
  19292              	.LASF320:
-ARM GAS  /tmp/ccHlG55l.s 			page 362
+ARM GAS  /tmp/ccDxM7oT.s 			page 362
 
 
  19293 1b6b 70616C5F 		.ascii	"pal_default_config\000"
@@ -21718,7 +21718,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  19318              	.LASF18:
  19319 1c06 6C6F6E67 		.ascii	"long long unsigned int\000"
  19319      206C6F6E 
-ARM GAS  /tmp/ccHlG55l.s 			page 363
+ARM GAS  /tmp/ccDxM7oT.s 			page 363
 
 
  19319      6720756E 
@@ -21778,7 +21778,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  19347      414D504C 
  19347      494E475F 
  19347      583400
-ARM GAS  /tmp/ccHlG55l.s 			page 364
+ARM GAS  /tmp/ccDxM7oT.s 			page 364
 
 
  19348              	.LASF77:
@@ -21838,7 +21838,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  19375 1d4a 53504943 		.ascii	"SPIConfig\000"
  19375      6F6E6669 
  19375      6700
-ARM GAS  /tmp/ccHlG55l.s 			page 365
+ARM GAS  /tmp/ccDxM7oT.s 			page 365
 
 
  19376              	.LASF305:
@@ -21898,7 +21898,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  19405 1dce 706F3830 		.ascii	"po8030_config\000"
  19405      33305F63 
  19405      6F6E6669 
-ARM GAS  /tmp/ccHlG55l.s 			page 366
+ARM GAS  /tmp/ccDxM7oT.s 			page 366
 
 
  19405      6700
@@ -21958,7 +21958,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  19433      6720696E 
  19433      7400
  19434              	.LASF641:
-ARM GAS  /tmp/ccHlG55l.s 			page 367
+ARM GAS  /tmp/ccDxM7oT.s 			page 367
 
 
  19435 1e6a 48505458 		.ascii	"HPTXFSIZ\000"
@@ -22018,7 +22018,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  19457 1f0f 6275735F 		.ascii	"bus_width\000"
  19457      77696474 
  19457      6800
-ARM GAS  /tmp/ccHlG55l.s 			page 368
+ARM GAS  /tmp/ccDxM7oT.s 			page 368
 
 
  19458              	.LASF150:
@@ -22078,7 +22078,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  19485 1fa5 47505444 		.ascii	"GPTD6\000"
  19485      3600
  19486              	.LASF348:
-ARM GAS  /tmp/ccHlG55l.s 			page 369
+ARM GAS  /tmp/ccDxM7oT.s 			page 369
 
 
  19487 1fab 6572726F 		.ascii	"error_cb\000"
@@ -22138,7 +22138,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  19509 2046 5F5F696E 		.ascii	"__int8_t\000"
  19509      74385F74 
  19509      00
-ARM GAS  /tmp/ccHlG55l.s 			page 370
+ARM GAS  /tmp/ccDxM7oT.s 			page 370
 
 
  19510              	.LASF701:
@@ -22198,7 +22198,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  19538              	.LASF353:
  19539 20d5 73717233 		.ascii	"sqr3\000"
  19539      00
-ARM GAS  /tmp/ccHlG55l.s 			page 371
+ARM GAS  /tmp/ccDxM7oT.s 			page 371
 
 
  19540              	.LASF645:
@@ -22258,7 +22258,7 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  19566              	.LASF480:
  19567 216d 49325344 		.ascii	"I2SDriver\000"
  19567      72697665 
-ARM GAS  /tmp/ccHlG55l.s 			page 372
+ARM GAS  /tmp/ccDxM7oT.s 			page 372
 
 
  19567      7200
@@ -22316,78 +22316,78 @@ ARM GAS  /tmp/ccHlG55l.s 			page 1
  19597      74617465 
  19597      5F7400
  19598              		.ident	"GCC: (GNU Tools for Arm Embedded Processors 7-2017-q4-major) 7.2.1 20170904 (release) [ARM
-ARM GAS  /tmp/ccHlG55l.s 			page 373
+ARM GAS  /tmp/ccDxM7oT.s 			page 373
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 po8030.c
-     /tmp/ccHlG55l.s:18     .text.po8030_read_id:0000000000000000 $t
-     /tmp/ccHlG55l.s:26     .text.po8030_read_id:0000000000000000 po8030_read_id
-     /tmp/ccHlG55l.s:99     .text.po8030_read_id:000000000000004c $d
-     /tmp/ccHlG55l.s:104    .text.po8030_set_bank:0000000000000000 $t
-     /tmp/ccHlG55l.s:112    .text.po8030_set_bank:0000000000000000 po8030_set_bank
-     /tmp/ccHlG55l.s:155    .text.po8030_set_bank:0000000000000028 $d
-     /tmp/ccHlG55l.s:160    .text.po8030_set_format:0000000000000000 $t
-     /tmp/ccHlG55l.s:168    .text.po8030_set_format:0000000000000000 po8030_set_format
-     /tmp/ccHlG55l.s:320    .text.po8030_set_format:00000000000000a0 $d
-     /tmp/ccHlG55l.s:326    .text.po8030_set_vga:0000000000000000 $t
-     /tmp/ccHlG55l.s:334    .text.po8030_set_vga:0000000000000000 po8030_set_vga
-     /tmp/ccHlG55l.s:645    .text.po8030_set_vga:00000000000001c4 $d
-     /tmp/ccHlG55l.s:652    .text.po8030_set_qvga:0000000000000000 $t
-     /tmp/ccHlG55l.s:660    .text.po8030_set_qvga:0000000000000000 po8030_set_qvga
-     /tmp/ccHlG55l.s:971    .text.po8030_set_qvga:00000000000001c4 $d
-     /tmp/ccHlG55l.s:978    .text.po8030_set_qqvga:0000000000000000 $t
-     /tmp/ccHlG55l.s:986    .text.po8030_set_qqvga:0000000000000000 po8030_set_qqvga
-     /tmp/ccHlG55l.s:1297   .text.po8030_set_qqvga:00000000000001c4 $d
-     /tmp/ccHlG55l.s:1304   .text.po8030_set_size:0000000000000000 $t
-     /tmp/ccHlG55l.s:1312   .text.po8030_set_size:0000000000000000 po8030_set_size
-     /tmp/ccHlG55l.s:1414   .text.po8030_set_size:0000000000000054 $d
-     /tmp/ccHlG55l.s:1419   .text.po8030_set_scale_buffer_size:0000000000000000 $t
-     /tmp/ccHlG55l.s:1427   .text.po8030_set_scale_buffer_size:0000000000000000 po8030_set_scale_buffer_size
-     /tmp/ccHlG55l.s:1639   .text.po8030_set_scale_buffer_size:00000000000000f4 $d
-     /tmp/ccHlG55l.s:1646   .text.po8030_config:0000000000000000 $t
-     /tmp/ccHlG55l.s:1654   .text.po8030_config:0000000000000000 po8030_config
-     /tmp/ccHlG55l.s:1755   .text.po8030_config:0000000000000064 $d
-     /tmp/ccHlG55l.s:1760   .text.po8030_advanced_config:0000000000000000 $t
-     /tmp/ccHlG55l.s:1768   .text.po8030_advanced_config:0000000000000000 po8030_advanced_config
-     /tmp/ccHlG55l.s:2402   .text.po8030_advanced_config:00000000000003f8 $d
-     /tmp/ccHlG55l.s:2410   .text.po8030_advanced_config:000000000000040c $t
-     /tmp/ccHlG55l.s:2522   .text.po8030_advanced_config:00000000000004a0 $d
-     /tmp/ccHlG55l.s:2528   .text.po8030_set_brightness:0000000000000000 $t
-     /tmp/ccHlG55l.s:2536   .text.po8030_set_brightness:0000000000000000 po8030_set_brightness
-     /tmp/ccHlG55l.s:2615   .text.po8030_set_brightness:000000000000003c $d
-     /tmp/ccHlG55l.s:2620   .text.po8030_set_contrast:0000000000000000 $t
-     /tmp/ccHlG55l.s:2628   .text.po8030_set_contrast:0000000000000000 po8030_set_contrast
-     /tmp/ccHlG55l.s:2707   .text.po8030_set_contrast:000000000000003c $d
-     /tmp/ccHlG55l.s:2712   .text.po8030_set_mirror:0000000000000000 $t
-     /tmp/ccHlG55l.s:2720   .text.po8030_set_mirror:0000000000000000 po8030_set_mirror
-     /tmp/ccHlG55l.s:2811   .text.po8030_set_mirror:0000000000000050 $d
-     /tmp/ccHlG55l.s:2816   .text.po8030_set_awb:0000000000000000 $t
-     /tmp/ccHlG55l.s:2824   .text.po8030_set_awb:0000000000000000 po8030_set_awb
-     /tmp/ccHlG55l.s:2913   .text.po8030_set_awb:000000000000005c $d
-     /tmp/ccHlG55l.s:2918   .text.po8030_set_rgb_gain:0000000000000000 $t
-     /tmp/ccHlG55l.s:2926   .text.po8030_set_rgb_gain:0000000000000000 po8030_set_rgb_gain
-     /tmp/ccHlG55l.s:3046   .text.po8030_set_rgb_gain:000000000000006c $d
-     /tmp/ccHlG55l.s:3051   .text.po8030_set_ae:0000000000000000 $t
-     /tmp/ccHlG55l.s:3059   .text.po8030_set_ae:0000000000000000 po8030_set_ae
-     /tmp/ccHlG55l.s:3148   .text.po8030_set_ae:000000000000005c $d
-     /tmp/ccHlG55l.s:3153   .text.po8030_start:0000000000000000 $t
-     /tmp/ccHlG55l.s:3161   .text.po8030_start:0000000000000000 po8030_start
-     /tmp/ccHlG55l.s:3228   .text.po8030_start:0000000000000048 $d
-     /tmp/ccHlG55l.s:3233   .text.po8030_set_exposure:0000000000000000 $t
-     /tmp/ccHlG55l.s:3241   .text.po8030_set_exposure:0000000000000000 po8030_set_exposure
-ARM GAS  /tmp/ccHlG55l.s 			page 374
+     /tmp/ccDxM7oT.s:18     .text.po8030_read_id:0000000000000000 $t
+     /tmp/ccDxM7oT.s:26     .text.po8030_read_id:0000000000000000 po8030_read_id
+     /tmp/ccDxM7oT.s:99     .text.po8030_read_id:000000000000004c $d
+     /tmp/ccDxM7oT.s:104    .text.po8030_set_bank:0000000000000000 $t
+     /tmp/ccDxM7oT.s:112    .text.po8030_set_bank:0000000000000000 po8030_set_bank
+     /tmp/ccDxM7oT.s:155    .text.po8030_set_bank:0000000000000028 $d
+     /tmp/ccDxM7oT.s:160    .text.po8030_set_format:0000000000000000 $t
+     /tmp/ccDxM7oT.s:168    .text.po8030_set_format:0000000000000000 po8030_set_format
+     /tmp/ccDxM7oT.s:320    .text.po8030_set_format:00000000000000a0 $d
+     /tmp/ccDxM7oT.s:326    .text.po8030_set_vga:0000000000000000 $t
+     /tmp/ccDxM7oT.s:334    .text.po8030_set_vga:0000000000000000 po8030_set_vga
+     /tmp/ccDxM7oT.s:645    .text.po8030_set_vga:00000000000001c4 $d
+     /tmp/ccDxM7oT.s:652    .text.po8030_set_qvga:0000000000000000 $t
+     /tmp/ccDxM7oT.s:660    .text.po8030_set_qvga:0000000000000000 po8030_set_qvga
+     /tmp/ccDxM7oT.s:971    .text.po8030_set_qvga:00000000000001c4 $d
+     /tmp/ccDxM7oT.s:978    .text.po8030_set_qqvga:0000000000000000 $t
+     /tmp/ccDxM7oT.s:986    .text.po8030_set_qqvga:0000000000000000 po8030_set_qqvga
+     /tmp/ccDxM7oT.s:1297   .text.po8030_set_qqvga:00000000000001c4 $d
+     /tmp/ccDxM7oT.s:1304   .text.po8030_set_size:0000000000000000 $t
+     /tmp/ccDxM7oT.s:1312   .text.po8030_set_size:0000000000000000 po8030_set_size
+     /tmp/ccDxM7oT.s:1414   .text.po8030_set_size:0000000000000054 $d
+     /tmp/ccDxM7oT.s:1419   .text.po8030_set_scale_buffer_size:0000000000000000 $t
+     /tmp/ccDxM7oT.s:1427   .text.po8030_set_scale_buffer_size:0000000000000000 po8030_set_scale_buffer_size
+     /tmp/ccDxM7oT.s:1639   .text.po8030_set_scale_buffer_size:00000000000000f4 $d
+     /tmp/ccDxM7oT.s:1646   .text.po8030_config:0000000000000000 $t
+     /tmp/ccDxM7oT.s:1654   .text.po8030_config:0000000000000000 po8030_config
+     /tmp/ccDxM7oT.s:1755   .text.po8030_config:0000000000000064 $d
+     /tmp/ccDxM7oT.s:1760   .text.po8030_advanced_config:0000000000000000 $t
+     /tmp/ccDxM7oT.s:1768   .text.po8030_advanced_config:0000000000000000 po8030_advanced_config
+     /tmp/ccDxM7oT.s:2402   .text.po8030_advanced_config:00000000000003f8 $d
+     /tmp/ccDxM7oT.s:2410   .text.po8030_advanced_config:000000000000040c $t
+     /tmp/ccDxM7oT.s:2522   .text.po8030_advanced_config:00000000000004a0 $d
+     /tmp/ccDxM7oT.s:2528   .text.po8030_set_brightness:0000000000000000 $t
+     /tmp/ccDxM7oT.s:2536   .text.po8030_set_brightness:0000000000000000 po8030_set_brightness
+     /tmp/ccDxM7oT.s:2615   .text.po8030_set_brightness:000000000000003c $d
+     /tmp/ccDxM7oT.s:2620   .text.po8030_set_contrast:0000000000000000 $t
+     /tmp/ccDxM7oT.s:2628   .text.po8030_set_contrast:0000000000000000 po8030_set_contrast
+     /tmp/ccDxM7oT.s:2707   .text.po8030_set_contrast:000000000000003c $d
+     /tmp/ccDxM7oT.s:2712   .text.po8030_set_mirror:0000000000000000 $t
+     /tmp/ccDxM7oT.s:2720   .text.po8030_set_mirror:0000000000000000 po8030_set_mirror
+     /tmp/ccDxM7oT.s:2811   .text.po8030_set_mirror:0000000000000050 $d
+     /tmp/ccDxM7oT.s:2816   .text.po8030_set_awb:0000000000000000 $t
+     /tmp/ccDxM7oT.s:2824   .text.po8030_set_awb:0000000000000000 po8030_set_awb
+     /tmp/ccDxM7oT.s:2913   .text.po8030_set_awb:000000000000005c $d
+     /tmp/ccDxM7oT.s:2918   .text.po8030_set_rgb_gain:0000000000000000 $t
+     /tmp/ccDxM7oT.s:2926   .text.po8030_set_rgb_gain:0000000000000000 po8030_set_rgb_gain
+     /tmp/ccDxM7oT.s:3046   .text.po8030_set_rgb_gain:000000000000006c $d
+     /tmp/ccDxM7oT.s:3051   .text.po8030_set_ae:0000000000000000 $t
+     /tmp/ccDxM7oT.s:3059   .text.po8030_set_ae:0000000000000000 po8030_set_ae
+     /tmp/ccDxM7oT.s:3148   .text.po8030_set_ae:000000000000005c $d
+     /tmp/ccDxM7oT.s:3153   .text.po8030_start:0000000000000000 $t
+     /tmp/ccDxM7oT.s:3161   .text.po8030_start:0000000000000000 po8030_start
+     /tmp/ccDxM7oT.s:3228   .text.po8030_start:0000000000000048 $d
+     /tmp/ccDxM7oT.s:3233   .text.po8030_set_exposure:0000000000000000 $t
+     /tmp/ccDxM7oT.s:3241   .text.po8030_set_exposure:0000000000000000 po8030_set_exposure
+ARM GAS  /tmp/ccDxM7oT.s 			page 374
 
 
-     /tmp/ccHlG55l.s:3348   .text.po8030_set_exposure:0000000000000068 $d
-     /tmp/ccHlG55l.s:3353   .text.po8030_get_image_size:0000000000000000 $t
-     /tmp/ccHlG55l.s:3361   .text.po8030_get_image_size:0000000000000000 po8030_get_image_size
-     /tmp/ccHlG55l.s:3407   .text.po8030_get_image_size:000000000000002c $d
-     /tmp/ccHlG55l.s:3413   .text.po8030_is_connected:0000000000000000 $t
-     /tmp/ccHlG55l.s:3421   .text.po8030_is_connected:0000000000000000 po8030_is_connected
-     /tmp/ccHlG55l.s:3484   .text.po8030_is_connected:000000000000003c $d
-     /tmp/ccHlG55l.s:3489   .bss.po8030_conf:0000000000000000 $d
-     /tmp/ccHlG55l.s:3493   .bss.po8030_conf:0000000000000000 po8030_conf
+     /tmp/ccDxM7oT.s:3348   .text.po8030_set_exposure:0000000000000068 $d
+     /tmp/ccDxM7oT.s:3353   .text.po8030_get_image_size:0000000000000000 $t
+     /tmp/ccDxM7oT.s:3361   .text.po8030_get_image_size:0000000000000000 po8030_get_image_size
+     /tmp/ccDxM7oT.s:3407   .text.po8030_get_image_size:000000000000002c $d
+     /tmp/ccDxM7oT.s:3413   .text.po8030_is_connected:0000000000000000 $t
+     /tmp/ccDxM7oT.s:3421   .text.po8030_is_connected:0000000000000000 po8030_is_connected
+     /tmp/ccDxM7oT.s:3484   .text.po8030_is_connected:000000000000003c $d
+     /tmp/ccDxM7oT.s:3489   .bss.po8030_conf:0000000000000000 $d
+     /tmp/ccDxM7oT.s:3493   .bss.po8030_conf:0000000000000000 po8030_conf
 
 UNDEFINED SYMBOLS
 read_reg
