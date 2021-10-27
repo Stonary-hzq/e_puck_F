@@ -534,3 +534,15 @@ make all
 [1;34mCreating build/Project_template.list[0m
 
 [1;34mDone[0m
+06:08:11 **** Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling crt0_v7m.s[0m
+[1;34mCompiling chcoreasm_v7m.s[0m
+[1;34mCompiling main.c[0m
+main.c:6:10: fatal error: cstdlib: No such file or directory
+../e-puck2_main-processor/ChibiOS//os/common/ports/ARMCMx/compilers/GCC/rules.mk:216: recipe for target 'build/obj/main.o' failed
+ #include <cstdlib>
+          ^~~~~~~~~
+compilation terminated.
+make: *** [build/obj/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
