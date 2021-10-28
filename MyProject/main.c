@@ -17,6 +17,8 @@
 #include "serial_comm.h"
 #include "sensors/VL53L0X/VL53L0X.h"
 
+#define FRONT_SENSITIVITY 90
+
 // define the inter process communication bus
 messagebus_t bus;
 MUTEX_DECL(bus_lock);
@@ -47,6 +49,11 @@ int check_cylindar();//check whether the cylindar is arrived
 void random_choice(int speed, int wall_condition);
 void toObstacle(int wall_condition, int speed);
 int check_cylindar(int p_value[]);
+
+void FollowTarget(int targetLocation);
+int GetTargetLocation(int p_value[]);
+void move_time(int speed,int time_ms);
+void rotate_time(int speed,int time_ms);
 
 int main(void)
 {
@@ -107,14 +114,7 @@ int main(void)
 			random_choice(speed, wall_condition);
 			break;
 		case 2:// pursue the cylindar
-			if (circular){ // stop when find cylindar
-				moving(0);
-				set_rgb_led(LED2, 0,1,0); //bingo!
-				set_body_led(1);
-				}
-			else{
-				//toObstacle();
-			}
+			FollowTarget(GetTargetLocation(proximity));
 			break;
 		case 3:// forward obstacle
 
@@ -231,8 +231,40 @@ void random_choice(int speed, int wall_condition){
 		break;
 	}
 }
-void FollowTarget()
+void FollowTarget(int targetLocation)
 {
+
+	switch (targetLocation)
+	{
+	case 0:
+		//Move forward
+		if(get_calibrated_prox(0)<FRONT_SENSITIVITY&&get_calibrated_prox(7)<FRONT_SENSITIVITY)
+		{
+			move_time(300,500);
+		}
+		break;
+	case 1:
+		//Rotate Front-Left
+		rotate_time(-300,500);
+		break;
+	case 2:
+		//Rotate Front-Right
+		rotate_time(300,500);
+		break;
+	case 3:
+		//Rotate Left
+		rotate_time(-300,1000);
+		break;
+	case 4:
+		//Rotate Right
+		rotate_time(+300,1000);
+		break;
+	case 5:
+		//Rotate 180
+		rotate_time(+300,2000);
+	default:
+		break;
+	}
 
 }
 
@@ -245,7 +277,7 @@ int GetTargetLocation(int p_value[])
 	//4 -Target is right
 	// 5 Target is back. 
 	//Front
-	if(p_value[0]>80||p_value[7]>)return 0;
+	if(p_value[0]>80||p_value[7]>80)return 0;
 	//Front_Left
 	if(p_value[6]>70)return 1;
 	//Front_Right
@@ -268,6 +300,24 @@ void rotation(int speed){
 	left_motor_set_speed(speed);
 	right_motor_set_speed(-speed);
 }
+void move_time(int speed,int time_ms)
+{
+	left_motor_set_speed(speed)
+	right_motor_set_speed(speed)
+	chThdSleepMilliseconds(time_ms);
+	left_motor_set_speed(0)
+	right_motor_set_speed(0)
+}
+void rotate_time(int speed,int time_ms)
+{
+	left_motor_set_speed(speed)
+	right_motor_set_speed(-speed)
+	chThdSleepMilliseconds(time_ms);
+	left_motor_set_speed(0)
+	right_motor_set_speed(0)
+}
+
+
 
 int gamble(){
 	int result = rand();
@@ -278,7 +328,7 @@ int check_walls(int p_value[]){
 	// return a int number represent a 4 digit vector [front, left, right, back], 1 means walls, 0 means free
 	int wall_condition=0;
 	// check front wall
-	if (p_value[0]>80 || p_value[7]>80 || p_value[1]>70 ||p_value[6]>70) wall_condition+=8;
+	if (p_value[0]>80 || p_value[7]>80 || p_value[1]>100 ||p_value[6]>100) wall_condition+=8;
 	// check left wall
 	if (p_value[5]>100) wall_condition+=4;
 	// check right wall
