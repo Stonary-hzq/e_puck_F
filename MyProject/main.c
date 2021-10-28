@@ -231,6 +231,32 @@ void random_choice(int speed, int wall_condition){
 		break;
 	}
 }
+void FollowTarget()
+{
+
+}
+
+int GetTargetLocation(int p_value[])
+{
+	// 0 - Target is front
+	// 1- Target is front-left
+	// 2 - Target is front-right
+	// 3 - Target is left
+	//4 -Target is right
+	// 5 Target is back. 
+	//Front
+	if(p_value[0]>80||p_value[7]>)return 0;
+	//Front_Left
+	if(p_value[6]>70)return 1;
+	//Front_Right
+	if(p_value[1]>70) return 2;
+	//Left
+	if(p_value[5]>100) return 3;
+	//Right
+	if(p_value[2]>500) return 4;
+	//Back
+	if(p_value[3]>100||p_value[4>250])return 5;
+}
 
 void moving(int speed){
 	left_motor_set_speed(speed);
@@ -252,11 +278,11 @@ int check_walls(int p_value[]){
 	// return a int number represent a 4 digit vector [front, left, right, back], 1 means walls, 0 means free
 	int wall_condition=0;
 	// check front wall
-	if (p_value[0]>80 || p_value[7]>80)  wall_condition+=8;
+	if (p_value[0]>80 || p_value[7]>80 || p_value[1]>70 ||p_value[6]>70) wall_condition+=8;
 	// check left wall
 	if (p_value[5]>100) wall_condition+=4;
 	// check right wall
-	if (p_value[1]>=200 || p_value[2]>500) wall_condition+=2;
+	if (p_value[2]>500) wall_condition+=2;
 	// check back wall
 	if (p_value[3]>=100 || p_value[4]>=250) wall_condition+=1;
 
