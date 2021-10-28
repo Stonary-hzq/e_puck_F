@@ -17,6 +17,7 @@
 #include "epuck1x/uart/e_uart_char.h"
 #include "stdio.h"
 #include "serial_comm.h"
+#include "sensors/VL53L0X/VL53L0X.h"
 
 // define the inter process communication bus
 messagebus_t bus;
@@ -26,6 +27,9 @@ CONDVAR_DECL(bus_condvar);
 void moving(int speed);// positive for forward, negative for backward
 void rotation(int speed); // positive for cw/tr, negative for ccw/tl
 bool gamble();// random choice [true, false]
+int check_cylindar();//check whether the cylindar is arrived
+void random_choice(int speed, int wall_condition);
+void toObstacle(int wall_condition, int speed);
 
 int main(void)
 {
@@ -52,77 +56,154 @@ int main(void)
 	proximity_start();
 	calibrate_ir();
 
+	// distance sensor initialize
+	VL53L0X_start();
+
 	//set up variable used latter
 	int porximity[8]; // proximity data array
 	int wall_condition;
+	// set the mode
+	int mode = get_selector();
+
 
 	// set reference speed <1000 = 15.4cm/s; cooperate with proximity range and measurement update frequency
 	speed = 300;
 
+
     /* Infinite loop. */
     while (1) {
-    	for (int i=0; i<8; i++){
-    		// update proximity array
-    		proximity[i] = get_calibrated_prox(i);
-    		// print proximity data
-    		str_length = sprintf(str, "calibrated IR %d: %d\n", i, proximity[i]);
-    		e_send_uart1_char(str, str_length);
+    	// update proximity array
+    	proximity[i] = get_calibrated_prox(i);
+    	// print proximity data
+    	str_length = sprintf(str, "calibrated IR %d: %d\n", i, proximity[i]);
+    	e_send_uart1_char(str, str_length);
     	}
     	wall_condition=check_walls(proximity);
-    	switch(wall_condition) {
-    	case 8: //front wall 1000
-    		// action = {turn left, turn right}
-    		if (gamble()) rotation(speed);
-    		else rotation(-speed);
-    		break;
-    	case 10://right corner 1010
-    		// action = turn left
-    		// calibrate speed here to cooperate with measurement update frequency
-    		rotation(-speed);
-    		break;
-    	case 9://left corner 1001
-    		// action = turn right
-    		rotation(speed);
-    		break;
-    	case 13: // a bag 1110
-    		// action = backward
-    		moving(-speed);
-    		break;
-    	case 0: // empty space
-    		// action = forward
-    		moving(speed);
-    		break;
-    	case 2://right wall 0010
-    		// action = {forward, turn left}
-    		if (gamble()) moving(speed);
-    		else rotation(-speed);
-    		break;
-    	case 4://left wall 0100
-    		// action = {forward, turn right}
-    		if (gamble()) moving(speed);
-    		else rotation(speed);
-    		break;
-    	case 1: //back wall 0001
-    		// action = forward
-    		moving(speed);
-    		break;
-    	case 3: //right back corner 0011
-    		// action = forward
-    		moving(speed);
-    		break;
-    	case 5: //left back corner 0101
-    		// action = forward
-    		moving(speed);
-    		break;
-    	case 15: //totally blocked
-    		moving(0);
-    		break;
-    	default:
-    		// code block
-    	}
-    	//e_send_uart1_char(str, str_length);
-    	chThdSleepMilliseconds(500);
+    	circular=check_cylindar(proximity);
+    	switch(mode){
+    	case 1:// random explorer
+			random_choice(speed, wall_condition);
+			break;
+		case 2:// pursue the cylindar
+			if (circular){ // stop when find cylindar
+				moving(0);
+				set_rgb_led(LED2, 0,1,0); //bingo!
+				set_body_led(1);
+				}
+			else{
+				//toObstacle();
+			}
+			break;
+			default:
+				// relax here
+				moving(0);
+			}
+			//e_send_uart1_char(str, str_length);
+			chThdSleepMilliseconds(500);
+		}
     }
+}
+
+void toObstacle(int wall_condition, int speed){
+	// set up distance measured in mm
+	unit16_t dist;
+	int prox0;
+	ing num=10;
+	unit16_t dist_history[num];
+	switch(wall_condition) {
+	case 8: //front wall 1000
+		// action = rotate and find the first obstacle?
+		rotation(speed);
+		for (int i; i<num; i++){
+			dist = VL53L0X_get_mm();
+			prox0 = get_calibrated_prox(0);
+			if (prox0<30) dist_history[i]=dist;
+			else i--;
+			chThdSleepMilliseconds(100);//update every 0.1s
+		}
+		moving(0);
+		min = minimum(dist_history);
+		rotation(-speed);
+		for (int i; i<num; i++){
+			dist = VL53L0X_get_mm();
+			prox0 = get_calibrated_prox(0);
+			if (dist< min+10 && prox0 < 30) {
+				moving(speed);
+				i = num+1;
+			}
+			chThdSleepMilliseconds(100);
+		}
+		break;
+	case 10://right corner 1010
+		// action = turn left
+		// calibrate speed here to cooperate with measurement update frequency
+		rotation(-speed);
+		break;
+	case 9://left corner 1001
+		// action = turn right
+		rotation(speed);
+		break;
+	case 13: // a bag 1110
+		// action = backward
+		moving(-speed);
+		break;
+	default:
+		moving(speed);
+	}
+}
+
+void random_choice(int speed, int wall_condition){
+	switch(wall_condition) {
+	case 8: //front wall 1000
+		// action = {turn left, turn right}
+		if (gamble()) rotation(speed);
+		else rotation(-speed);
+		break;
+	case 10://right corner 1010
+		// action = turn left
+		// calibrate speed here to cooperate with measurement update frequency
+		rotation(-speed);
+		break;
+	case 9://left corner 1001
+		// action = turn right
+		rotation(speed);
+		break;
+	case 13: // a bag 1110
+		// action = backward
+		moving(-speed);
+		break;
+	case 0: // empty space
+		// action = forward
+		moving(speed);
+		break;
+	case 2://right wall 0010
+		// action = {forward, turn left}
+		if (gamble()) moving(speed);
+		else rotation(-speed);
+		break;
+	case 4://left wall 0100
+		// action = {forward, turn right}
+		if (gamble()) moving(speed);
+		else rotation(speed);
+		break;
+	case 1: //back wall 0001
+		// action = forward
+		moving(speed);
+		break;
+	case 3: //right back corner 0011
+		// action = forward
+		moving(speed);
+		break;
+	case 5: //left back corner 0101
+		// action = forward
+		moving(speed);
+		break;
+	case 15: //totally blocked
+		moving(0);
+		break;
+	default:
+			// code block
+	}
 }
 
 void moving(int speed){
@@ -158,6 +239,12 @@ int check_walls(int p_value){
 	if (p_value[3]>=100 && p_value[4]>=250) wall_condition+=1;
 
 	return walls;
+}
+
+bool check_cylindar(int p_value){
+	// at front
+	if (p_value[0]>300 && p_value[0]<200) return true;
+	else return false;
 }
 
 #define STACK_CHK_GUARD 0xe2dee396
