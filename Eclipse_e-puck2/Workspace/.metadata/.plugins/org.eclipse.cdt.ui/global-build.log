@@ -1667,3 +1667,126 @@ make: Nothing to be done for 'all'.
 15:13:16 **** Incremental Build of configuration Default for project MyProject ****
 make all 
 make: Nothing to be done for 'all'.
+15:34:20 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c:28:0: warning: "RAND_MAX" redefined
+ #define RAND_MAX ((1U<<31)-1)
+ 
+In file included from main.c:2:0:
+/home/uos/Documents/e_puck_F/Eclipse_e-puck2/Tools/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/stdlib.h:63:0: note: this is the location of the previous definition
+ #define RAND_MAX __RAND_MAX
+ 
+main.c:45:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ int gamble();// random choice [true, false]
+ ^~~
+main.c:46:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ int check_cylindar();//check whether the cylindar is arrived
+ ^~~
+main.c: In function 'main':
+main.c:100:21: warning: implicit declaration of function 'check_walls'; did you mean 'check_cylindar'? [-Wimplicit-function-declaration]
+      wall_condition=check_walls(proximity);
+                     ^~~~~~~~~~~
+                     check_cylindar
+main.c: At top level:
+main.c:245:5: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ int gamble(){
+     ^~~~~~
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  81412	   3732	  18868	 104012	  1964c	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+15:34:34 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+15:45:05 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c:28:0: warning: "RAND_MAX" redefined
+ #define RAND_MAX ((1U<<31)-1)
+ 
+In file included from main.c:2:0:
+/home/uos/Documents/e_puck_F/Eclipse_e-puck2/Tools/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/stdlib.h:63:0: note: this is the location of the previous definition
+ #define RAND_MAX __RAND_MAX
+ 
+main.c:45:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ int gamble();// random choice [true, false]
+ ^~~
+main.c:46:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ int check_cylindar();//check whether the cylindar is arrived
+ ^~~
+main.c: In function 'main':
+main.c:100:21: warning: implicit declaration of function 'check_walls'; did you mean 'check_cylindar'? [-Wimplicit-function-declaration]
+      wall_condition=check_walls(proximity);
+                     ^~~~~~~~~~~
+                     check_cylindar
+main.c: At top level:
+main.c:246:5: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ int gamble(){
+     ^~~~~~
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  81380	   3732	  18868	 103980	  1962c	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+15:46:10 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+15:48:06 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+[1;34mCompiling main.c[0m
+main.c:28:0: warning: "RAND_MAX" redefined
+ #define RAND_MAX ((1U<<31)-1)
+ 
+In file included from main.c:2:0:
+/home/uos/Documents/e_puck_F/Eclipse_e-puck2/Tools/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/stdlib.h:63:0: note: this is the location of the previous definition
+ #define RAND_MAX __RAND_MAX
+ 
+main.c:45:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ int gamble();// random choice [true, false]
+ ^~~
+main.c:46:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ int check_cylindar();//check whether the cylindar is arrived
+ ^~~
+main.c: In function 'main':
+main.c:100:21: warning: implicit declaration of function 'check_walls'; did you mean 'check_cylindar'? [-Wimplicit-function-declaration]
+      wall_condition=check_walls(proximity);
+                     ^~~~~~~~~~~
+                     check_cylindar
+main.c: At top level:
+main.c:246:5: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ int gamble(){
+     ^~~~~~
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  81428	   3732	  18868	 104028	  1965c	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+15:48:13 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+15:48:49 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+15:49:43 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.
+15:51:13 **** Incremental Build of configuration Default for project MyProject ****
+make all 
+make: Nothing to be done for 'all'.

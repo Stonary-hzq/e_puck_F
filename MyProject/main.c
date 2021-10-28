@@ -98,6 +98,8 @@ int main(void)
 			e_send_uart1_char(str, str_length);
     	}
     	wall_condition=check_walls(proximity);
+    	str_length = sprintf(str, "wall condition: %d\n", wall_condition);
+    	e_send_uart1_char(str, str_length);
     	circular=check_cylindar(proximity);
     	mode = get_selector();
     	switch(mode){
@@ -114,9 +116,8 @@ int main(void)
 				//toObstacle();
 			}
 			break;
-		case 3:// test random generation
-			str_length = sprintf(str, "random number: %d", rand());
-			e_send_uart1_char(str, str_length);
+		case 3:// forward obstacle
+
 			break;
 		default:
 			// relax here
@@ -124,7 +125,7 @@ int main(void)
 			break;
     	}
 		//e_send_uart1_char(str, str_length);
-		chThdSleepMilliseconds(500);
+		chThdSleepMilliseconds(100);
     }
 }
 
@@ -251,13 +252,13 @@ int check_walls(int p_value[]){
 	// return a int number represent a 4 digit vector [front, left, right, back], 1 means walls, 0 means free
 	int wall_condition=0;
 	// check front wall
-	if (p_value[0]>300 && p_value[7]>250)  wall_condition+=2^3;
+	if (p_value[0]>80 || p_value[7]>80)  wall_condition+=8;
 	// check left wall
-	if (p_value[5]>200) wall_condition+=2^2;
+	if (p_value[5]>100) wall_condition+=4;
 	// check right wall
-	if (p_value[1]>=80 || p_value[2]>300) wall_condition+=2;
+	if (p_value[1]>=200 || p_value[2]>500) wall_condition+=2;
 	// check back wall
-	if (p_value[3]>=100 && p_value[4]>=250) wall_condition+=1;
+	if (p_value[3]>=100 || p_value[4]>=250) wall_condition+=1;
 
 	return wall_condition;
 }
