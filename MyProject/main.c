@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
-#include <time.h>
-#include <cstdlib>
 
 #include "ch.h"
 #include "hal.h"
@@ -24,12 +22,31 @@ messagebus_t bus;
 MUTEX_DECL(bus_lock);
 CONDVAR_DECL(bus_condvar);
 
+//random genearator
+int rseed=0;
+#ifndef MS_RAND
+#define RAND_MAX ((1U<<31)-1)
+inline int rand(){
+	return rseed=(rseed* 110315245 + 12345) & RAND_MAX;
+}
+#else /* MS rand */
+
+#define RAND_MAX_32 ((1U<<31)-1)
+#define RAND_MAX((1U<<15)-1)
+
+inline int rand(){
+	return (rseed = (rseed *214013+2531011) & RAND_MAX_32) >> 16;
+}
+
+#endif/* MS_RAND */
+
 void moving(int speed);// positive for forward, negative for backward
 void rotation(int speed); // positive for cw/tr, negative for ccw/tl
-bool gamble();// random choice [true, false]
+int gamble();// random choice [true, false]
 int check_cylindar();//check whether the cylindar is arrived
 void random_choice(int speed, int wall_condition);
 void toObstacle(int wall_condition, int speed);
+int check_cylindar(int p_value[]);
 
 int main(void)
 {
@@ -60,26 +77,29 @@ int main(void)
 	VL53L0X_start();
 
 	//set up variable used latter
-	int porximity[8]; // proximity data array
+	int proximity[8]; // proximity data array
 	int wall_condition;
+	bool circular;
 	// set the mode
 	int mode = get_selector();
 
 
 	// set reference speed <1000 = 15.4cm/s; cooperate with proximity range and measurement update frequency
-	speed = 300;
+	int speed = 300;
 
 
     /* Infinite loop. */
     while (1) {
-    	// update proximity array
-    	proximity[i] = get_calibrated_prox(i);
-    	// print proximity data
-    	str_length = sprintf(str, "calibrated IR %d: %d\n", i, proximity[i]);
-    	e_send_uart1_char(str, str_length);
+    	for (int i = 0; i<8; i++){
+			// update proximity array
+			proximity[i] = get_calibrated_prox(i);
+			// print proximity data
+			str_length = sprintf(str, "calibrated IR %d: %d\n", i, proximity[i]);
+			e_send_uart1_char(str, str_length);
     	}
     	wall_condition=check_walls(proximity);
     	circular=check_cylindar(proximity);
+    	mode = get_selector();
     	switch(mode){
     	case 1:// random explorer
 			random_choice(speed, wall_condition);
@@ -94,22 +114,26 @@ int main(void)
 				//toObstacle();
 			}
 			break;
-			default:
-				// relax here
-				moving(0);
-			}
-			//e_send_uart1_char(str, str_length);
-			chThdSleepMilliseconds(500);
-		}
+		case 3:// test random generation
+			str_length = sprintf(str, "random number: %d", rand());
+			e_send_uart1_char(str, str_length);
+			break;
+		default:
+			// relax here
+			moving(0);
+			break;
+    	}
+		//e_send_uart1_char(str, str_length);
+		chThdSleepMilliseconds(500);
     }
 }
 
-void toObstacle(int wall_condition, int speed){
+/*void toObstacle(int wall_condition, int speed){
 	// set up distance measured in mm
-	unit16_t dist;
+	uint16_t dist;
 	int prox0;
-	ing num=10;
-	unit16_t dist_history[num];
+	int num=10;
+	uint16_t dist_history[num];
 	switch(wall_condition) {
 	case 8: //front wall 1000
 		// action = rotate and find the first obstacle?
@@ -150,13 +174,13 @@ void toObstacle(int wall_condition, int speed){
 	default:
 		moving(speed);
 	}
-}
+}*/
 
 void random_choice(int speed, int wall_condition){
 	switch(wall_condition) {
 	case 8: //front wall 1000
 		// action = {turn left, turn right}
-		if (gamble()) rotation(speed);
+		if (gamble()==1) rotation(speed);
 		else rotation(-speed);
 		break;
 	case 10://right corner 1010
@@ -178,12 +202,12 @@ void random_choice(int speed, int wall_condition){
 		break;
 	case 2://right wall 0010
 		// action = {forward, turn left}
-		if (gamble()) moving(speed);
+		if (gamble()==1) moving(speed);
 		else rotation(-speed);
 		break;
 	case 4://left wall 0100
 		// action = {forward, turn right}
-		if (gamble()) moving(speed);
+		if (gamble()==1) moving(speed);
 		else rotation(speed);
 		break;
 	case 1: //back wall 0001
@@ -203,6 +227,7 @@ void random_choice(int speed, int wall_condition){
 		break;
 	default:
 			// code block
+		break;
 	}
 }
 
@@ -217,34 +242,30 @@ void rotation(int speed){
 	right_motor_set_speed(-speed);
 }
 
-bool gamble(){
-	unsigned seed;
-	seed=time();
-	srand(seed);
-	result = rand();
-	if (result%2==0) return false;
-	else return true;
+int gamble(){
+	int result = rand();
+	return result%2==0;
 }
 
-int check_walls(int p_value){
+int check_walls(int p_value[]){
 	// return a int number represent a 4 digit vector [front, left, right, back], 1 means walls, 0 means free
 	int wall_condition=0;
 	// check front wall
-	if (p_value[0]>300 && p_value[7]>=250)  wall_condition+=2^3;
+	if (p_value[0]>300 && p_value[7]>250)  wall_condition+=2^3;
 	// check left wall
-	if (p5>=200) wall_condition+=2^2;
+	if (p_value[5]>200) wall_condition+=2^2;
 	// check right wall
-	if (p_value[1]>=80 || p[2]>300) wall_condition+=2;
+	if (p_value[1]>=80 || p_value[2]>300) wall_condition+=2;
 	// check back wall
 	if (p_value[3]>=100 && p_value[4]>=250) wall_condition+=1;
 
-	return walls;
+	return wall_condition;
 }
 
-bool check_cylindar(int p_value){
+int check_cylindar(int p_value[]){
 	// at front
-	if (p_value[0]>300 && p_value[0]<200) return true;
-	else return false;
+	if (p_value[0]>300 && p_value[0]<200) return 1;
+	else return 0;
 }
 
 #define STACK_CHK_GUARD 0xe2dee396

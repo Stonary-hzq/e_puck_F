@@ -143,7 +143,17 @@ build/obj/main.o: main.c \
  ../e-puck2_main-processor/src/motors.h \
  ../e-puck2_main-processor/src/sensors/proximity.h \
  ../e-puck2_main-processor/src/epuck1x/uart/e_uart_char.h \
- ../e-puck2_main-processor/src/serial_comm.h
+ ../e-puck2_main-processor/src/serial_comm.h \
+ ../e-puck2_main-processor/src/sensors/VL53L0X/VL53L0X.h \
+ ../e-puck2_main-processor/src/sensors/VL53L0X/Api/core/inc/vl53l0x_api.h \
+ ../e-puck2_main-processor/src/sensors/VL53L0X/Api/core/inc/vl53l0x_api_strings.h \
+ ../e-puck2_main-processor/src/sensors/VL53L0X/Api/core/inc/vl53l0x_def.h \
+ ../e-puck2_main-processor/src/sensors/VL53L0X/Api/core/inc/vl53l0x_device.h \
+ ../e-puck2_main-processor/src/sensors/VL53L0X/Api/core/inc/vl53l0x_types.h \
+ ../e-puck2_main-processor/src/sensors/VL53L0X/Api/core/inc/../../platform/inc/vl53l0x_platform.h \
+ ../e-puck2_main-processor/src/sensors/VL53L0X/Api/core/inc/../../platform/inc/../../core/inc/vl53l0x_def.h \
+ ../e-puck2_main-processor/src/sensors/VL53L0X/Api/core/inc/../../platform/inc/vl53l0x_platform_log.h \
+ ../e-puck2_main-processor/src/sensors/VL53L0X/Api/core/inc/../../platform/inc/vl53l0x_i2c_platform.h
 
 /home/uos/Documents/e_puck_F/Eclipse_e-puck2/Tools/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/stdio.h:
 
@@ -436,3 +446,23 @@ main.h:
 ../e-puck2_main-processor/src/epuck1x/uart/e_uart_char.h:
 
 ../e-puck2_main-processor/src/serial_comm.h:
+
+../e-puck2_main-processor/src/sensors/VL53L0X/VL53L0X.h:
+
+../e-puck2_main-processor/src/sensors/VL53L0X/Api/core/inc/vl53l0x_api.h:
+
+../e-puck2_main-processor/src/sensors/VL53L0X/Api/core/inc/vl53l0x_api_strings.h:
+
+../e-puck2_main-processor/src/sensors/VL53L0X/Api/core/inc/vl53l0x_def.h:
+
+../e-puck2_main-processor/src/sensors/VL53L0X/Api/core/inc/vl53l0x_device.h:
+
+../e-puck2_main-processor/src/sensors/VL53L0X/Api/core/inc/vl53l0x_types.h:
+
+../e-puck2_main-processor/src/sensors/VL53L0X/Api/core/inc/../../platform/inc/vl53l0x_platform.h:
+
+../e-puck2_main-processor/src/sensors/VL53L0X/Api/core/inc/../../platform/inc/../../core/inc/vl53l0x_def.h:
+
+../e-puck2_main-processor/src/sensors/VL53L0X/Api/core/inc/../../platform/inc/vl53l0x_platform_log.h:
+
+../e-puck2_main-processor/src/sensors/VL53L0X/Api/core/inc/../../platform/inc/vl53l0x_i2c_platform.h:

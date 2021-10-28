@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccghr0m6.s 			page 1
+ARM GAS  /tmp/ccQDYoxm.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccghr0m6.s 			page 1
   55              	.L7:
   56              		.align	2
   57              	.L6:
-ARM GAS  /tmp/ccghr0m6.s 			page 2
+ARM GAS  /tmp/ccQDYoxm.s 			page 2
 
 
   58 001c 00000000 		.word	__stack_chk_guard
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccghr0m6.s 			page 1
  112              	__default_exit:
  113              	.LFB2:
  114              		.loc 1 68 0
-ARM GAS  /tmp/ccghr0m6.s 			page 3
+ARM GAS  /tmp/ccQDYoxm.s 			page 3
 
 
  115              		.cfi_startproc
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccghr0m6.s 			page 1
  169 0045 05       		.uleb128 0x5
  170 0046 3D000000 		.4byte	0x3d
  171 004a 00000000 		.4byte	.LFB0
-ARM GAS  /tmp/ccghr0m6.s 			page 4
+ARM GAS  /tmp/ccQDYoxm.s 			page 4
 
 
  172 004e 20000000 		.4byte	.LFE0-.LFB0
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccghr0m6.s 			page 1
  226 0029 9742     		.uleb128 0x2117
  227 002b 19       		.uleb128 0x19
  228 002c 00       		.byte	0
-ARM GAS  /tmp/ccghr0m6.s 			page 5
+ARM GAS  /tmp/ccQDYoxm.s 			page 5
 
 
  229 002d 00       		.byte	0
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccghr0m6.s 			page 1
  283 0066 01       		.uleb128 0x1
  284 0067 31       		.uleb128 0x31
  285 0068 13       		.uleb128 0x13
-ARM GAS  /tmp/ccghr0m6.s 			page 6
+ARM GAS  /tmp/ccQDYoxm.s 			page 6
 
 
  286 0069 00       		.byte	0
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccghr0m6.s 			page 1
  330      696E6974 
  330      00
  331              	.LASF6:
-ARM GAS  /tmp/ccghr0m6.s 			page 7
+ARM GAS  /tmp/ccQDYoxm.s 			page 7
 
 
  332 0035 5F5F7374 		.ascii	"__stack_chk_fail\000"
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccghr0m6.s 			page 1
  345      7374616E 
  345      7400
  346              	.LASF3:
-ARM GAS  /tmp/ccghr0m6.s 			page 8
+ARM GAS  /tmp/ccQDYoxm.s 			page 8
 
 
  347 01e5 5F5F6465 		.ascii	"__default_exit\000"
@@ -426,20 +426,20 @@ ARM GAS  /tmp/ccghr0m6.s 			page 1
  347      745F6578 
  347      697400
  348              		.ident	"GCC: (GNU Tools for Arm Embedded Processors 7-2017-q4-major) 7.2.1 20170904 (release) [ARM
-ARM GAS  /tmp/ccghr0m6.s 			page 9
+ARM GAS  /tmp/ccQDYoxm.s 			page 9
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 crt1.c
-     /tmp/ccghr0m6.s:18     .text.__early_init:0000000000000000 $t
-     /tmp/ccghr0m6.s:26     .text.__early_init:0000000000000000 __early_init
-     /tmp/ccghr0m6.s:58     .text.__early_init:000000000000001c $d
-     /tmp/ccghr0m6.s:63     .text.__late_init:0000000000000000 $t
-     /tmp/ccghr0m6.s:71     .text.__late_init:0000000000000000 __late_init
-     /tmp/ccghr0m6.s:99     .text.__late_init:000000000000001c $d
-     /tmp/ccghr0m6.s:104    .text.__default_exit:0000000000000000 $t
-     /tmp/ccghr0m6.s:112    .text.__default_exit:0000000000000000 __default_exit
-     /tmp/ccghr0m6.s:132    .text.__default_exit:000000000000000c $d
+     /tmp/ccQDYoxm.s:18     .text.__early_init:0000000000000000 $t
+     /tmp/ccQDYoxm.s:26     .text.__early_init:0000000000000000 __early_init
+     /tmp/ccQDYoxm.s:58     .text.__early_init:000000000000001c $d
+     /tmp/ccQDYoxm.s:63     .text.__late_init:0000000000000000 $t
+     /tmp/ccQDYoxm.s:71     .text.__late_init:0000000000000000 __late_init
+     /tmp/ccQDYoxm.s:99     .text.__late_init:000000000000001c $d
+     /tmp/ccQDYoxm.s:104    .text.__default_exit:0000000000000000 $t
+     /tmp/ccQDYoxm.s:112    .text.__default_exit:0000000000000000 __default_exit
+     /tmp/ccQDYoxm.s:132    .text.__default_exit:000000000000000c $d
 
 UNDEFINED SYMBOLS
 __stack_chk_fail

@@ -1,15 +1,6 @@
-06:08:11 **** Build of configuration Default for project MyProject ****
+15:13:16 **** Incremental Build of configuration Default for project MyProject ****
 make all 
-[1;34mCompiling crt0_v7m.s[0m
-[1;34mCompiling chcoreasm_v7m.s[0m
-[1;34mCompiling main.c[0m
-main.c:6:10: fatal error: cstdlib: No such file or directory
-../e-puck2_main-processor/ChibiOS//os/common/ports/ARMCMx/compilers/GCC/rules.mk:216: recipe for target 'build/obj/main.o' failed
- #include <cstdlib>
-          ^~~~~~~~~
-compilation terminated.
-make: *** [build/obj/main.o] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
+make: Nothing to be done for 'all'.
 
-06:08:12 Build Failed. 3 errors, 0 warnings. (took 1s.133ms)
+15:13:17 Build Finished. 0 errors, 0 warnings. (took 764ms)
 
