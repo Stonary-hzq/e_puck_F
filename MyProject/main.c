@@ -288,6 +288,29 @@ int GetTargetLocation(int p_value[])
 	if(p_value[2]>500) return 4;
 	//Back
 	if(p_value[3]>100||p_value[4>250])return 5;
+	return -1; //No target detected by proximity sensor. 
+}
+
+void SendBluetooth(const char * text,int len)
+{
+	char txStr[len];
+	sprintf(txStr,text);
+	e_send_uart1_char(txStr, len);
+}
+
+void FindTarget_TOF()
+{
+	uint16_t minimumDistance=500;
+	while(VL53L0X_get_dist_mm()>minimumDistance)
+	{
+		//Keep rotating
+		left_motor_set_speed(300);
+		right_motor_set_speed(-300);
+	}
+	//When target found stop
+	//Keep rotating
+	left_motor_set_speed(0);
+	right_motor_set_speed(0);
 }
 
 void moving(int speed){
