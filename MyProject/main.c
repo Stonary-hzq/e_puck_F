@@ -53,7 +53,7 @@ int check_cylindar(int p_value[]);
 void FollowTarget(int targetLocation);
 int GetTargetLocation(int p_value[]);
 void move_time(int speed,int time_ms);
-void rotate_time(int speed,int time_ms);
+void rotate_angle(int speed,int theta_d);
 
 int main(void)
 {
@@ -116,8 +116,9 @@ int main(void)
 		case 2:// pursue the cylindar
 			FollowTarget(GetTargetLocation(proximity));
 			break;
-		case 3:// forward obstacle
-
+		case 3: //Rotate EPuck to Specified Angle
+			rotate_angle(300,180);
+			chThdSleepMilliseconds(3000);
 			break;
 		default:
 			// relax here
@@ -245,23 +246,26 @@ void FollowTarget(int targetLocation)
 		break;
 	case 1:
 		//Rotate Front-Left
-		rotate_time(-300,500);
+		rotate_angle(-300,40);
 		break;
 	case 2:
 		//Rotate Front-Right
-		rotate_time(300,500);
+		rotate_angle(300,40);
 		break;
 	case 3:
 		//Rotate Left
-		rotate_time(-300,1000);
+		rotate_angle(-300,90);
 		break;
 	case 4:
 		//Rotate Right
-		rotate_time(+300,1000);
+		rotate_angle(300,90);
 		break;
 	case 5:
 		//Rotate 180
-		rotate_time(+300,2000);
+		rotate_angle(300,180);
+	case -1:
+		FindTarget_TOF();
+		break;
 	default:
 		break;
 	}
@@ -300,8 +304,8 @@ void SendBluetooth(const char * text,int len)
 
 void FindTarget_TOF()
 {
-	uint16_t minimumDistance=500;
-	while(VL53L0X_get_dist_mm()>minimumDistance)
+	uint16_t maxDist=500;
+	while(VL53L0X_get_dist_mm()<maxDist)
 	{
 		//Keep rotating
 		left_motor_set_speed(300);
@@ -309,6 +313,16 @@ void FindTarget_TOF()
 	}
 	//When target found stop
 	//Keep rotating
+	left_motor_set_speed(0);
+	right_motor_set_speed(0);
+
+	while(p_value[0]<80&&p_value[7]<80)
+	{
+		//move forward
+		left_motor_set_speed(300);
+		right_motor_set_speed(300);
+	}
+	//Stop
 	left_motor_set_speed(0);
 	right_motor_set_speed(0);
 }
@@ -323,24 +337,28 @@ void rotation(int speed){
 	left_motor_set_speed(speed);
 	right_motor_set_speed(-speed);
 }
+
+
 void move_time(int speed,int time_ms)
 {
-	left_motor_set_speed(speed)
-	right_motor_set_speed(speed)
+	left_motor_set_speed(speed);
+	right_motor_set_speed(speed);
 	chThdSleepMilliseconds(time_ms);
-	left_motor_set_speed(0)
-	right_motor_set_speed(0)
+	left_motor_set_speed(0);
+	right_motor_set_speed(0);
 }
-void rotate_time(int speed,int time_ms)
+
+//This function is supposed to rotate a set angle theta relative to its front.
+// (+)ve speed values for clockwise rotation and (-)ve speed values for anti-clockwise rotation. 
+void rotate_angle(int speed,int theta_d)
 {
-	left_motor_set_speed(speed)
-	right_motor_set_speed(-speed)
-	chThdSleepMilliseconds(time_ms);
-	left_motor_set_speed(0)
-	right_motor_set_speed(0)
+	int time_s=(50/33)*(22/7)*(theta_d/speed);
+	left_motor_set_speed(speed);
+	right_motor_set_speed(-speed);
+	chThdSleepMilliseconds(time_s*1000);
+	left_motor_set_speed(0);
+	right_motor_set_speed(0);
 }
-
-
 
 int gamble(){
 	int result = rand();
