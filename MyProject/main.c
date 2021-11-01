@@ -371,9 +371,9 @@ int check_walls(int p_value[]){
 	// check front wall
 	if (p_value[0]>80 || p_value[7]>80 || p_value[1]>100 ||p_value[6]>100) wall_condition+=8;
 	// check left wall
-	if (p_value[5]>100) wall_condition+=4;
+	if (p_value[5]>100 ||p_value[6]>100) wall_condition+=4;
 	// check right wall
-	if (p_value[2]>500) wall_condition+=2;
+	if (p_value[2]>500|| p_value[1]>100 ) wall_condition+=2;
 	// check back wall
 	if (p_value[3]>=100 || p_value[4]>=250) wall_condition+=1;
 
