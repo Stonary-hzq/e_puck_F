@@ -56,21 +56,21 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY
  17 .comment      0000007e  00000000  00000000  00031509  2**0
                   CONTENTS, READONLY
- 18 .debug_info   001160ae  00000000  00000000  00031587  2**0
+ 18 .debug_info   001160d2  00000000  00000000  00031587  2**0
                   CONTENTS, READONLY, DEBUGGING
- 19 .debug_abbrev 00012cfd  00000000  00000000  00147635  2**0
+ 19 .debug_abbrev 00012cf0  00000000  00000000  00147659  2**0
                   CONTENTS, READONLY, DEBUGGING
- 20 .debug_loc    00023627  00000000  00000000  0015a332  2**0
+ 20 .debug_loc    0002366d  00000000  00000000  0015a349  2**0
                   CONTENTS, READONLY, DEBUGGING
- 21 .debug_aranges 00002470  00000000  00000000  0017d959  2**0
+ 21 .debug_aranges 00002470  00000000  00000000  0017d9b6  2**0
                   CONTENTS, READONLY, DEBUGGING
- 22 .debug_ranges 00004a98  00000000  00000000  0017fdc9  2**0
+ 22 .debug_ranges 00004ab0  00000000  00000000  0017fe26  2**0
                   CONTENTS, READONLY, DEBUGGING
- 23 .debug_line   0002f324  00000000  00000000  00184861  2**0
+ 23 .debug_line   0002f319  00000000  00000000  001848d6  2**0
                   CONTENTS, READONLY, DEBUGGING
- 24 .debug_str    0000bce8  00000000  00000000  001b3b85  2**0
+ 24 .debug_str    0000bcf0  00000000  00000000  001b3bef  2**0
                   CONTENTS, READONLY, DEBUGGING
- 25 .debug_frame  0000b084  00000000  00000000  001bf870  2**2
+ 25 .debug_frame  0000b080  00000000  00000000  001bf8e0  2**2
                   CONTENTS, READONLY, DEBUGGING
 SYMBOL TABLE:
 08000000 l    d  startup	00000000 startup
@@ -685,7 +685,7 @@ e000ed04 l       *ABS*	00000000 SCB_ICSR
 00020000 g       *ABS*	00000000 __ram0_size__
 080018a0 g     F .text	0000002c __stack_chk_fail
 08009e30 g     F .text	00000088 i2cStop
-08001210 g     F .text	0000006c GetTargetLocation
+08001210 g     F .text	00000070 GetTargetLocation
 0800ea80 g     F .text	00000034 usb_lld_stall_out
 080085a0 g     F .text	0000005c chTMChainMeasurementToX
 0800a8b0 g     F .text	00000074 sdcRead

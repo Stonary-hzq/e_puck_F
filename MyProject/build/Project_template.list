@@ -1433,56 +1433,57 @@ Disassembly of section .text:
 
 08001210 <GetTargetLocation>:
  8001210:	b500      	push	{lr}
- 8001212:	4b19      	ldr	r3, [pc, #100]	; (8001278 <GetTargetLocation+0x68>)
+ 8001212:	4b1a      	ldr	r3, [pc, #104]	; (800127c <GetTargetLocation+0x6c>)
  8001214:	6802      	ldr	r2, [r0, #0]
  8001216:	6819      	ldr	r1, [r3, #0]
  8001218:	b083      	sub	sp, #12
  800121a:	2a50      	cmp	r2, #80	; 0x50
  800121c:	9101      	str	r1, [sp, #4]
- 800121e:	dc17      	bgt.n	8001250 <GetTargetLocation+0x40>
- 8001220:	69c1      	ldr	r1, [r0, #28]
- 8001222:	2950      	cmp	r1, #80	; 0x50
- 8001224:	dc14      	bgt.n	8001250 <GetTargetLocation+0x40>
- 8001226:	6981      	ldr	r1, [r0, #24]
- 8001228:	2946      	cmp	r1, #70	; 0x46
- 800122a:	dc19      	bgt.n	8001260 <GetTargetLocation+0x50>
- 800122c:	6841      	ldr	r1, [r0, #4]
- 800122e:	2946      	cmp	r1, #70	; 0x46
- 8001230:	dc1a      	bgt.n	8001268 <GetTargetLocation+0x58>
- 8001232:	6941      	ldr	r1, [r0, #20]
- 8001234:	2964      	cmp	r1, #100	; 0x64
- 8001236:	dc19      	bgt.n	800126c <GetTargetLocation+0x5c>
- 8001238:	6881      	ldr	r1, [r0, #8]
- 800123a:	2950      	cmp	r1, #80	; 0x50
- 800123c:	dc18      	bgt.n	8001270 <GetTargetLocation+0x60>
- 800123e:	68c1      	ldr	r1, [r0, #12]
- 8001240:	2964      	cmp	r1, #100	; 0x64
- 8001242:	dc0f      	bgt.n	8001264 <GetTargetLocation+0x54>
- 8001244:	2a00      	cmp	r2, #0
- 8001246:	bf14      	ite	ne
- 8001248:	2005      	movne	r0, #5
- 800124a:	f04f 30ff 	moveq.w	r0, #4294967295	; 0xffffffff
- 800124e:	e000      	b.n	8001252 <GetTargetLocation+0x42>
- 8001250:	2000      	movs	r0, #0
- 8001252:	9a01      	ldr	r2, [sp, #4]
- 8001254:	681b      	ldr	r3, [r3, #0]
- 8001256:	429a      	cmp	r2, r3
- 8001258:	d10c      	bne.n	8001274 <GetTargetLocation+0x64>
- 800125a:	b003      	add	sp, #12
- 800125c:	f85d fb04 	ldr.w	pc, [sp], #4
- 8001260:	2001      	movs	r0, #1
- 8001262:	e7f6      	b.n	8001252 <GetTargetLocation+0x42>
- 8001264:	2005      	movs	r0, #5
- 8001266:	e7f4      	b.n	8001252 <GetTargetLocation+0x42>
- 8001268:	2002      	movs	r0, #2
- 800126a:	e7f2      	b.n	8001252 <GetTargetLocation+0x42>
- 800126c:	2003      	movs	r0, #3
- 800126e:	e7f0      	b.n	8001252 <GetTargetLocation+0x42>
- 8001270:	2004      	movs	r0, #4
- 8001272:	e7ee      	b.n	8001252 <GetTargetLocation+0x42>
- 8001274:	f000 fb14 	bl	80018a0 <__stack_chk_fail>
- 8001278:	20000800 	.word	0x20000800
- 800127c:	00000000 	.word	0x00000000
+ 800121e:	dc18      	bgt.n	8001252 <GetTargetLocation+0x42>
+ 8001220:	69c2      	ldr	r2, [r0, #28]
+ 8001222:	2a50      	cmp	r2, #80	; 0x50
+ 8001224:	dc15      	bgt.n	8001252 <GetTargetLocation+0x42>
+ 8001226:	6982      	ldr	r2, [r0, #24]
+ 8001228:	2a46      	cmp	r2, #70	; 0x46
+ 800122a:	dc1a      	bgt.n	8001262 <GetTargetLocation+0x52>
+ 800122c:	6842      	ldr	r2, [r0, #4]
+ 800122e:	2a46      	cmp	r2, #70	; 0x46
+ 8001230:	dc1b      	bgt.n	800126a <GetTargetLocation+0x5a>
+ 8001232:	6942      	ldr	r2, [r0, #20]
+ 8001234:	2a64      	cmp	r2, #100	; 0x64
+ 8001236:	dc1a      	bgt.n	800126e <GetTargetLocation+0x5e>
+ 8001238:	6882      	ldr	r2, [r0, #8]
+ 800123a:	2a50      	cmp	r2, #80	; 0x50
+ 800123c:	dc19      	bgt.n	8001272 <GetTargetLocation+0x62>
+ 800123e:	68c2      	ldr	r2, [r0, #12]
+ 8001240:	2a64      	cmp	r2, #100	; 0x64
+ 8001242:	dc10      	bgt.n	8001266 <GetTargetLocation+0x56>
+ 8001244:	6902      	ldr	r2, [r0, #16]
+ 8001246:	2a64      	cmp	r2, #100	; 0x64
+ 8001248:	bfcc      	ite	gt
+ 800124a:	2005      	movgt	r0, #5
+ 800124c:	f04f 30ff 	movle.w	r0, #4294967295	; 0xffffffff
+ 8001250:	e000      	b.n	8001254 <GetTargetLocation+0x44>
+ 8001252:	2000      	movs	r0, #0
+ 8001254:	9a01      	ldr	r2, [sp, #4]
+ 8001256:	681b      	ldr	r3, [r3, #0]
+ 8001258:	429a      	cmp	r2, r3
+ 800125a:	d10c      	bne.n	8001276 <GetTargetLocation+0x66>
+ 800125c:	b003      	add	sp, #12
+ 800125e:	f85d fb04 	ldr.w	pc, [sp], #4
+ 8001262:	2001      	movs	r0, #1
+ 8001264:	e7f6      	b.n	8001254 <GetTargetLocation+0x44>
+ 8001266:	2005      	movs	r0, #5
+ 8001268:	e7f4      	b.n	8001254 <GetTargetLocation+0x44>
+ 800126a:	2002      	movs	r0, #2
+ 800126c:	e7f2      	b.n	8001254 <GetTargetLocation+0x44>
+ 800126e:	2003      	movs	r0, #3
+ 8001270:	e7f0      	b.n	8001254 <GetTargetLocation+0x44>
+ 8001272:	2004      	movs	r0, #4
+ 8001274:	e7ee      	b.n	8001254 <GetTargetLocation+0x44>
+ 8001276:	f000 fb13 	bl	80018a0 <__stack_chk_fail>
+ 800127a:	bf00      	nop
+ 800127c:	20000800 	.word	0x20000800
 
 08001280 <moving>:
  8001280:	b570      	push	{r4, r5, r6, lr}

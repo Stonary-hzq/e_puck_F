@@ -1,4 +1,4 @@
-07:45:38 **** Incremental Build of configuration Default for project MyProject ****
+07:52:25 **** Incremental Build of configuration Default for project MyProject ****
 make all 
 [1;34mCompiling main.c[0m
 main.c:30:0: warning: "RAND_MAX" redefined
@@ -19,5 +19,5 @@ In file included from main.c:2:0:
 
 [1;34mDone[0m
 
-07:45:39 Build Finished. 0 errors, 1 warnings. (took 1s.681ms)
+07:52:27 Build Finished. 0 errors, 1 warnings. (took 1s.720ms)
 

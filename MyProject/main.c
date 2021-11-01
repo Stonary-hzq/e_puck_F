@@ -55,6 +55,7 @@ void FollowTarget(int targetLocation);
 int GetTargetLocation(int p_value[]);
 void move_time(int speed,int time_ms);
 void rotate_angle(int speed,int theta_d);
+void SendBluetooth(const char * text,int len);
 
 int main(void)
 {
@@ -292,15 +293,15 @@ int GetTargetLocation(int p_value[])
 	//Right
 	if(p_value[2]>80) return 4;
 	//Back
-	if(p_value[3]>100||p_value[4>100])return 5;
+	if(p_value[3]>100||p_value[4]>100)return 5;
 	return -1; //No target detected by proximity sensor. 
 }
 
 void SendBluetooth(const char * text,int len)
 {
 	char txStr[len];
-	sprintf(txStr,text);
-	e_send_uart1_char(txStr, len);
+	int str_len=sprintf(txStr,text);
+	e_send_uart1_char(txStr, str_len);
 }
 
 void FindTarget_TOF(int speed)
