@@ -302,7 +302,7 @@ void SendBluetooth(const char * text,int len)
 	e_send_uart1_char(txStr, len);
 }
 
-void FindTarget_TOF()
+void FindTarget_TOF_()
 {
 	uint16_t maxDist=500;
 	while(VL53L0X_get_dist_mm()<maxDist)
@@ -332,7 +332,7 @@ void moving(int speed){
 	right_motor_set_speed(speed);
 }
 
-void rotation(int speed){
+void rotation_(int speed){
 	// positive for cw, negative for ccw
 	left_motor_set_speed(speed);
 	right_motor_set_speed(-speed);
