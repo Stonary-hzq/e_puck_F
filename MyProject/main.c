@@ -51,6 +51,16 @@ void random_choice(int speed, int wall_condition);
 int check_walls(int p_value[]);
 void FollowTarget2(int targetLocation, int speed);
 
+//MFCassim Function Signetures 
+//-----------------------------
+//-************************************************************
+int GetTargetLocation_MFCassim(int p_value[]);
+void RotateAngle_MFCassim(int speed,int theta_d);
+void MoveSmart_MFCassim(int speed, int p_value[]);
+void FindTarget_TOF_MFCassim(int p_value[]);
+void FollowTarget_MFCassim(int targetLocation,int p_value[]);
+//------------------------------------
+
 int main(void)
 {
 	// initialization
@@ -126,6 +136,9 @@ int main(void)
                 
             }
 			break;
+		case 3:
+			FollowTarget_MFCassim(GetTargetLocation(proximity),proximity);
+
 		default:
 			// relax here
 			moving(0);
@@ -371,4 +384,167 @@ uintptr_t __stack_chk_guard = STACK_CHK_GUARD;
 void __stack_chk_fail(void)
 {
     chSysHalt("Stack smashing detected");
+}
+
+
+//=============================================
+//	MFCassim | Task 2
+//=============================================
+int GetTargetLocation_MFCassim(int p_value[])
+{
+	// 0 - Target is front
+	// 1- Target is front-left
+	// 2 - Target is front-right
+	// 3 - Target is left
+	//4 -Target is right
+	// 5 Target is back. 
+
+
+	char txStr[100];
+	int txStrLen=0;
+
+	//Front
+	if((p_value[0]>80||p_value[7]>80)&&(p_value[0]>p_value[1])&&(p_value[7]>p_value[6]))
+	{
+		txStrLen = sprintf(txStr, "MFCassim | Target: Front \n");
+		e_send_uart1_char(str, txStrLen);
+		return 0;
+	}
+	//Front_Left
+	if((p_value[6]>70)&&(p_value[6]>p_value[5])&&(p_value[6]>p_value[7]))
+	{
+		txStrLen = sprintf(txStr, "MFCassim | Target: Front_Left \n");
+		e_send_uart1_char(str, txStrLen);
+		return 1;
+	}
+	//Front_Right
+	if((p_value[1]>70)&&(p_value[1]>p_value[2])&&(p_value[1]>p_value[0]))
+	{
+		txStrLen = sprintf(txStr, "MFCassim | Target: Front_Right \n");
+		e_send_uart1_char(str, txStrLen);
+		return 2;
+	}
+	//Left
+	if((p_value[5]>100)&&(p_value[5]>p_value[6])&&(p_value[5]>p_value[4]))
+	{
+		txStrLen = sprintf(txStr, "MFCassim | Target: Left \n");
+		e_send_uart1_char(str, txStrLen);
+		return 3;
+	}
+	//Right
+	if((p_value[2]>80)&&(p_value[2]>p_value[1])&&(p_value[2]>p_value[3]))
+	{
+		txStrLen = sprintf(txStr, "MFCassim | Target: Right \n");
+		e_send_uart1_char(str, txStrLen);
+		return 4;
+	}
+	//Back
+	if((p_value[3]>100||p_value[4]>100)&&(p_value[3]>p_value[2])&&(p_value[4]>p_value[5]))
+	{
+		txStrLen = sprintf(txStr, "MFCassim | Target: Back \n");
+		e_send_uart1_char(str, txStrLen);
+		return 5;
+	}
+	txStrLen = sprintf(txStr, "MFCassim | Target: Not Found (Proxsensors) \n");
+	e_send_uart1_char(str, txStrLen);
+	return -1; //No target detected by proximity sensor. 
+}
+//This function is supposed to rotate a set angle theta relative to its front.
+// (+)ve speed values for clockwise rotation and (-)ve speed values for anti-clockwise rotation. 
+void RotateAngle_MFCassim(int speed,int theta_d)
+{
+	double time_s=(50/33)*(22/7)*(theta_d/speed);
+	left_motor_set_speed(speed);
+	right_motor_set_speed(-speed);
+	chThdSleepMilliseconds(time_s*1000);
+	left_motor_set_speed(0);
+	right_motor_set_speed(0);
+}
+
+void MoveSmart_MFCassim(int speed, int p_value[])
+{
+	if(p_value[0]<100&&p_value[7]<100)
+	{
+		left_motor_set_speed(speed);
+		right_motor_set_speed(speed);
+	}
+	else
+	{
+		left_motor_set_speed(0);
+		right_motor_set_speed(0);
+	}
+}
+
+void FindTarget_TOF_MFCassim(int p_value[])
+{
+	//Bluetooth Stuff
+	char txStr[100];
+	int txStrLen=0;
+
+	uint16_t maxDist=500;
+	txStrLen = sprintf(txStr, "MFCassim | TOF | Finding Target. \n");
+	e_send_uart1_char(str, txStrLen);
+	while(VL53L0X_get_dist_mm()<maxDist)
+	{
+		//Keep rotating
+		left_motor_set_speed(300);
+		right_motor_set_speed(-300);
+	}
+
+	//When target found stop
+	left_motor_set_speed(0);
+	right_motor_set_speed(0);
+
+	txStrLen = sprintf(txStr, "MFCassim | TOF | Target Found, Moving Towards Target. \n");
+	e_send_uart1_char(str, txStrLen);
+
+	while(p_value[0]<FRONT_SENSITIVITY&&p_value[7]<FRONT_SENSITIVITY)
+	{ 
+		//move forward
+		left_motor_set_speed(300);
+		right_motor_set_speed(300);
+	}
+	//Stop
+	left_motor_set_speed(0);
+	right_motor_set_speed(0);
+
+	txStrLen = sprintf(txStr, "MFCassim | TOF | Target Near. \n");
+	e_send_uart1_char(str, txStrLen);
+}
+
+void FollowTarget_MFCassim(int targetLocation,int p_value[])
+{
+	switch (targetLocation)
+	{
+	case 0:
+		//Move forward
+		//Move Smart
+		MoveSmart_MFCassim(300,p_value);
+		break;
+	case 1:
+		//Rotate Front-Left
+		RotateAngle_MFCassim(-300,40);
+		break;
+	case 2:
+		//Rotate Front-Right
+		RotateAngle_MFCassim(300,40);
+		break;
+	case 3:
+		//Rotate Left
+		RotateAngle_MFCassim(-300,90);
+		break;
+	case 4:
+		//Rotate Right
+		RotateAngle_MFCassim(300,90);
+		break;
+	case 5:
+		//Rotate 180
+		RotateAngle_MFCassim(300,180);
+		break;
+	case -1: //Target not found by prox sensors
+		void FindTarget_TOF_MFCassim(p_value);
+		break;
+	default:
+		break;
+	}
 }
