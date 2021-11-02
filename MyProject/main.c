@@ -25,6 +25,7 @@ MUTEX_DECL(bus_lock);
 CONDVAR_DECL(bus_condvar);
 
 //random genearator
+int turn = 0;
 int rseed=0;
 #ifndef MS_RAND
 #define RAND_MAX ((1U<<31)-1)
@@ -49,7 +50,6 @@ int check_cylindar(void);//check whether the cylindar is arrived
 void random_choice(int speed, int wall_condition);
 int check_walls(int p_value[]);
 void FollowTarget2(int targetLocation, int speed);
-void FindTarget_TOF(int speed);
 
 void FollowTarget(int targetLocation);
 int GetTargetLocation(int p_value[]);
@@ -57,7 +57,7 @@ void move_time(int speed,int time_ms);
 void rotate_angle(int speed,int theta_d);
 void SendBluetooth(const char * text,int len);
 void rotate_continous(int speed);
-void FindTarget_TOF_MFCassim();
+void FindTarget_TOF_MFCassim(void);
 
 int main(void)
 {
@@ -96,7 +96,8 @@ int main(void)
 
 
 	// set reference speed <1000 = 15.4cm/s; cooperate with proximity range and measurement update frequency
-	int speed = 300;
+	int speed = 400;
+
 
 
     /* Infinite loop. */
@@ -111,8 +112,12 @@ int main(void)
     	wall_condition=check_walls(proximity);
     	str_length = sprintf(str, "wall condition: %d\n", wall_condition);
     	e_send_uart1_char(str, str_length);
+    	int objt=GetTargetLocation(proximity);
+    	str_length = sprintf(str, "obj condition: %d\n", objt);
+    	e_send_uart1_char(str, str_length);
     	circular=check_cylindar();
     	mode = get_selector();
+
     	switch(mode){
     	case 1:// random explorer
 			random_choice(speed, wall_condition);
@@ -120,15 +125,11 @@ int main(void)
 		case 2:// pursue the cylindar
 			FollowTarget(GetTargetLocation(proximity));
 			break;
-		case 3: //Rotate EPuck to Specified Angle
-			rotate_angle(300,180);
-			chThdSleepMilliseconds(3000);
-			break;
 		case 4:
 			if (circular ==1){
 				moving(0);
 			}
-			else FollowTarget2(GetTargetLocation(proximity), speed);
+			else FollowTarget2(GetTargetLocation(proximity), 300);
 			break;
 		default:
 			// relax here
@@ -136,7 +137,7 @@ int main(void)
 			break;
     	}
 		//e_send_uart1_char(str, str_length);
-		chThdSleepMilliseconds(100);
+		chThdSleepMilliseconds(300);
     }
 }
 
@@ -144,19 +145,26 @@ void random_choice(int speed, int wall_condition){
 	switch(wall_condition) {
 	case 8: //front wall 1000
 		// action = {turn left, turn right}
-		if (gamble()==1) rotation(speed);
-		else rotation(-speed);
+		if (gamble()==1) {
+			rotation(800);
+		}
+		else {
+			rotation(-800);
+		}
+		chThdSleepMilliseconds(300);
 		break;
 	case 10://right corner 1010
 		// action = turn left
 		// calibrate speed here to cooperate with measurement update frequency
-		rotation(-speed);
+		rotation(-800);
+		chThdSleepMilliseconds(300);
 		break;
-	case 9://left corner 1001
+	case 12://left corner 1100
 		// action = turn right
-		rotation(speed);
+		rotation(800);
+		chThdSleepMilliseconds(300);
 		break;
-	case 13: // a bag 1110
+	case 14: // a bag 1110
 		// action = backward
 		moving(-speed);
 		break;
@@ -166,13 +174,24 @@ void random_choice(int speed, int wall_condition){
 		break;
 	case 2://right wall 0010
 		// action = {forward, turn left}
-		if (gamble()==1) moving(speed);
-		else rotation(-speed);
+		if (gamble()==1) {
+			moving(speed);
+		}
+		else {
+			rotation(-800);
+			chThdSleepMilliseconds(300);
+		}
+
 		break;
 	case 4://left wall 0100
 		// action = {forward, turn right}
-		if (gamble()==1) moving(speed);
-		else rotation(speed);
+		if (gamble()==1) {
+			moving(speed);
+		}
+		else {
+			rotation(800);
+			chThdSleepMilliseconds(300);
+		}
 		break;
 	case 1: //back wall 0001
 		// action = forward
@@ -226,7 +245,7 @@ void FollowTarget(int targetLocation)
 		rotate_angle(300,180);
 		break;
 	case -1: //Target not found by prox sensors
-		void FindTarget_TOF_MFCassim();
+		FindTarget_TOF_MFCassim();
 		break;
 	default:
 		break;
@@ -238,6 +257,7 @@ void FollowTarget2(int targetLocation, int speed)
 	uint16_t max=25;
 	uint16_t min=15;
 	uint16_t dist = VL53L0X_get_dist_mm();
+	uint16_t maxDist=500;
 	switch (targetLocation)
 	{
 	case 0:
@@ -267,7 +287,10 @@ void FollowTarget2(int targetLocation, int speed)
 		rotation(speed*2);
 		break;
 	case -1:
-		FindTarget_TOF(speed);
+		if(dist>maxDist) rotation(speed);
+		else if (dist>max) moving(speed);
+		else if (dist<min) moving(-speed);
+		else moving(0);
 		break;
 	default:
 		break;
@@ -305,7 +328,7 @@ void SendBluetooth(const char * text,int len)
 	e_send_uart1_char(txStr, str_len);
 }
 
-void FindTarget_TOF_MFCassim()
+void FindTarget_TOF_MFCassim(void)
 {
 	uint16_t maxDist=500;
 	while(VL53L0X_get_dist_mm()<maxDist)
@@ -317,7 +340,7 @@ void FindTarget_TOF_MFCassim()
 	left_motor_set_speed(0);
 	right_motor_set_speed(0);
 
-	while(p_value[0]<FRONT_SENSITIVITY&&p_value[7]<FRONT_SENSITIVITY)
+	/*while(p_value[0]<FRONT_SENSITIVITY&&p_value[7]<FRONT_SENSITIVITY)
 	{ 
 		//move forward
 		left_motor_set_speed(300);
@@ -325,7 +348,7 @@ void FindTarget_TOF_MFCassim()
 	}
 	//Stop
 	left_motor_set_speed(0);
-	right_motor_set_speed(0);
+	right_motor_set_speed(0);*/
 }
 
 void moving(int speed){
@@ -386,18 +409,18 @@ void rotate_angle(int speed,int theta_d)
 
 int gamble(void){
 	int result = rand();
-	return result%2==0;
+	return result%2;
 }
 
 int check_walls(int p_value[]){
 	// return a int number represent a 4 digit vector [front, left, right, back], 1 means walls, 0 means free
 	int wall_condition=0;
 	// check front wall
-	if (p_value[0]>80 || p_value[7]>80 || p_value[1]>200 ||p_value[6]>200) wall_condition+=8; //
+	if (p_value[0]>80 || p_value[7]>80||p_value[1]>250 || p_value[6]>250) wall_condition+=8;
 	// check left wall
-	if (p_value[5]>300 ||p_value[6]>300) wall_condition+=4;
+	if (p_value[5]>300 ) wall_condition+=4;//||p_value[6]>300
 	// check right wall
-	if (p_value[2]>300|| p_value[1]>300 ) wall_condition+=2;
+	if (p_value[2]>300 ) wall_condition+=2;//|| p_value[1]>300
 	// check back wall
 	if (p_value[3]>100 || p_value[4]>250) wall_condition+=1;
 
