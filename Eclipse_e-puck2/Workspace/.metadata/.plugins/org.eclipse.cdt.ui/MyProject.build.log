@@ -1,6 +1,23 @@
-15:51:13 **** Incremental Build of configuration Default for project MyProject ****
+07:52:25 **** Incremental Build of configuration Default for project MyProject ****
 make all 
-make: Nothing to be done for 'all'.
+[1;34mCompiling main.c[0m
+main.c:30:0: warning: "RAND_MAX" redefined
+ #define RAND_MAX ((1U<<31)-1)
+ 
+In file included from main.c:2:0:
+/home/stonary/Documents/e_puck_F/Eclipse_e-puck2/Tools/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/stdlib.h:63:0: note: this is the location of the previous definition
+ #define RAND_MAX __RAND_MAX
+ 
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
 
-15:51:13 Build Finished. 0 errors, 0 warnings. (took 765ms)
+   text	   data	    bss	    dec	    hex	filename
+  82596	   3732	  18868	 105196	  19aec	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+
+07:52:27 Build Finished. 0 errors, 1 warnings. (took 1s.720ms)
 

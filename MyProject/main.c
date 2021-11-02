@@ -44,16 +44,20 @@ inline int rand(){
 
 void moving(int speed);// positive for forward, negative for backward
 void rotation(int speed); // positive for cw/tr, negative for ccw/tl
-int gamble();// random choice [true, false]
-int check_cylindar();//check whether the cylindar is arrived
+int gamble(void);// random choice [true, false]
+int check_cylindar(void);//check whether the cylindar is arrived
 void random_choice(int speed, int wall_condition);
-void toObstacle(int wall_condition, int speed);
-int check_cylindar(int p_value[]);
+int check_walls(int p_value[]);
+void FollowTarget2(int targetLocation, int speed);
+void FindTarget_TOF(int speed);
 
 void FollowTarget(int targetLocation);
 int GetTargetLocation(int p_value[]);
 void move_time(int speed,int time_ms);
 void rotate_angle(int speed,int theta_d);
+void SendBluetooth(const char * text,int len);
+void rotate_continous(int speed);
+void FindTarget_TOF_MFCassim();
 
 int main(void)
 {
@@ -107,7 +111,7 @@ int main(void)
     	wall_condition=check_walls(proximity);
     	str_length = sprintf(str, "wall condition: %d\n", wall_condition);
     	e_send_uart1_char(str, str_length);
-    	circular=check_cylindar(proximity);
+    	circular=check_cylindar();
     	mode = get_selector();
     	switch(mode){
     	case 1:// random explorer
@@ -120,6 +124,12 @@ int main(void)
 			rotate_angle(300,180);
 			chThdSleepMilliseconds(3000);
 			break;
+		case 4:
+			if (circular ==1){
+				moving(0);
+			}
+			else FollowTarget2(GetTargetLocation(proximity), speed);
+			break;
 		default:
 			// relax here
 			moving(0);
@@ -129,54 +139,6 @@ int main(void)
 		chThdSleepMilliseconds(100);
     }
 }
-
-/*void toObstacle(int wall_condition, int speed){
-	// set up distance measured in mm
-	uint16_t dist;
-	int prox0;
-	int num=10;
-	uint16_t dist_history[num];
-	switch(wall_condition) {
-	case 8: //front wall 1000
-		// action = rotate and find the first obstacle?
-		rotation(speed);
-		for (int i; i<num; i++){
-			dist = VL53L0X_get_mm();
-			prox0 = get_calibrated_prox(0);
-			if (prox0<30) dist_history[i]=dist;
-			else i--;
-			chThdSleepMilliseconds(100);//update every 0.1s
-		}
-		moving(0);
-		min = minimum(dist_history);
-		rotation(-speed);
-		for (int i; i<num; i++){
-			dist = VL53L0X_get_mm();
-			prox0 = get_calibrated_prox(0);
-			if (dist< min+10 && prox0 < 30) {
-				moving(speed);
-				i = num+1;
-			}
-			chThdSleepMilliseconds(100);
-		}
-		break;
-	case 10://right corner 1010
-		// action = turn left
-		// calibrate speed here to cooperate with measurement update frequency
-		rotation(-speed);
-		break;
-	case 9://left corner 1001
-		// action = turn right
-		rotation(speed);
-		break;
-	case 13: // a bag 1110
-		// action = backward
-		moving(-speed);
-		break;
-	default:
-		moving(speed);
-	}
-}*/
 
 void random_choice(int speed, int wall_condition){
 	switch(wall_condition) {
@@ -234,7 +196,6 @@ void random_choice(int speed, int wall_condition){
 }
 void FollowTarget(int targetLocation)
 {
-
 	switch (targetLocation)
 	{
 	case 0:
@@ -263,8 +224,50 @@ void FollowTarget(int targetLocation)
 	case 5:
 		//Rotate 180
 		rotate_angle(300,180);
+		break;
+	case -1: //Target not found by prox sensors
+		void FindTarget_TOF_MFCassim();
+		break;
+	default:
+		break;
+	}
+}
+
+void FollowTarget2(int targetLocation, int speed)
+{
+	uint16_t max=25;
+	uint16_t min=15;
+	uint16_t dist = VL53L0X_get_dist_mm();
+	switch (targetLocation)
+	{
+	case 0:
+		//Move forward or backward
+		if (dist>max) moving(speed);
+		else if (dist<min) moving(-speed);
+		else moving(0);
+		break;
+	case 1:
+		//Rotate Front-Left
+		rotation(-speed);
+		break;
+	case 2:
+		//Rotate Front-Right
+		rotation(speed);
+		break;
+	case 3:
+		//Rotate Left
+		rotation(-speed);
+		break;
+	case 4:
+		//Rotate Right
+		rotation(speed);
+		break;
+	case 5:
+		//Rotate 180
+		rotation(speed*2);
+		break;
 	case -1:
-		FindTarget_TOF();
+		FindTarget_TOF(speed);
 		break;
 	default:
 		break;
@@ -289,35 +292,33 @@ int GetTargetLocation(int p_value[])
 	//Left
 	if(p_value[5]>100) return 3;
 	//Right
-	if(p_value[2]>500) return 4;
+	if(p_value[2]>80) return 4;
 	//Back
-	if(p_value[3]>100||p_value[4>250])return 5;
+	if(p_value[3]>100||p_value[4]>100)return 5;
 	return -1; //No target detected by proximity sensor. 
 }
 
 void SendBluetooth(const char * text,int len)
 {
 	char txStr[len];
-	sprintf(txStr,text);
-	e_send_uart1_char(txStr, len);
+	int str_len=sprintf(txStr,text);
+	e_send_uart1_char(txStr, str_len);
 }
 
-void FindTarget_TOF_()
+void FindTarget_TOF_MFCassim()
 {
 	uint16_t maxDist=500;
 	while(VL53L0X_get_dist_mm()<maxDist)
 	{
 		//Keep rotating
-		left_motor_set_speed(300);
-		right_motor_set_speed(-300);
+		rotate_continous(300);
 	}
 	//When target found stop
-	//Keep rotating
 	left_motor_set_speed(0);
 	right_motor_set_speed(0);
 
-	while(p_value[0]<80&&p_value[7]<80)
-	{
+	while(p_value[0]<FRONT_SENSITIVITY&&p_value[7]<FRONT_SENSITIVITY)
+	{ 
 		//move forward
 		left_motor_set_speed(300);
 		right_motor_set_speed(300);
@@ -328,16 +329,39 @@ void FindTarget_TOF_()
 }
 
 void moving(int speed){
-	left_motor_set_speed(speed);
-	right_motor_set_speed(speed);
+	if (speed<=1000){
+		left_motor_set_speed(speed);
+		right_motor_set_speed(speed);
+	}
+	else {
+		char str[100];
+		int str_length;
+		str_length = sprintf(str, "speed over 1000\n");
+		e_send_uart1_char(str, str_length);
+		moving(1000);
+	}
 }
 
-void rotation_(int speed){
+void rotation(int speed){
 	// positive for cw, negative for ccw
+	if (speed<=1000){
+		left_motor_set_speed(speed);
+		right_motor_set_speed(-speed);
+	}
+	else {
+		char str[100];
+		int str_length;
+		str_length = sprintf(str, "speed over 1000\n");
+		e_send_uart1_char(str, str_length);
+		rotation(1000);
+	}
+}
+
+void rotate_continous(int speed)
+{
 	left_motor_set_speed(speed);
 	right_motor_set_speed(-speed);
 }
-
 
 void move_time(int speed,int time_ms)
 {
@@ -360,7 +384,7 @@ void rotate_angle(int speed,int theta_d)
 	right_motor_set_speed(0);
 }
 
-int gamble(){
+int gamble(void){
 	int result = rand();
 	return result%2==0;
 }
@@ -369,20 +393,23 @@ int check_walls(int p_value[]){
 	// return a int number represent a 4 digit vector [front, left, right, back], 1 means walls, 0 means free
 	int wall_condition=0;
 	// check front wall
-	if (p_value[0]>80 || p_value[7]>80 || p_value[1]>100 ||p_value[6]>100) wall_condition+=8;
+	if (p_value[0]>80 || p_value[7]>80 || p_value[1]>200 ||p_value[6]>200) wall_condition+=8; //
 	// check left wall
-	if (p_value[5]>100 ||p_value[6]>100) wall_condition+=4;
+	if (p_value[5]>300 ||p_value[6]>300) wall_condition+=4;
 	// check right wall
-	if (p_value[2]>500|| p_value[1]>100 ) wall_condition+=2;
+	if (p_value[2]>300|| p_value[1]>300 ) wall_condition+=2;
 	// check back wall
-	if (p_value[3]>=100 || p_value[4]>=250) wall_condition+=1;
+	if (p_value[3]>100 || p_value[4]>250) wall_condition+=1;
 
 	return wall_condition;
 }
 
-int check_cylindar(int p_value[]){
-	// at front
-	if (p_value[0]>300 && p_value[0]<200) return 1;
+int check_cylindar(){
+	// stop condition check
+	uint16_t max=25;
+	uint16_t min=15;
+	uint16_t dist = VL53L0X_get_dist_mm();
+	if (dist<max && dist>min) return 1;
 	else return 0;
 }
 

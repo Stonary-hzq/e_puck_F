@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccF8ETv1.s 			page 1
+ARM GAS  /tmp/cc06BPu9.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccF8ETv1.s 			page 1
   55              		.loc 1 6 0
   56 0018 FFF7FEBF 		b	calibrate_ir
   57              	.LVL0:
-ARM GAS  /tmp/ccF8ETv1.s 			page 2
+ARM GAS  /tmp/cc06BPu9.s 			page 2
 
 
   58              	.L6:
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccF8ETv1.s 			page 1
  112              	.L15:
  113              		.cfi_restore_state
  114              		.loc 1 14 0
-ARM GAS  /tmp/ccF8ETv1.s 			page 3
+ARM GAS  /tmp/cc06BPu9.s 			page 3
 
 
  115 0020 9A42     		cmp	r2, r3
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccF8ETv1.s 			page 1
  169 000e 1B68     		ldr	r3, [r3]
  170              		.loc 1 20 0
  171 0010 06D9     		bls	.L24
-ARM GAS  /tmp/ccF8ETv1.s 			page 4
+ARM GAS  /tmp/cc06BPu9.s 			page 4
 
 
  172              		.loc 1 25 0
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccF8ETv1.s 			page 1
  226              	.LVL12:
  227 0000 00B5     		push	{lr}
  228              		.cfi_def_cfa_offset 4
-ARM GAS  /tmp/ccF8ETv1.s 			page 5
+ARM GAS  /tmp/cc06BPu9.s 			page 5
 
 
  229              		.cfi_offset 14, -4
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccF8ETv1.s 			page 1
  283              	.Letext0:
  284              		.file 2 "../e-puck2_main-processor/src/epuck1x/../sensors/proximity.h"
  285              		.section	.debug_info,"",%progbits
-ARM GAS  /tmp/ccF8ETv1.s 			page 6
+ARM GAS  /tmp/cc06BPu9.s 			page 6
 
 
  286              	.Ldebug_info0:
@@ -309,7 +309,7 @@ ARM GAS  /tmp/ccF8ETv1.s 			page 1
  291 000b 01       		.uleb128 0x1
  292 000c AE000000 		.4byte	.LASF17
  293 0010 0C       		.byte	0xc
- 294 0011 82020000 		.4byte	.LASF18
+ 294 0011 86020000 		.4byte	.LASF18
  295 0015 2D020000 		.4byte	.LASF19
  296 0019 00000000 		.4byte	.Ldebug_ranges0+0
  297 001d 00000000 		.4byte	0
@@ -317,7 +317,7 @@ ARM GAS  /tmp/ccF8ETv1.s 			page 1
  299 0025 02       		.uleb128 0x2
  300 0026 01       		.byte	0x1
  301 0027 06       		.byte	0x6
- 302 0028 76020000 		.4byte	.LASF0
+ 302 0028 7A020000 		.4byte	.LASF0
  303 002c 02       		.uleb128 0x2
  304 002d 01       		.byte	0x1
  305 002e 08       		.byte	0x8
@@ -325,7 +325,7 @@ ARM GAS  /tmp/ccF8ETv1.s 			page 1
  307 0033 02       		.uleb128 0x2
  308 0034 02       		.byte	0x2
  309 0035 05       		.byte	0x5
- 310 0036 55020000 		.4byte	.LASF2
+ 310 0036 59020000 		.4byte	.LASF2
  311 003a 02       		.uleb128 0x2
  312 003b 02       		.byte	0x2
  313 003c 07       		.byte	0x7
@@ -333,7 +333,7 @@ ARM GAS  /tmp/ccF8ETv1.s 			page 1
  315 0041 02       		.uleb128 0x2
  316 0042 04       		.byte	0x4
  317 0043 05       		.byte	0x5
- 318 0044 6D020000 		.4byte	.LASF4
+ 318 0044 71020000 		.4byte	.LASF4
  319 0048 02       		.uleb128 0x2
  320 0049 04       		.byte	0x4
  321 004a 07       		.byte	0x7
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccF8ETv1.s 			page 1
  340 006c 00000000 		.4byte	.LASF9
  341 0070 01       		.byte	0x1
  342 0071 1B       		.byte	0x1b
-ARM GAS  /tmp/ccF8ETv1.s 			page 7
+ARM GAS  /tmp/cc06BPu9.s 			page 7
 
 
  343 0072 5D000000 		.4byte	0x5d
@@ -368,7 +368,7 @@ ARM GAS  /tmp/ccF8ETv1.s 			page 1
  347 007f 9C       		.byte	0x9c
  348 0080 A6000000 		.4byte	0xa6
  349 0084 05       		.uleb128 0x5
- 350 0085 5F020000 		.4byte	.LASF11
+ 350 0085 63020000 		.4byte	.LASF11
  351 0089 01       		.byte	0x1
  352 008a 1B       		.byte	0x1b
  353 008b 64000000 		.4byte	0x64
@@ -391,7 +391,7 @@ ARM GAS  /tmp/ccF8ETv1.s 			page 1
  370 00ba 9C       		.byte	0x9c
  371 00bb E1000000 		.4byte	0xe1
  372 00bf 05       		.uleb128 0x5
- 373 00c0 5F020000 		.4byte	.LASF11
+ 373 00c0 63020000 		.4byte	.LASF11
  374 00c4 01       		.byte	0x1
  375 00c5 12       		.byte	0x12
  376 00c6 64000000 		.4byte	0x64
@@ -414,11 +414,11 @@ ARM GAS  /tmp/ccF8ETv1.s 			page 1
  393 00f5 9C       		.byte	0x9c
  394 00f6 1C010000 		.4byte	0x11c
  395 00fa 05       		.uleb128 0x5
- 396 00fb 5F020000 		.4byte	.LASF11
+ 396 00fb 63020000 		.4byte	.LASF11
  397 00ff 01       		.byte	0x1
  398 0100 09       		.byte	0x9
  399 0101 64000000 		.4byte	0x64
-ARM GAS  /tmp/ccF8ETv1.s 			page 8
+ARM GAS  /tmp/cc06BPu9.s 			page 8
 
 
  400 0105 74000000 		.4byte	.LLST0
@@ -464,8 +464,8 @@ ARM GAS  /tmp/ccF8ETv1.s 			page 1
  440 016c 02       		.byte	0x2
  441 016d 33       		.byte	0x33
  442 016e 09       		.uleb128 0x9
- 443 016f C5020000 		.4byte	.LASF16
- 444 0173 C5020000 		.4byte	.LASF16
+ 443 016f C9020000 		.4byte	.LASF16
+ 444 0173 C9020000 		.4byte	.LASF16
  445 0177 02       		.byte	0x2
  446 0178 2A       		.byte	0x2a
  447 0179 00       		.byte	0
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccF8ETv1.s 			page 1
  454 0004 0E       		.uleb128 0xe
  455 0005 13       		.uleb128 0x13
  456 0006 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccF8ETv1.s 			page 9
+ARM GAS  /tmp/cc06BPu9.s 			page 9
 
 
  457 0007 03       		.uleb128 0x3
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccF8ETv1.s 			page 1
  511 003d 18       		.uleb128 0x18
  512 003e 9742     		.uleb128 0x2117
  513 0040 19       		.uleb128 0x19
-ARM GAS  /tmp/ccF8ETv1.s 			page 10
+ARM GAS  /tmp/cc06BPu9.s 			page 10
 
 
  514 0041 01       		.uleb128 0x1
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccF8ETv1.s 			page 1
  568 007c 12       		.uleb128 0x12
  569 007d 06       		.uleb128 0x6
  570 007e 40       		.uleb128 0x40
-ARM GAS  /tmp/ccF8ETv1.s 			page 11
+ARM GAS  /tmp/cc06BPu9.s 			page 11
 
 
  571 007f 18       		.uleb128 0x18
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccF8ETv1.s 			page 1
  625 0021 0100     		.2byte	0x1
  626 0023 50       		.byte	0x50
  627 0024 2D000000 		.4byte	.LVL15-1
-ARM GAS  /tmp/ccF8ETv1.s 			page 12
+ARM GAS  /tmp/cc06BPu9.s 			page 12
 
 
  628 0028 38000000 		.4byte	.LFE3
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccF8ETv1.s 			page 1
  682 00a4 50       		.byte	0x50
  683 00a5 9F       		.byte	0x9f
  684 00a6 00000000 		.4byte	0
-ARM GAS  /tmp/ccF8ETv1.s 			page 13
+ARM GAS  /tmp/cc06BPu9.s 			page 13
 
 
  685 00aa 00000000 		.4byte	0
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccF8ETv1.s 			page 1
  725              	.LASF5:
  726 0031 6C6F6E67 		.ascii	"long unsigned int\000"
  726      20756E73 
-ARM GAS  /tmp/ccF8ETv1.s 			page 14
+ARM GAS  /tmp/cc06BPu9.s 			page 14
 
 
  726      69676E65 
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccF8ETv1.s 			page 1
  743      62202D4F 
  743      32202D66 
  743      6F6D6974 
-ARM GAS  /tmp/ccF8ETv1.s 			page 15
+ARM GAS  /tmp/cc06BPu9.s 			page 15
 
 
  743      2D667261 
@@ -878,64 +878,64 @@ ARM GAS  /tmp/ccF8ETv1.s 			page 1
  754      6720696E 
  754      7400
  755              	.LASF19:
- 756 022d 2F686F6D 		.ascii	"/home/uos/Documents/e_puck_F/MyProject/\000"
- 756      652F756F 
- 756      732F446F 
+ 756 022d 2F686F6D 		.ascii	"/home/stonary/Documents/e_puck_F/MyProject/\000"
+ 756      652F7374 
+ 756      6F6E6172 
+ 756      792F446F 
  756      63756D65 
- 756      6E74732F 
  757              	.LASF2:
- 758 0255 73686F72 		.ascii	"short int\000"
+ 758 0259 73686F72 		.ascii	"short int\000"
  758      7420696E 
  758      7400
  759              	.LASF11:
- 760 025f 73656E73 		.ascii	"sensor_number\000"
+ 760 0263 73656E73 		.ascii	"sensor_number\000"
  760      6F725F6E 
  760      756D6265 
  760      7200
  761              	.LASF4:
- 762 026d 6C6F6E67 		.ascii	"long int\000"
+ 762 0271 6C6F6E67 		.ascii	"long int\000"
  762      20696E74 
  762      00
  763              	.LASF0:
- 764 0276 7369676E 		.ascii	"signed char\000"
-ARM GAS  /tmp/ccF8ETv1.s 			page 16
+ 764 027a 7369676E 		.ascii	"signed char\000"
+ARM GAS  /tmp/cc06BPu9.s 			page 16
 
 
  764      65642063 
  764      68617200 
  765              	.LASF18:
- 766 0282 2E2E2F65 		.ascii	"../e-puck2_main-processor/src/epuck1x/a_d/advance_a"
+ 766 0286 2E2E2F65 		.ascii	"../e-puck2_main-processor/src/epuck1x/a_d/advance_a"
  766      2D707563 
  766      6B325F6D 
  766      61696E2D 
  766      70726F63 
- 767 02b5 645F7363 		.ascii	"d_scan/e_prox.c\000"
+ 767 02b9 645F7363 		.ascii	"d_scan/e_prox.c\000"
  767      616E2F65 
  767      5F70726F 
  767      782E6300 
  768              	.LASF16:
- 769 02c5 63616C69 		.ascii	"calibrate_ir\000"
+ 769 02c9 63616C69 		.ascii	"calibrate_ir\000"
  769      62726174 
  769      655F6972 
  769      00
  770              		.ident	"GCC: (GNU Tools for Arm Embedded Processors 7-2017-q4-major) 7.2.1 20170904 (release) [ARM
-ARM GAS  /tmp/ccF8ETv1.s 			page 17
+ARM GAS  /tmp/cc06BPu9.s 			page 17
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 e_prox.c
-     /tmp/ccF8ETv1.s:18     .text.e_calibrate_ir:0000000000000000 $t
-     /tmp/ccF8ETv1.s:26     .text.e_calibrate_ir:0000000000000000 e_calibrate_ir
-     /tmp/ccF8ETv1.s:65     .text.e_calibrate_ir:0000000000000020 $d
-     /tmp/ccF8ETv1.s:70     .text.e_get_prox:0000000000000000 $t
-     /tmp/ccF8ETv1.s:78     .text.e_get_prox:0000000000000000 e_get_prox
-     /tmp/ccF8ETv1.s:136    .text.e_get_prox:0000000000000034 $d
-     /tmp/ccF8ETv1.s:141    .text.e_get_calibrated_prox:0000000000000000 $t
-     /tmp/ccF8ETv1.s:149    .text.e_get_calibrated_prox:0000000000000000 e_get_calibrated_prox
-     /tmp/ccF8ETv1.s:207    .text.e_get_calibrated_prox:0000000000000034 $d
-     /tmp/ccF8ETv1.s:212    .text.e_get_ambient_light:0000000000000000 $t
-     /tmp/ccF8ETv1.s:220    .text.e_get_ambient_light:0000000000000000 e_get_ambient_light
-     /tmp/ccF8ETv1.s:278    .text.e_get_ambient_light:0000000000000034 $d
+     /tmp/cc06BPu9.s:18     .text.e_calibrate_ir:0000000000000000 $t
+     /tmp/cc06BPu9.s:26     .text.e_calibrate_ir:0000000000000000 e_calibrate_ir
+     /tmp/cc06BPu9.s:65     .text.e_calibrate_ir:0000000000000020 $d
+     /tmp/cc06BPu9.s:70     .text.e_get_prox:0000000000000000 $t
+     /tmp/cc06BPu9.s:78     .text.e_get_prox:0000000000000000 e_get_prox
+     /tmp/cc06BPu9.s:136    .text.e_get_prox:0000000000000034 $d
+     /tmp/cc06BPu9.s:141    .text.e_get_calibrated_prox:0000000000000000 $t
+     /tmp/cc06BPu9.s:149    .text.e_get_calibrated_prox:0000000000000000 e_get_calibrated_prox
+     /tmp/cc06BPu9.s:207    .text.e_get_calibrated_prox:0000000000000034 $d
+     /tmp/cc06BPu9.s:212    .text.e_get_ambient_light:0000000000000000 $t
+     /tmp/cc06BPu9.s:220    .text.e_get_ambient_light:0000000000000000 e_get_ambient_light
+     /tmp/cc06BPu9.s:278    .text.e_get_ambient_light:0000000000000034 $d
 
 UNDEFINED SYMBOLS
 calibrate_ir
