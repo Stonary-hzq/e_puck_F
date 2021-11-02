@@ -138,6 +138,7 @@ int main(void)
 			break;
 		case 3:
 			FollowTarget_MFCassim(GetTargetLocation(proximity),proximity);
+			break;
 
 		default:
 			// relax here
