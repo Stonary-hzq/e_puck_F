@@ -1,3 +1,15 @@
+/*
+===================================================
+	ACS6501 EPuck Lab Assignment Code
+===================================================
+Authors: 
+Mohamed Faizan Cassim (mfcassim1@sheffield.ac.uk)
+Ziqian Huang (ZHuang96@sheffield.ac.uk)
+Both are associated with the department of Automated Control and Systems Engineering at the University of Sheffield. 
+
+Note: Please note that the code for both the tasks are in the same program; deferentiated by the Mode Switch button. 
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -47,10 +59,9 @@ void moving(int speed);// positive for forward, negative for backward
 void rotation(int speed); // positive for cw/tr, negative for ccw/tl
 int gamble(void);// random choice [true, false]
 int check_cylindar(void);//check whether the cylindar is arrived
-void random_choice(int speed, int wall_condition);
-int check_walls(int p_value[]);
+void random_choice(int speed, int wall_condition); //Random choice function. 
+int check_walls(int p_value[]); //Checks the locations of the wals
 void FollowTarget2(int targetLocation, int speed);
-
 void RotateAngle(int speed,int theta_d); //Rotates an angle of theta at a given steper motor rate. 
 
 int main(void)
@@ -114,6 +125,9 @@ int main(void)
         e_send_uart1_char(str, str_length);
     	mode = get_selector();
 
+
+		//The switch statement here is based on the mode selector switch on the EPuck. 
+
     	switch(mode){
     	case 1:// random explorer
 			random_choice(speed, wall_condition);
@@ -128,10 +142,7 @@ int main(void)
                 
             }
 			break;
-		case 3:
-			FollowTarget_MFCassim(GetTargetLocation(proximity),proximity);
-			break;
-
+	
 		default:
 			// relax here
 			moving(0);
@@ -215,7 +226,6 @@ void random_choice(int speed, int wall_condition){
 		break;
 	}
 }
-
 
 void FollowTarget2(int targetLocation, int speed)
 {
@@ -378,9 +388,6 @@ void __stack_chk_fail(void)
 {
     chSysHalt("Stack smashing detected");
 }
-
-
-
 
 //This function is supposed to rotate a set angle theta relative to its front.
 // (+)ve speed values for clockwise rotation and (-)ve speed values for anti-clockwise rotation. 
