@@ -36,7 +36,7 @@ messagebus_t bus;
 MUTEX_DECL(bus_lock);
 CONDVAR_DECL(bus_condvar);
 
-//random genearator
+//construct a random genearator
 int turn = 0;
 int rseed=0;
 #ifndef MS_RAND
@@ -61,18 +61,18 @@ int gamble(void);// random choice [true, false]
 int check_cylindar(void);//check whether the cylindar is arrived
 void random_choice(int speed, int wall_condition); //Random choice function. 
 int check_walls(int p_value[]); //Checks the locations of the wals
-void FollowTarget2(int targetLocation, int speed);
+void FollowTarget2(int targetLocation, int speed); // follow the object with specific distance
 void RotateAngle(int speed,int theta_d); //Rotates an angle of theta at a given steper motor rate. 
 
 int main(void)
 {
 	// initialization
-    halInit();
-    chSysInit();
-    mpu_init();
-    // motor initialize
-    motors_init();
-    // led initialize
+    	halInit();
+    	chSysInit();
+    	mpu_init();
+    	// motor initialize
+    	motors_init();
+    	// led initialize
 	clear_leds();
 	spi_comm_start();
 
@@ -99,62 +99,59 @@ int main(void)
 	// set the mode
 	int mode = get_selector();
 
-
 	// set reference speed <1000 = 15.4cm/s; cooperate with proximity range and measurement update frequency
 	int speed = 400;
 
-
-
-    /* Infinite loop. */
-    while (1) {
-    	for (int i = 0; i<8; i++){
+    	/* Infinite loop. */
+    	while (1) {
+		// read and update proximity measurements
+    		for (int i = 0; i<8; i++){
 			// update proximity array
 			proximity[i] = get_calibrated_prox(i);
 			// print proximity data
 			str_length = sprintf(str, "calibrated IR %d: %d\n", i, proximity[i]);
 			e_send_uart1_char(str, str_length);
-    	}
+    		}
+	// update and print local environment
     	wall_condition=check_walls(proximity);
     	str_length = sprintf(str, "wall condition: %d\n", wall_condition);
     	e_send_uart1_char(str, str_length);
+	// update and print the location of the target object
     	int objt=GetTargetLocation(proximity);
     	str_length = sprintf(str, "obj condition: %d\n", objt);
     	e_send_uart1_char(str, str_length);
+	// update and print if the stop condition achieved
     	circular=check_cylindar();
         str_length = sprintf(str, "circular condition: %d\n", circular)
         e_send_uart1_char(str, str_length);
+	// update the switch mode
     	mode = get_selector();
-
-
-		//The switch statement here is based on the mode selector switch on the EPuck. 
-
+		
+	//The switch statement here is based on the mode selector switch on the EPuck. 
     	switch(mode){
     	case 1:// random explorer
-			random_choice(speed, wall_condition);
-			break;
-		case 2:
-			if (circular ==1){
-				moving(0);
-                
-			}
-            else {
-                FollowTarget2(GetTargetLocation(proximity), 300);
-                
-            }
-			break;
-	
-		default:
-			// relax here
+		random_choice(speed, wall_condition);
+		break;
+	case 2: // object following
+		if (circular ==1){ // stop condition check
 			moving(0);
-			break;
+		}
+		else { // run the following program
+			FollowTarget2(GetTargetLocation(proximity), 300);
+			}
+		break;
+	default:
+		// relax
+		moving(0);
+		break;
     	}
-		//e_send_uart1_char(str, str_length);
-		chThdSleepMilliseconds(300);
+	chThdSleepMilliseconds(300); // sleep for 0.3 second
     }
 }
 
+//As mentioned in section II B
+//the function randomly select avaliable actions according to the local environment
 void random_choice(int speed, int wall_condition){
-    
 	switch(wall_condition) {
 	case 8: //front wall 1000
 		// action = {turn left, turn right}
@@ -194,7 +191,6 @@ void random_choice(int speed, int wall_condition){
 			rotation(-800);
 			chThdSleepMilliseconds(200);
 		}
-
 		break;
 	case 4://left wall 0100
 		// action = {forward, turn right}
@@ -222,50 +218,52 @@ void random_choice(int speed, int wall_condition){
 		moving(0);
 		break;
 	default:
-			// code block
+		// do nothing
 		break;
 	}
 }
 
+// As mentioned in Section II C
+// the function follow the target according to the location
 void FollowTarget2(int targetLocation, int speed)
 {
 	uint16_t max=25;
 	uint16_t min=15;
 	uint16_t dist = VL53L0X_get_dist_mm();
 	uint16_t maxDist=500;
-    int P0 = get_calibrated_prox(0);
-    int p7 = get_calibrated_prox(7);
+	int P0 = get_calibrated_prox(0);
+	int p7 = get_calibrated_prox(7);
 	switch (targetLocation)
 	{
-	case 0:
+	case 0://target at the front
 		//Move forward or backward
-            if (p0>80 || p7>80) {
-                if (p0<300 || p7<300) moving(0);
-                else moving(-300);
-            }
-            else moving(300);
+	    	if (p0>80 || p7>80) {
+			if (p0<300 || p7<300) moving(0);
+			else moving(-300);
+	    	}
+	   	else moving(300);
 		break;
-	case 1:
+	case 1:// target at front left
 		//Rotate Front-Left
 		rotation(-speed);
 		break;
-	case 2:
+	case 2:// target at front right
 		//Rotate Front-Right
 		rotation(speed);
 		break;
-	case 3:
+	case 3:// target at left
 		//Rotate Left
 		rotation(-speed);
 		break;
-	case 4:
+	case 4://target at right
 		//Rotate Right
 		rotation(speed);
 		break;
-	case 5:
+	case 5://target at back
 		//Rotate 180
 		rotation(speed*2);
 		break;
-	case -1:
+	case -1://no target
 		if(dist>maxDist) rotation(speed);
 		else if (dist>max) moving(speed);
 		else if (dist<min) moving(-speed);
@@ -280,12 +278,13 @@ void FollowTarget2(int targetLocation, int speed)
 int GetTargetLocation(int p_value[])
 {
 	// 0 - Target is front
-	// 1- Target is front-left
+	// 1 - Target is front-left
 	// 2 - Target is front-right
 	// 3 - Target is left
-	//4 -Target is right
-	// 5 Target is back. 
-	//Front
+	// 4 - Target is right
+	// 5 - Target is back. 
+	// -1 - Target out of range
+	//Frong
 	if(p_value[0]>80||p_value[7]>80)return 0;
 	//Front_Left
 	if(p_value[6]>70) return 1;
@@ -300,17 +299,21 @@ int GetTargetLocation(int p_value[])
 	return -1; //No target detected by proximity sensor. 
 }
 
+// As mentioned in II A
+// the function move e-puck forward or backward at speed
 void moving(int speed){
     int P0 = get_calibrated_prox(0);
     int p7 = get_calibrated_prox(7);
     int p3 = get_calibrated_prox(3);
     int p4 = get_calibrated_prox(4);
-    if ((p0<150 && p7<150) || speed<0){ // only move forward if no close wall
+    if ((p0<150 && p7<150) || speed<0){ 
+	 // only move forward if no front wall
         if (speed<=1000 && speed >0){
             left_motor_set_speed(speed);
             right_motor_set_speed(speed);
         }
         else if (speed>0){
+	    // if speed exceed the max speed
             char str[100];
             int str_length;
             str_length = sprintf(str, "speed over 1000\n");
@@ -318,10 +321,12 @@ void moving(int speed){
             moving(1000);
         }
         else if (speed>-1000 && p3<150 && p4<150){
+	    // move backward only if no obstacles at the back
             left_motor_set_speed(speed);
             right_motor_set_speed(speed);
         }
         else {
+	    // if speed exceed the max speed
             char str[100];
             int str_length;
             str_length = sprintf(str, "speed over 1000\n");
@@ -338,6 +343,7 @@ void rotation(int speed){
 		right_motor_set_speed(-speed);
 	}
 	else {
+		// if the speed exceed the max speed
 		char str[100];
 		int str_length;
 		str_length = sprintf(str, "speed over 1000\n");
@@ -346,11 +352,13 @@ void rotation(int speed){
 	}
 }
 
+// return 0 and 1 randomly
 int gamble(void){
 	int result = rand();
 	return result%2;
 }
 
+// constract occupancy vector
 int check_walls(int p_value[]){
 	// return a int number represent a 4 digit vector [front, left, right, back], 1 means walls, 0 means free
 	int wall_condition=0;
@@ -366,6 +374,7 @@ int check_walls(int p_value[]){
 	return wall_condition;
 }
 
+// stop condition for object following
 int check_cylindar(){
 	// stop condition check
 	/*uint16_t max=10;
@@ -375,7 +384,7 @@ int check_cylindar(){
 	else return 0;*/
     int P0 = get_calibrated_prox(0);
     int p7 = get_calibrated_prox(7);
-    if ((p0>80&&p0<300) || (p7>80 && p7<300){
+    if ((p0>80&&p0<300) || (p7>80 && p7<300)){
         return 1;
     }
     else return 0;
