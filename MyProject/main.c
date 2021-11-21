@@ -7,14 +7,13 @@ Mohamed Faizan Cassim (mfcassim1@sheffield.ac.uk)
 Ziqian Huang (ZHuang96@sheffield.ac.uk)
 Both are associated with the department of Automated Control and Systems Engineering at the University of Sheffield. 
 
-Note: Please note that the code for both the tasks are in the same program; deferentiated by the Mode Switch button. 
+Note: Please note that the code for both the tasks are in the same program; differentiated by the Mode Switch button. 
 */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
-
 #include "ch.h"
 #include "hal.h"
 #include "memory_protection.h"
@@ -47,7 +46,7 @@ inline int rand(){
 #else /* MS rand */
 
 #define RAND_MAX_32 ((1U<<31)-1)
-#define RAND_MAX((1U<<15)-1)
+#define RAND_MAX ((1U<<15)-1)
 
 inline int rand(){
 	return (rseed = (rseed *214013+2531011) & RAND_MAX_32) >> 16;
@@ -56,23 +55,23 @@ inline int rand(){
 #endif/* MS_RAND */
 
 void moving(int speed);// positive for forward, negative for backward
-void rotation(int speed); // positive for cw/tr, negative for ccw/tl
+void rotation(int speed); // positive for cw/turn right, negative for ccw/turn left
 int gamble(void);// random choice [true, false]
 int check_cylindar(void);//check whether the cylindar is arrived
 void random_choice(int speed, int wall_condition); //Random choice function. 
-int check_walls(int p_value[]); //Checks the locations of the wals
+int check_walls(int p_value[]); //Checks the locations of the walls
 void FollowTarget2(int targetLocation, int speed); // follow the object with specific distance
-void RotateAngle(int speed,int theta_d); //Rotates an angle of theta at a given steper motor rate. 
+void RotateAngle(int speed,int theta_d); //Rotates an angle of theta at a given step motor rate. 
 
 int main(void)
 {
 	// initialization
-    	halInit();
-    	chSysInit();
-    	mpu_init();
-    	// motor initialize
-    	motors_init();
-    	// led initialize
+	halInit();
+	chSysInit();
+	mpu_init();
+	// motor initialize
+	motors_init();
+	// led initialize
 	clear_leds();
 	spi_comm_start();
 
@@ -102,50 +101,50 @@ int main(void)
 	// set reference speed <1000 = 15.4cm/s; cooperate with proximity range and measurement update frequency
 	int speed = 400;
 
-    	/* Infinite loop. */
-    	while (1) {
+	/* Infinite loop. */
+	while (1) {
 		// read and update proximity measurements
-    		for (int i = 0; i<8; i++){
-			// update proximity array
-			proximity[i] = get_calibrated_prox(i);
-			// print proximity data
-			str_length = sprintf(str, "calibrated IR %d: %d\n", i, proximity[i]);
-			e_send_uart1_char(str, str_length);
-    		}
-	// update and print local environment
-    	wall_condition=check_walls(proximity);
-    	str_length = sprintf(str, "wall condition: %d\n", wall_condition);
-    	e_send_uart1_char(str, str_length);
-	// update and print the location of the target object
-    	int objt=GetTargetLocation(proximity);
-    	str_length = sprintf(str, "obj condition: %d\n", objt);
-    	e_send_uart1_char(str, str_length);
-	// update and print if the stop condition achieved
-    	circular=check_cylindar();
-        str_length = sprintf(str, "circular condition: %d\n", circular)
-        e_send_uart1_char(str, str_length);
-	// update the switch mode
-    	mode = get_selector();
-		
-	//The switch statement here is based on the mode selector switch on the EPuck. 
-    	switch(mode){
-    	case 1:// random explorer
-		random_choice(speed, wall_condition);
-		break;
-	case 2: // object following
-		if (circular ==1){ // stop condition check
-			moving(0);
+		for (int i = 0; i<8; i++){
+		// update proximity array
+		proximity[i] = get_calibrated_prox(i);
+		// print proximity data
+		str_length = sprintf(str, "calibrated IR %d: %d\n", i, proximity[i]);
+		e_send_uart1_char(str, str_length);
 		}
-		else { // run the following program
-			FollowTarget2(GetTargetLocation(proximity), 300);
+		// update and print local environment
+		wall_condition=check_walls(proximity);
+		str_length = sprintf(str, "wall condition: %d\n", wall_condition);
+		e_send_uart1_char(str, str_length);
+		// update and print the location of the target object
+		int objt=GetTargetLocation(proximity);
+		str_length = sprintf(str, "obj condition: %d\n", objt);
+		e_send_uart1_char(str, str_length);
+		// update and print if the stop condition achieved
+		circular=check_cylindar();
+	    str_length = sprintf(str, "circular condition: %d\n", circular)
+	    e_send_uart1_char(str, str_length);
+		// update the switch mode
+		mode = get_selector();
+		
+		//The switch statement here is based on the mode selector switch on the EPuck. 
+		switch(mode){
+		case 1:// random explorer
+			random_choice(speed, wall_condition);
+			break;
+		case 2: // object following
+			if (circular ==1){ // stop condition check
+				moving(0);
 			}
-		break;
-	default:
-		// relax
-		moving(0);
-		break;
-    	}
-	chThdSleepMilliseconds(300); // sleep for 0.3 second
+			else { // run the following program
+				FollowTarget2(GetTargetLocation(proximity), 300);
+				}
+			break;
+		default:
+			// relax
+			moving(0);
+			break;
+	    	}
+		chThdSleepMilliseconds(300); // sleep for 0.3 second
     }
 }
 
@@ -237,10 +236,10 @@ void FollowTarget2(int targetLocation, int speed)
 	{
 	case 0://target at the front
 		//Move forward or backward
-	    	if (p0>80 || p7>80) {
-			if (p0<300 || p7<300) moving(0);
-			else moving(-300);
-	    	}
+    	if (p0>80 || p7>80) {
+		if (p0<300 || p7<300) moving(0);
+		else moving(-300);
+    	}
 	   	else moving(300);
 		break;
 	case 1:// target at front left
@@ -409,6 +408,3 @@ void RotateAngle(int speed,int theta_d)
 	left_motor_set_speed(0);
 	right_motor_set_speed(0);
 }
-
-
-
